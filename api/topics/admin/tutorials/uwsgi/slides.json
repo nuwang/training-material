@@ -1,0 +1,39 @@
+{
+  "layout": "tutorial_slides",
+  "logo": "assets/images/gat.png",
+  "title": "uWSGI",
+  "contributors": [
+    "natefoo",
+    "slugger70"
+  ],
+  "subtopic": "deprecated",
+  "url": "/topics/admin/tutorials/uwsgi/slides.html",
+  "topic_name": "admin",
+  "tutorial_name": "uwsgi",
+  "dir": "topics/admin/tutorials/uwsgi",
+  "id": "admin/uwsgi",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": false,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial"
+}

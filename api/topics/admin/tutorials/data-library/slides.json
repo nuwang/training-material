@@ -1,0 +1,99 @@
+{
+  "layout": "base_slides",
+  "title": "Storage Management",
+  "questions": [
+    "How does Galaxy locate data?",
+    "How can I have Galaxy use multiple storage locations?"
+  ],
+  "objectives": [
+    "Setup Galaxy with both the Hierarachical and Distributed Object Storages"
+  ],
+  "time_estimation": "30m",
+  "key_points": [
+    "The distributed object store configuration allows you to easily expand that storage that is attached to your Galaxy.",
+    "You can move data around without affecting users."
+  ],
+  "contributors": [
+    "natefoo",
+    "martenson",
+    "hexylena",
+    "shiltemann"
+  ],
+  "subtopic": "data",
+  "tags": [
+    "ansible",
+    "storage",
+    "git-gat"
+  ],
+  "requirements": [
+    {
+      "type": "internal",
+      "topic_name": "admin",
+      "tutorials": [
+        "ansible",
+        "ansible-galaxy",
+        "tool-management"
+      ]
+    }
+  ],
+  "url": "/topics/admin/tutorials/data-library/slides.html",
+  "topic_name": "admin",
+  "tutorial_name": "data-library",
+  "dir": "topics/admin/tutorials/data-library",
+  "id": "admin/data-library",
+  "video_library": {
+    "tutorial": {
+      "description": null,
+      "materials": [
+        {
+          "link": "topics/admin/tutorials/data-library/tutorial.html",
+          "type": "Tutorial"
+        }
+      ],
+      "tags": [
+        "admin"
+      ],
+      "type": "Tutorial",
+      "versions": [
+        {
+          "captions": [
+            "hexylena",
+            "shiltemann"
+          ],
+          "date": "2021-02-15",
+          "galaxy_version": "21.01",
+          "length": "22M",
+          "link": "6BWu29Oiihw",
+          "speakers": [
+            "shiltemann"
+          ]
+        }
+      ],
+      "gtn_id": "admin/data-library",
+      "title": "Data Libraries",
+      "captioned": true
+    },
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": true,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": true
+  },
+  "type": "tutorial",
+  "logo": "assets/images/gat.png"
+}

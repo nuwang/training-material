@@ -1,0 +1,39 @@
+{
+  "layout": "tutorial_slides",
+  "logo": "assets/images/gat.png",
+  "title": "Galaxy Troubleshooting",
+  "contributors": [
+    "martenson",
+    "natefoo"
+  ],
+  "subtopic": "maintenance",
+  "url": "/topics/admin/tutorials/troubleshooting/slides.html",
+  "topic_name": "admin",
+  "tutorial_name": "troubleshooting",
+  "dir": "topics/admin/tutorials/troubleshooting",
+  "id": "admin/troubleshooting",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": false,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial"
+}

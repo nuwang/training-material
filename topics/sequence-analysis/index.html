@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -6,40 +6,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Galaxy Training!</title>
         
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-45719423-18' , 'auto');
-            ga('send', 'pageview');
-        </script>
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <link rel="stylesheet" href="/training-material/assets/css/font-awesome.css">
+        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/sequence-analysis/" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="2017-06-09 14:36:45 +0000" />
 
         
         
         
         
-        
         <meta name="description" content="Analyses of sequences" />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Sequence analysis" />
         <meta property="og:description" content="Analyses of sequences" />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,63 +56,196 @@
             <div class="collapse navbar-collapse" id="top-navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                         <a class="nav-link" href="/training-material/hall-of-fame" title="Hall of Fame">
-                            <i class="fa fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span> Contributors
+                        
+                        <a class="nav-link" href="/training-material/hall-of-fame" title="Hall of Fame">
+                           <i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span> Contributors
                         </a>
+
+                        
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material" title="View on GitHub">
-                            <i class="fa fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> View on GitHub
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
                         </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
                     </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="fa fa-life-ring" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Chat on Gitter">
-            Chat on Gitter
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/sequence-analysis/faqs/" title="Check our FAQs for the Sequence analysis topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
         </a>
+        
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
         </a>
     </div>
 </li>
 
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/sequence-analysis/" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/sequence-analysis/" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html#topic-sequence-analysis" title="Show feedback statistics about this topic">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Topic feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-05-01/topics/sequence-analysis/" title="Version 2019-05-01">2019-05-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-02-07/topics/sequence-analysis/" title="Version 2019-02-07">2019-02-07</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
 
-
-
-
-
-
-
-
-<div class="container main-content">
-    <section>
-        <h1>Sequence analysis</h1>
-        <p>Analyses of sequences</p>
-
         
-        <h2 id="requirements">Requirements</h2>
-        <p>Before diving into this topic, we recommend you to have a look at:</p>
+        <div class="container main-content" role="main">
+        
 
-        <ul>
-            
+
+
+
+
+<!-- Gitter -->
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<section class="tutorials-list sequence-analysis topic-type-use">
+    <h1>Sequence analysis</h1>
+    <p><p>Analyses of sequences</p>
+</p>
+    <i>You can view the tutorial materials in different languages by clicking the dropdown icon next to the slides (<i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span>) and tutorial (<i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>) buttons below. </i>
+
+    
+    <h2 id="requirements">Requirements</h2>
+    <p>Before diving into this topic, we recommend you to have a look at:</p>
+
+    <ul>
+        
     <li>
     
         
@@ -114,1535 +255,2608 @@
     
     </li>
 
-        </ul>
+    </ul>
+    
+
+    <h2 id="material">Material</h2>
+    
+    
+        <!-- subtopic = [__FLAT__, {subtopic => , materials => [ ... ]} ] -->
+
         
 
-        <h2 id="material">Material</h2>
         <table class="table table-responsive table-striped">
-            <tr>
-                <th>Lesson</th>
-                <th>Slides</th>
-                <th>Hands-on</th>
+  <thead>
+    <tr>
+      <th>Lesson</th>
+      <th title="Lecture for this training. May include a video version using automated text-to-speech.">Slides</th>
+      <th title="Practical tutorial guiding you through an analysis step by step.">Hands-on</th>
+      <th title="Recordings of various instructors teaching this tutorial. May use an outdated version of the tutorial.">Recordings</th>
 
-                
-                <th>Input dataset</th>
-                <th>Workflows</th>
-                <th>Galaxy tour</th>
-                
+      
+      <th title="Datasets used in this tutorial, available from Zenodo.">Input dataset</th>
+      <th title="Galaxy workflows used in this tutorial.">Workflows</th>
+      
 
-                
-            </tr>
+      
+      <th title="List of public Galaxies on which this tutorial can be performed. ">Galaxy servers</th>
+      
+    </tr>
+  </thead>
+  <tbody class="list">
 
+  
+  
+        <!-- MAT: sequence-analysis/mapping -->
+      
+
+        <tr>
+          <td class="tutorial_title">
             
-                
-                        <script type="application/ld+json">
-                            
+            
+            <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html">
+                Mapping
+            </a>
+            
 
 
-{
-  "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
-  "audience": {
-    "@type": "EducationalAudience",
-    "educationalRole": "students"
-  },
-  "citation": {
-    "@type": "CreativeWork",
-    "name": "Community-Driven Data Analysis Training for Biology",
-    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
-  },
-  "copyrightHolder": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
-  "headline": "Mapping",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
-  "interactivityType": "mixed",
-  "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
-  "producer": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "provider": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "sourceOrganization": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "courseCode": "sequence-analysis / mapping",
-  "isPartOf": {
-    "@type": "CreativeWork",
-    "name": "Sequence analysis",
-    "description": "Analyses of sequences",
-    "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-  },
-  "learningResourceType": "tutorial",
-  "name": "Mapping",
-  "description": "Mapping",
-  "coursePrerequisites": [
-    {
-      "@type": "CreativeWork",
-      "url": "https://galaxyproject.github.io//training-material/topics/introduction/",
-      "name": "Introduction to Galaxy Analyses",
-      "description": "Introduction to Galaxy Analyses",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
-      "name": "Quality Control",
-      "description": "Slides for 'Quality Control' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
-      "name": "Quality Control",
-      "description": "Hands-on for 'Quality Control' tutorial",
-      "learningResourceType": "hands-on tutorial",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    }
-  ],
-  "hasPart": [
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html",
-      "name": "Hands-on for 'Mapping' tutorial",
-      "learningResourceType": "hands-on tutorial",
-      "interactivityType": "expositive"
-    },
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
-      "name": "Slides for 'Mapping' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive"
-    }
-  ],
-  "mentions": [
-    [
-      {
-        "@type": "Thing",
-        "url": "/blob//topics/sequence-analysis/tutorials/mapping/workflows/joachimwolff",
-        "name": "Workflow for Mapping tutorial"
-      },
-      {
-        "@type": "Thing",
-        "url": "/blob//topics/sequence-analysis/tutorials/mapping/workflows/bebatut",
-        "name": "Workflow for Mapping tutorial"
-      },
-      {
-        "@type": "Thing",
-        "url": "/blob//topics/sequence-analysis/tutorials/mapping/workflows/erasche",
-        "name": "Workflow for Mapping tutorial"
-      }
-    ]
-  ],
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Joachim Wolff"
-    },
-    {
-      "@type": "Person",
-      "name": "Bérénice Batut"
-    },
-    {
-      "@type": "Person",
-      "name": "Helena Rasche"
-    }
-  ],
-  "contributor": [
-    {
-      "@type": "Person",
-      "name": "Joachim Wolff"
-    },
-    {
-      "@type": "Person",
-      "name": "Bérénice Batut"
-    },
-    {
-      "@type": "Person",
-      "name": "Helena Rasche"
-    }
-  ],
-  "about": [
-    {
-      "@type": "CreativeWork",
-      "name": "Sequence analysis",
-      "description": "Analyses of sequences",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-    }
-  ]
-}
-                        </script>
-                    <tr>
-                        <td>
-                            Mapping
-                            <div class="">
-                            
-                            
-                        </div>
-                        </td>
-                        
-                            <td>
-                                
-    <a class="topic-icon" href="/training-material/topics/sequence-analysis/tutorials/mapping/slides.html">
-    <i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span>
-</a>
+            <div class="extra">
+            
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
 
 
-                            </td>
-                            <td>
-                                
     <span class="btn-group">
-        <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html" class="btn btn-default" title="Where to run the tutorial">
-            <i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+	<a class="visually-hidden" href="/training-material/topics/sequence-analysis/tutorials/mapping/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
+    <span class="btn-group">
+        <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/mapping/slides.html" title="Slides">
+            <i class="fab fa-slideshare" aria-hidden="true"></i>
         </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="View slides in different languages">
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
         
+        
+
+        <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+
+	<a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/mapping/slides-plain.html" aria-label="more accessible, plain text slides">
+		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
+	</a>
+    </ul>
+    
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+
+              
+    <span class="btn-group">
+        <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                FR
+                Français
             </a>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                JA
+                日本語
             </a>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                ES
+                Español
             </a>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                PT
+                Português
             </a>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                AR
+                العربية
             </a>
         
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
     </span>
 
 
-                            </td>
+              
 
-                            
-                                <td>
-                                    
-<a class="topic-icon" href="https://doi.org/10.5281/zenodo.1324070">
-    <i class="fa fa-files-o" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/mapping/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+          
+          
+          
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/mapping/slides" title="View GTN Video Library for these Slides">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (February 2021)
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
+              
+                  
+
+
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.1324070">
+    <i class="far fa-copy" aria-hidden="true"></i>
 </a>
 
 
-                                </td>
-                                <td>
-                                    
-    <a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/mapping/workflows/" title="Workflows" alt="Mapping workflows">
-        <i class="fa fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
+                  
+
+
+    <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/mapping/workflows/" title="Workflows" alt="Mapping workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
     </a>
 
 
-                                </td>
-                                <td>
-                                    
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/mapping/tours/">
-    <i class="fa fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
-</a>
+              
+
+              
+                  
 
 
-                                </td>
-                            
-
-                            <td>
-                                
-
-                            </td>
-                        
-                    </tr>
-                
-            
-                
-                        <script type="application/ld+json">
-                            
-
-
-{
-  "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
-  "audience": {
-    "@type": "EducationalAudience",
-    "educationalRole": "students"
-  },
-  "citation": {
-    "@type": "CreativeWork",
-    "name": "Community-Driven Data Analysis Training for Biology",
-    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
-  },
-  "copyrightHolder": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
-  "headline": "Quality Control",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
-  "interactivityType": "mixed",
-  "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
-  "producer": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "provider": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "sourceOrganization": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "courseCode": "sequence-analysis / quality-control",
-  "isPartOf": {
-    "@type": "CreativeWork",
-    "name": "Sequence analysis",
-    "description": "Analyses of sequences",
-    "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-  },
-  "learningResourceType": "tutorial",
-  "name": "Quality Control",
-  "description": "Quality Control",
-  "coursePrerequisites": [
-    {
-      "@type": "CreativeWork",
-      "url": "https://galaxyproject.github.io//training-material/topics/introduction/",
-      "name": "Introduction to Galaxy Analyses",
-      "description": "Introduction to Galaxy Analyses",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    }
-  ],
-  "hasPart": [
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
-      "name": "Hands-on for 'Quality Control' tutorial",
-      "learningResourceType": "hands-on tutorial",
-      "interactivityType": "expositive"
-    },
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
-      "name": "Slides for 'Quality Control' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive"
-    }
-  ],
-  "mentions": [
-    [
-      {
-        "@type": "Thing",
-        "url": "/blob//topics/sequence-analysis/tutorials/quality-control/workflows/bebatut",
-        "name": "Workflow for Quality Control tutorial"
-      }
-    ]
-  ],
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Bérénice Batut"
-    }
-  ],
-  "contributor": [
-    {
-      "@type": "Person",
-      "name": "Bérénice Batut"
-    }
-  ],
-  "about": [
-    {
-      "@type": "CreativeWork",
-      "name": "Sequence analysis",
-      "description": "Analyses of sequences",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-    }
-  ]
-}
-                        </script>
-                    <tr>
-                        <td>
-                            Quality Control
-                            <div class="">
-                            
-                            
-                        </div>
-                        </td>
-                        
-                            <td>
-                                
-    <a class="topic-icon" href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html">
-    <i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span>
-</a>
-
-
-                            </td>
-                            <td>
-                                
-    <span class="btn-group">
-        <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html" class="btn btn-default" title="Where to run the tutorial">
-            <i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
+    </a>
+    <ul class="dropdown-menu">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
         </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
+            Galaxy Test
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxytrakr.org/" title="GalaxyTrakr">
+            GalaxyTrakr
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.fr/" title="UseGalaxy.fr">
+            UseGalaxy.fr
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+
+
+
+              
+              </div>
+            </div>
+          </td>
+
+          <td> 
+
+
+    <span class="btn-group">
+	<a class="visually-hidden" href="/training-material/topics/sequence-analysis/tutorials/mapping/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
+    <span class="btn-group">
+        <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/mapping/slides.html" title="Slides">
+            <i class="fab fa-slideshare" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="View slides in different languages">
             <span class="sr-only">Toggle Dropdown</span>
         </a>
         <ul class="dropdown-menu">
         
+        
+
+        <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Fslides.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+
+	<a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/mapping/slides-plain.html" aria-label="more accessible, plain text slides">
+		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
+	</a>
+    </ul>
+    
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+ </td>
+          <td> 
+    <span class="btn-group">
+        <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+ </td>
+          <td> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/mapping/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+          
+          
+          
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/mapping/slides" title="View GTN Video Library for these Slides">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (February 2021)
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+   </li>
+   
+ </td>
+
+          
+          <td> 
+
+
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.1324070">
+    <i class="far fa-copy" aria-hidden="true"></i>
+</a>
+
+ </td>
+          <td> 
+
+
+    <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/mapping/workflows/" title="Workflows" alt="Mapping workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
+    </a>
+
+ </td>
+          
+
+          
+          <td> 
+
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
+    </a>
+    <ul class="dropdown-menu">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
+            Galaxy Test
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxytrakr.org/" title="GalaxyTrakr">
+            GalaxyTrakr
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.fr/" title="UseGalaxy.fr">
+            UseGalaxy.fr
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+
+
+ </td>
+          
+         </tr>
+       
+    
+        <!-- MAT: sequence-analysis/ncbi-blast-against-the-madland -->
+      
+    
+        <!-- MAT: sequence-analysis/quality-control -->
+      
+
+        <tr>
+          <td class="tutorial_title">
+            
+            
+            <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html">
+                Quality Control
+            </a>
+            
+
+
+            <div class="extra">
+            
+              
+
+
+
+<span class="level introductory" title="Introductory Tutorial">
+  <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+</span>
+
+
+            
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
+
+
+    <span class="btn-group">
+	<a class="visually-hidden" href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
+    <span class="btn-group">
+        <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html" title="Slides">
+            <i class="fab fa-slideshare" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="View slides in different languages">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+
+        <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+
+	<a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides-plain.html" aria-label="more accessible, plain text slides">
+		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
+	</a>
+    </ul>
+    
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+
+              
+    <span class="btn-group">
+        <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
-                FR
+                Français
             </a>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
-                JA
+                日本語
             </a>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
-                ES
+                Español
             </a>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
-                PT
+                Português
             </a>
         
             <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
-                AR
+                العربية
             </a>
         
-    </span>
-
-
-                            </td>
-
-                            
-                                <td>
-                                    
-<a class="topic-icon" href="https://doi.org/10.5281/zenodo.61771">
-    <i class="fa fa-files-o" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
-</a>
-
-
-                                </td>
-                                <td>
-                                    
-    <a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/quality-control/workflows/" title="Workflows" alt="Quality Control workflows">
-        <i class="fa fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
-    </a>
-
-
-                                </td>
-                                <td>
-                                    
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/quality-control/tours/">
-    <i class="fa fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
-</a>
-
-
-                                </td>
-                            
-
-                            <td>
-                                
-
-                            </td>
-                        
-                    </tr>
-                
-            
-                
-                        <script type="application/ld+json">
-                            
-
-
-{
-  "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
-  "audience": {
-    "@type": "EducationalAudience",
-    "educationalRole": "students"
-  },
-  "citation": {
-    "@type": "CreativeWork",
-    "name": "Community-Driven Data Analysis Training for Biology",
-    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
-  },
-  "copyrightHolder": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
-  "headline": "RAD-Seq Reference-based data analysis",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
-  "interactivityType": "mixed",
-  "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
-  "producer": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "provider": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "sourceOrganization": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "courseCode": "sequence-analysis / ref-based-rad-seq",
-  "isPartOf": {
-    "@type": "CreativeWork",
-    "name": "Sequence analysis",
-    "description": "Analyses of sequences",
-    "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-  },
-  "learningResourceType": "tutorial",
-  "name": "RAD-Seq Reference-based data analysis",
-  "description": "RAD-Seq Reference-based data analysis",
-  "coursePrerequisites": [
-    {
-      "@type": "CreativeWork",
-      "url": "https://galaxyproject.github.io//training-material/topics/introduction/",
-      "name": "Introduction to Galaxy Analyses",
-      "description": "Introduction to Galaxy Analyses",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    }
-  ],
-  "hasPart": [
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/ref-based-rad-seq/tutorial.html",
-      "name": "Hands-on for 'RAD-Seq Reference-based data analysis' tutorial",
-      "learningResourceType": "hands-on tutorial",
-      "interactivityType": "expositive"
-    },
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/ref-based-rad-seq/slides.html",
-      "name": "Slides for 'RAD-Seq Reference-based data analysis' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive"
-    }
-  ],
-  "mentions": [
-    [
-      {
-        "@type": "Thing",
-        "url": "/blob//topics/sequence-analysis/tutorials/ref-based-rad-seq/workflows/yvanlebras",
-        "name": "Workflow for RAD-Seq Reference-based data analysis tutorial"
-      }
-    ]
-  ],
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Yvan Le Bras"
-    }
-  ],
-  "contributor": [
-    {
-      "@type": "Person",
-      "name": "Yvan Le Bras"
-    }
-  ],
-  "about": [
-    {
-      "@type": "CreativeWork",
-      "name": "Sequence analysis",
-      "description": "Analyses of sequences",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-    }
-  ]
-}
-                        </script>
-                    <tr>
-                        <td>
-                            RAD-Seq Reference-based data analysis
-                            <div class="">
-                            
-                            
-                        </div>
-                        </td>
-                        
-                            <td>
-                                
-
-                            </td>
-                            <td>
-                                
-    <span class="btn-group">
-        <a href="/training-material/topics/sequence-analysis/tutorials/ref-based-rad-seq/tutorial.html" class="btn btn-default" title="Where to run the tutorial">
-            <i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
         </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fref-based-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                FR
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fref-based-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                JA
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fref-based-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                ES
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fref-based-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                PT
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fref-based-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                AR
-            </a>
-        
-    </span>
-
-
-                            </td>
-
-                            
-                                <td>
-                                    
-<a class="topic-icon" href="https://doi.org/10.5281/zenodo.1134547">
-    <i class="fa fa-files-o" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
-</a>
-
-
-                                </td>
-                                <td>
-                                    
-    <a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/ref-based-rad-seq/workflows/" title="Workflows" alt="RAD-Seq Reference-based data analysis workflows">
-        <i class="fa fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
-    </a>
-
-
-                                </td>
-                                <td>
-                                    
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/ref-based-rad-seq/tours/">
-    <i class="fa fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
-</a>
-
-
-                                </td>
-                            
-
-                            <td>
-                                
-
-                            </td>
-                        
-                    </tr>
-                
-            
-                
-                        <script type="application/ld+json">
-                            
-
-
-{
-  "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
-  "audience": {
-    "@type": "EducationalAudience",
-    "educationalRole": "students"
-  },
-  "citation": {
-    "@type": "CreativeWork",
-    "name": "Community-Driven Data Analysis Training for Biology",
-    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
-  },
-  "copyrightHolder": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
-  "headline": "RAD-Seq de-novo data analysis",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
-  "interactivityType": "mixed",
-  "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
-  "producer": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "provider": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "sourceOrganization": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "courseCode": "sequence-analysis / de-novo-rad-seq",
-  "isPartOf": {
-    "@type": "CreativeWork",
-    "name": "Sequence analysis",
-    "description": "Analyses of sequences",
-    "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-  },
-  "learningResourceType": "tutorial",
-  "name": "RAD-Seq de-novo data analysis",
-  "description": "RAD-Seq de-novo data analysis",
-  "coursePrerequisites": [
-    {
-      "@type": "CreativeWork",
-      "url": "https://galaxyproject.github.io//training-material/topics/introduction/",
-      "name": "Introduction to Galaxy Analyses",
-      "description": "Introduction to Galaxy Analyses",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    }
-  ],
-  "hasPart": [
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/de-novo-rad-seq/tutorial.html",
-      "name": "Hands-on for 'RAD-Seq de-novo data analysis' tutorial",
-      "learningResourceType": "hands-on tutorial",
-      "interactivityType": "expositive"
-    },
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/de-novo-rad-seq/slides.html",
-      "name": "Slides for 'RAD-Seq de-novo data analysis' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive"
-    }
-  ],
-  "mentions": [
-    [
-      {
-        "@type": "Thing",
-        "url": "/blob//topics/sequence-analysis/tutorials/de-novo-rad-seq/workflows/yvanlebras",
-        "name": "Workflow for RAD-Seq de-novo data analysis tutorial"
-      }
-    ]
-  ],
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Yvan Le Bras"
-    }
-  ],
-  "contributor": [
-    {
-      "@type": "Person",
-      "name": "Yvan Le Bras"
-    }
-  ],
-  "about": [
-    {
-      "@type": "CreativeWork",
-      "name": "Sequence analysis",
-      "description": "Analyses of sequences",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-    }
-  ]
-}
-                        </script>
-                    <tr>
-                        <td>
-                            RAD-Seq de-novo data analysis
-                            <div class="">
-                            
-                            
-                        </div>
-                        </td>
-                        
-                            <td>
-                                
-
-                            </td>
-                            <td>
-                                
-    <span class="btn-group">
-        <a href="/training-material/topics/sequence-analysis/tutorials/de-novo-rad-seq/tutorial.html" class="btn btn-default" title="Where to run the tutorial">
-            <i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fde-novo-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                FR
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fde-novo-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                JA
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fde-novo-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                ES
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fde-novo-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                PT
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fde-novo-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                AR
-            </a>
-        
-    </span>
-
-
-                            </td>
-
-                            
-                                <td>
-                                    
-<a class="topic-icon" href="https://doi.org/10.5281/zenodo.1134547">
-    <i class="fa fa-files-o" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
-</a>
-
-
-                                </td>
-                                <td>
-                                    
-    <a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/de-novo-rad-seq/workflows/" title="Workflows" alt="RAD-Seq de-novo data analysis workflows">
-        <i class="fa fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
-    </a>
-
-
-                                </td>
-                                <td>
-                                    
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/de-novo-rad-seq/tours/">
-    <i class="fa fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
-</a>
-
-
-                                </td>
-                            
-
-                            <td>
-                                
-
-                            </td>
-                        
-                    </tr>
-                
-            
-                
-                        <script type="application/ld+json">
-                            
-
-
-{
-  "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
-  "audience": {
-    "@type": "EducationalAudience",
-    "educationalRole": "students"
-  },
-  "citation": {
-    "@type": "CreativeWork",
-    "name": "Community-Driven Data Analysis Training for Biology",
-    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
-  },
-  "copyrightHolder": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
-  "headline": "RAD-Seq to construct genetic maps",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
-  "interactivityType": "mixed",
-  "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
-  "producer": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "provider": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "sourceOrganization": {
-    "@type": "Organization",
-    "email": "galaxytrainingnetwork@gmail.com",
-    "name": "Galaxy Training Network",
-    "url": "https://galaxyproject.org/teach/gtn/"
-  },
-  "courseCode": "sequence-analysis / genetic-map-rad-seq",
-  "isPartOf": {
-    "@type": "CreativeWork",
-    "name": "Sequence analysis",
-    "description": "Analyses of sequences",
-    "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-  },
-  "learningResourceType": "tutorial",
-  "name": "RAD-Seq to construct genetic maps",
-  "description": "RAD-Seq to construct genetic maps",
-  "coursePrerequisites": [
-    {
-      "@type": "CreativeWork",
-      "url": "https://galaxyproject.github.io//training-material/topics/introduction/",
-      "name": "Introduction to Galaxy Analyses",
-      "description": "Introduction to Galaxy Analyses",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    }
-  ],
-  "hasPart": [
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/genetic-map-rad-seq/tutorial.html",
-      "name": "Hands-on for 'RAD-Seq to construct genetic maps' tutorial",
-      "learningResourceType": "hands-on tutorial",
-      "interactivityType": "expositive"
-    },
-    {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/genetic-map-rad-seq/slides.html",
-      "name": "Slides for 'RAD-Seq to construct genetic maps' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive"
-    }
-  ],
-  "mentions": [
-    [
-      {
-        "@type": "Thing",
-        "url": "/blob//topics/sequence-analysis/tutorials/genetic-map-rad-seq/workflows/yvanlebras",
-        "name": "Workflow for RAD-Seq to construct genetic maps tutorial"
-      }
-    ]
-  ],
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Yvan Le Bras"
-    }
-  ],
-  "contributor": [
-    {
-      "@type": "Person",
-      "name": "Yvan Le Bras"
-    }
-  ],
-  "about": [
-    {
-      "@type": "CreativeWork",
-      "name": "Sequence analysis",
-      "description": "Analyses of sequences",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/"
-    }
-  ]
-}
-                        </script>
-                    <tr>
-                        <td>
-                            RAD-Seq to construct genetic maps
-                            <div class="">
-                            
-                            
-                        </div>
-                        </td>
-                        
-                            <td>
-                                
-
-                            </td>
-                            <td>
-                                
-    <span class="btn-group">
-        <a href="/training-material/topics/sequence-analysis/tutorials/genetic-map-rad-seq/tutorial.html" class="btn btn-default" title="Where to run the tutorial">
-            <i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
-        </a>
-        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu">
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fgenetic-map-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                FR
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fgenetic-map-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                JA
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fgenetic-map-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                ES
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fgenetic-map-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                PT
-            </a>
-        
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fgenetic-map-rad-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                AR
-            </a>
-        
-    </span>
-
-
-                            </td>
-
-                            
-                                <td>
-                                    
-<a class="topic-icon" href="https://doi.org/10.5281/zenodo.1219888">
-    <i class="fa fa-files-o" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span>
-</a>
-
-
-                                </td>
-                                <td>
-                                    
-    <a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/genetic-map-rad-seq/workflows/" title="Workflows" alt="RAD-Seq to construct genetic maps workflows">
-        <i class="fa fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span>
-    </a>
-
-
-                                </td>
-                                <td>
-                                    
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/genetic-map-rad-seq/tours/">
-    <i class="fa fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span>
-</a>
-
-
-                                </td>
-                            
-
-                            <td>
-                                
-
-                            </td>
-                        
-                    </tr>
-                
-            
-        </table>
-
-        
-            <h2 id="docker_image">Galaxy instances</h2>
-            <p>You can use a public Galaxy instance which has been tested for the availability of the used tools. They are listed along with the tutorials above.</p>
-            
-                <p>You can also use the following Docker image for these tutorials:</p>
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -d -p 8080:80 quay.io/galaxy/sequence-analysis-training</code></pre></div></div>
-                <p>It will launch a flavored Galaxy instance available on <a href="http://localhost:8080">http://localhost:8080</a>.</p>
-            
-        
-
-        <h2 id="maintainers">Maintainers</h2>
-        <p>This material is maintained by:</p>
-        
-        
-
-<a href="/training-material/hall-of-fame#yvanlebras" class="contributor-badge"><img src="https://avatars.githubusercontent.com/yvanlebras" alt="Yvan Le Bras">Yvan Le Bras</a>, <a href="/training-material/hall-of-fame#bebatut" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bebatut" alt="Bérénice Batut">Bérénice Batut</a>, <a href="/training-material/hall-of-fame#joachimwolff" class="contributor-badge"><img src="https://avatars.githubusercontent.com/joachimwolff" alt="Joachim Wolff">Joachim Wolff</a>
-
-
-
-        <p>
-            <em>For any question related to this topic and the content, you can contact them or visit our <a href="https://gitter.im/Galaxy-Training-Network/Lobby">Gitter channel</a>.</em>
-        </p>
-
-        <h2 id="contributors">Contributors</h2>
-        <p>This material was contributed to by:</p>
-        
-        
-        
-        
-
-<a href="/training-material/hall-of-fame#joachimwolff" class="contributor-badge"><img src="https://avatars.githubusercontent.com/joachimwolff" alt="Joachim Wolff">Joachim Wolff</a>, <a href="/training-material/hall-of-fame#bebatut" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bebatut" alt="Bérénice Batut">Bérénice Batut</a>, <a href="/training-material/hall-of-fame#erasche" class="contributor-badge"><img src="https://avatars.githubusercontent.com/erasche" alt="Helena Rasche">Helena Rasche</a>, <a href="/training-material/hall-of-fame#yvanlebras" class="contributor-badge"><img src="https://avatars.githubusercontent.com/yvanlebras" alt="Yvan Le Bras">Yvan Le Bras</a>
-
-
-
-        
-        <h2 id="references">References</h2>
-        <ul>
-        
-            <li class="citation">
-                <strong>SciLifeLab:</strong> <a href="https://sequencing.qcfail.com/">QCFAIL</a>
-                
-                <br><cite>Articles about common next-generation sequencing problems</cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Marco-Antonio Mendoza-Parra et al:</strong> <a href="http://nar.oxfordjournals.org/content/41/21/e196.short">A quality control system for profiles obtained by ChIP sequencing</a>
-                
-                <br><cite>Presents an approach that associates global and local QC indicators to ChIP-seq data sets as well as to a variety of enrichment-based studies by NGS.</cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Ana Conesa et al:</strong> <a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8">A survey of best practices for RNA-seq data analysis</a>
-                
-                <br><cite>Highlights the challenges associated with each step of RNA-seq data analysis.</cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Yuval Benjamini et al:</strong> <a href="http://nar.oxfordjournals.org/content/40/10/e72.long">Summarizing and correcting the GC content bias in high-throughput sequencing</a>
-                
-                <br><cite>Summarizes the many possible sourced of GC bias for deeply sequenced samples.</cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>David Sims et al:</strong> <a href="http://www.nature.com/nrg/journal/v15/n2/abs/nrg3642.html">Sequencing depth and coverage: key considerations in genomic analyses</a>
-                
-                <br><cite>Discuss the issue of sequencing depth in the design of next-generation sequencing experiments.</cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Frontiers in Genetics:</strong> <a href="http://journal.frontiersin.org/researchtopic/1683/quality-assessment-and-control-of-high-throughput-sequencing-data">Quality assessment and control of high-throughput sequencing data</a>
-                
-                <br><cite>Collection of papers on quality controls for various NGS applications</cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Frazer Meacham et al:</strong> <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-451">Identification and correction of systematic error in high-throughput sequence data</a>
-                
-                <br><cite>Reviews and proposes correction for systematic base pair errors in deep sequencing</cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Guillaume Devailly et al:</strong> <a href="http://biorxiv.org/content/early/2016/04/18/049254.abstract">Heat seq: an interactive web tool for high-throughput sequencing experiment comparison with public data</a>
-                
-                <br><cite>Presents a web-tool that allows genome scale comparison of high throughput experiments</cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Amores, A., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21828280">Genome evolution and meiotic maps by massively parallel DNA sequencing</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Catchen, J. M. et al. 2011:</strong> <a href="http://www.g3journal.org/content/1/3/171.full">Stacks: building and genotyping loci de novo from short-read sequences</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Davey, J. W., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21681211">Genome-wide genetic marker discovery and genotyping using next-generation sequencing</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Etter, P. D., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3658458/">SNP Discovery and Genotyping for Evolutionary Genetics using RAD sequencing</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Ekblom, R., and J. Galindo. 2010:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21139633">Applications of next generation sequencing in molecular ecology of non-model organisms</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Hohenlohe, P. A. et al. 2010:</strong> <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000862">Population genomics of parallel adaptation in threespine stickleback using sequenced RAD tags</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Gompert, Z., and C. A. Buerkle. 2011a:</strong> <a href="http://www.genetics.org/content/187/3/903">A hierarchical Bayesian model for next-generation population genomics</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Gompert, Z., and C. A. Buerkle. 2011b:</strong> <a href="http://onlinelibrary.wiley.com/wol1/doi/10.1111/j.1365-294X.2011.05074.x/abstract">Bayesian estimation of genomic clines</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Lynch, M. 2009:</strong> <a href="http://www.genetics.org/content/182/1/295">Estimation of allele frequencies from high-coverage genome-sequencing projects</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Nielsen, R., et al. 2005:</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1310644/">Genomic scans for selective sweeps using SNP data</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Hohenlohe, P. A., et al. 2010:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21218185">Using population genomics to detect selection in natural populations: Key concepts and methodological considerations</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Stapley, J., et al. 2010:</strong> <a href="http://www.cell.com/trends/ecology-evolution/abstract/S0169-5347(10)00216-8">Adaptation genomics: the next generation</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Altshuler, D., et al. 2000:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/11029002">An SNP map of the human genome generated by reduced representation shotgun sequencing</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Baxter, S. W., et al. 2011:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0019315">Linkage mapping and comparative genomics using next-generation RAD sequencing of a non-model organism</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Chutimanitsakun, Y., et al. 2011:</strong> <a href="http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-12-4">Construction and application for QTL analysis of a Restriction Site Associated DNA (RAD) linkage map in barley</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Gore, M. A., et al. 2009:</strong> <a href="http://science.sciencemag.org/content/326/5956/1115">A first-generation haplotype map of maize</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Baird, N. A., et al. 2008:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0003376">Rapid SNP discovery and genetic mapping using sequenced RAD markers</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Emerson, K. J., et al. 2010:</strong> <a href="http://www.pnas.org/content/107/37/16196">Resolving postglacial phylogeography using high-throughput sequencing</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Etter, P. D., et al. 2011:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0018561">Local De Novo Assembly of RAD Paired-End Contigs Using Short Sequencing Reads</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Hohenlohe, P. A., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21429168">Next-generation RAD sequencing identifies thousands of SNPs for assessing hybridization between rainbow and westslope cutthroat trout</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Miller, M. R., et al. 2007:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/17189378">Rapid and cost-effective polymorphism identification and genotyping using restriction site associated DNA (RAD) markers</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Willing, E. M., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21712251">Paired-end RAD-seq for de novo assembly and marker design without available reference</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Andolfatto, P., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21233398">Multiplexed shotgun genotyping for rapid and efficient genetic mapping</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Elshire, R. J., et al. 2011:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0019379">A Robust, Simple Genotyping-by-Sequencing (GBS) Approach for High Diversity Species</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Rigola, D., et al. 2009:</strong> <a href="">High-Throughput Detection of Induced Mutations and Natural Variation Using KeyPoint™ Technology</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>van Orsouw, N. J., et al. 2007:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0001172">Complexity reduction of polymorphic sequences (CRoPS): a novel approach for large-scale polymorphism discovery in complex genomes</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>van Tassell, C. P., et al. 2008:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/18297082">SNP discovery and allele frequency estimation by deep sequencing of reduced representation libraries</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Luikart, G.,et al. 2003:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/14631358">The power and promise of population genomics: from genotyping to genome typing</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
-            <li class="citation">
-                <strong>Nielsen, R., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3593722/">Genotype and SNP calling from next-generation sequencing data</a>
-                
-                <br><cite></cite>
-                
-            </li>
-        
         </ul>
-        
-    </section>
-</div>
+    </span>
 
-<footer>
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/quality-control/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+          
+          
+          
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/quality-control/slides" title="View GTN Video Library for these Slides">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (February 2021)
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
+              
+                  
+
+
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.61771">
+    <i class="far fa-copy" aria-hidden="true"></i>
+</a>
+
+
+                  
+
+
+    <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/quality-control/workflows/" title="Workflows" alt="Quality Control workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
+    </a>
+
+
+              
+
+              
+                  
+
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
+    </a>
+    <ul class="dropdown-menu">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://cpt.tamu.edu/galaxy-public/" title="Center for Phage Technology (CPT)">
+            Center for Phage Technology (CPT)
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
+            Galaxy Test
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.mesocentre.uca.fr" title="Galaxy@AuBi">
+            Galaxy@AuBi
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxytrakr.org/" title="GalaxyTrakr">
+            GalaxyTrakr
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.hyphy.org/" title="HyPhy HIV NGS Tools">
+            HyPhy HIV NGS Tools
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.fr/" title="UseGalaxy.fr">
+            UseGalaxy.fr
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+
+
+
+              
+              </div>
+            </div>
+          </td>
+
+          <td> 
+
+
+    <span class="btn-group">
+	<a class="visually-hidden" href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides-plain.html" aria-label="more accessible, plain text slides">plain text</a>
+    <span class="btn-group">
+        <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html" title="Slides">
+            <i class="fab fa-slideshare" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="View slides in different languages">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+
+        <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Fslides.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+
+	<a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides-plain.html" aria-label="more accessible, plain text slides">
+		<i class="fas fa-file-alt" aria-hidden="true"></i> Plain text slides
+	</a>
+    </ul>
+    
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+ </td>
+          <td> 
+    <span class="btn-group">
+        <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fquality-control%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+ </td>
+          <td> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/quality-control/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
+            </a>
+        </li>
+        
+        
+          
+          
+          
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/quality-control/slides" title="View GTN Video Library for these Slides">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Lecture (February 2021)
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+   </li>
+   
+ </td>
+
+          
+          <td> 
+
+
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.61771">
+    <i class="far fa-copy" aria-hidden="true"></i>
+</a>
+
+ </td>
+          <td> 
+
+
+    <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/quality-control/workflows/" title="Workflows" alt="Quality Control workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
+    </a>
+
+ </td>
+          
+
+          
+          <td> 
+
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
+    </a>
+    <ul class="dropdown-menu">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://cpt.tamu.edu/galaxy-public/" title="Center for Phage Technology (CPT)">
+            Center for Phage Technology (CPT)
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
+            Galaxy Test
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.mesocentre.uca.fr" title="Galaxy@AuBi">
+            Galaxy@AuBi
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxytrakr.org/" title="GalaxyTrakr">
+            GalaxyTrakr
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.hyphy.org/" title="HyPhy HIV NGS Tools">
+            HyPhy HIV NGS Tools
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.fr/" title="UseGalaxy.fr">
+            UseGalaxy.fr
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+
+
+ </td>
+          
+         </tr>
+       
+    
+        <!-- MAT: sequence-analysis/human-reads-removal -->
+      
+
+        <tr>
+          <td class="tutorial_title">
+            
+            
+            <a href="/training-material/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html">
+                Removal of human reads from SARS-CoV-2 sequencing data
+            </a>
+            
+
+
+            <div class="extra">
+            
+              
+
+
+
+<span class="level intermediate" title="Intermediate Tutorial">
+  <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+</span>
+
+
+            
+            
+              
+              <a href="/training-material/search?query=covid19" class="label label-default tutorial_tag" id="covid19" style="--color-primary: #ffa5da; --color-darker: #ff7fcf; --color-dimmed: #ff93d4;" title="Click to show all tutorials tagged covid19">covid19</a>
+              
+            
+            </div>
+
+            <div class="duplicate">
+              <div class="btn-group" role="group" aria-label="Supporting materials for this resource">
+              
+
+
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+
+              
+    <span class="btn-group">
+        <a href="/training-material/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/human-reads-removal/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial ()
+            </a>
+        </li>
+        
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
+              
+                  
+
+
+
+                  
+
+
+    <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/human-reads-removal/workflows/" title="Workflows" alt="Removal of human reads from SARS-CoV-2 sequencing data workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
+    </a>
+
+
+              
+
+              
+                  
+
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
+    </a>
+    <ul class="dropdown-menu">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://clipseq.usegalaxy.eu/" title="CLIP-Explorer">
+            CLIP-Explorer
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
+            Galaxy Test
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.mesocentre.uca.fr" title="Galaxy@AuBi">
+            Galaxy@AuBi
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxytrakr.org/" title="GalaxyTrakr">
+            GalaxyTrakr
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://hicexplorer.usegalaxy.eu" title="HiCExplorer">
+            HiCExplorer
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://humancellatlas.usegalaxy.eu/" title="Human Cell Atlas">
+            Human Cell Atlas
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://metagenomics.usegalaxy.eu/" title="Metagenomics">
+            Metagenomics
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://nanopore.usegalaxy.eu/" title="NanoGalaxy">
+            NanoGalaxy
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
+            Plant Anaylsis Workbench
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://singlecell.usegalaxy.eu/" title="Single Cell Omics workbench">
+            Single Cell Omics workbench
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.fr/" title="UseGalaxy.fr">
+            UseGalaxy.fr
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://virology.usegalaxy.eu/" title="Virology">
+            Virology
+        </a>
+        
+    
+        
+    
+    </ul>
+
+
+
+              
+              </div>
+            </div>
+          </td>
+
+          <td> 
+
+
+    </span>
+
+<!-- video slides -->
+
+
+</span>
+</span>
+ </td>
+          <td> 
+    <span class="btn-group">
+        <a href="/training-material/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html" class="btn btn-default" title="Follow the tutorial">
+            <i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span>
+        </a>
+        <a href="#" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Follow the tutorial in a different language">
+            <span class="sr-only">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu">
+        
+        
+         <div class="dropdown-item"><strong>Automatic translations</strong></div>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                Français
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                日本語
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                Español
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                Português
+            </a>
+        
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+                العربية
+            </a>
+        
+        <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fhuman-reads-removal%2Ftutorial.html&edit-text=&act=url" title="">
+            More Languages
+        </a>
+        </ul>
+    </span>
+
+ </td>
+          <td> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/sequence-analysis/human-reads-removal/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial ()
+            </a>
+        </li>
+        
+        
+        
+        
+    </ul>
+   </li>
+   
+ </td>
+
+          
+          <td> 
+
+
+ </td>
+          <td> 
+
+
+    <a class="btn btn-default topic-icon" href="/training-material/topics/sequence-analysis/tutorials/human-reads-removal/workflows/" title="Workflows" alt="Removal of human reads from SARS-CoV-2 sequencing data workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i>
+    </a>
+
+ </td>
+          
+
+          
+          <td> 
+
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>
+    </a>
+    <ul class="dropdown-menu">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://clipseq.usegalaxy.eu/" title="CLIP-Explorer">
+            CLIP-Explorer
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
+            Galaxy Test
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.mesocentre.uca.fr" title="Galaxy@AuBi">
+            Galaxy@AuBi
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxytrakr.org/" title="GalaxyTrakr">
+            GalaxyTrakr
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://hicexplorer.usegalaxy.eu" title="HiCExplorer">
+            HiCExplorer
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://humancellatlas.usegalaxy.eu/" title="Human Cell Atlas">
+            Human Cell Atlas
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://metagenomics.usegalaxy.eu/" title="Metagenomics">
+            Metagenomics
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://nanopore.usegalaxy.eu/" title="NanoGalaxy">
+            NanoGalaxy
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
+            Plant Anaylsis Workbench
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://singlecell.usegalaxy.eu/" title="Single Cell Omics workbench">
+            Single Cell Omics workbench
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.fr/" title="UseGalaxy.fr">
+            UseGalaxy.fr
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://virology.usegalaxy.eu/" title="Virology">
+            Virology
+        </a>
+        
+    
+        
+    
+    </ul>
+
+
+ </td>
+          
+         </tr>
+       
+    
+  </tbody>
+</table>
+
+
+
+
+    
+
+
+    
+        <h2 id="docker_image">Galaxy instances</h2>
+        <p>You can use a public Galaxy instance which has been tested for the availability of the used tools. They are listed along with the tutorials above.</p>
+        
+            <p>You can also use the following Docker image for these tutorials:</p>
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p 8080:80 quay.io/galaxy/sequence-analysis-training</code></pre></div></div>
+            <p>NOTE: Use the -d flag at the end of the command if you want to automatically download all the data-libraries into the container.</p>
+            <p>It will launch a flavored Galaxy instance available on <a href="http://localhost:8080">http://localhost:8080</a>. This instance will contain all the tools and workflows to follow the tutorials in this topic. Login as <b>admin</b> with password <b>password</b> to access everything.</p>
+        
+    
+
+    
+    <h2 id="topic-faq">Frequently Asked Questions</h2>
+    Common questions regarding this topic have been collected on a <a href="faqs/">dedicated FAQ page </a>. Common questions related to specific tutorials can be accessed from the tutorials themselves.
+    
+
+    <h2 id="maintainers">Maintainers</h2>
+    <p>This material is maintained by:</p>
+    
+    <a href="/training-material/hall-of-fame/yvanlebras/" class="contributor-badge contributor-yvanlebras"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/yvanlebras?s=27" alt="Avatar">Yvan Le Bras</a><a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a><a href="/training-material/hall-of-fame/joachimwolff/" class="contributor-badge contributor-joachimwolff"><img src="https://avatars.githubusercontent.com/joachimwolff?s=27" alt="Avatar">Joachim Wolff</a>
+
+    <p>
+        <em>For any question related to this topic and the content, you can contact them or visit our <a href="https://gitter.im/Galaxy-Training-Network/Lobby">Gitter channel</a>.</em>
+    </p>
+
+    <h2 id="contributors">Contributors</h2>
+    <p>This material was contributed to by:</p>
+    
+    <a href="/training-material/hall-of-fame/stephanierobin/" class="contributor-badge contributor-stephanierobin"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/stephanierobin?s=27" alt="Avatar">Stéphanie Robin</a><a href="/training-material/hall-of-fame/lleroi/" class="contributor-badge contributor-lleroi"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/lleroi?s=27" alt="Avatar">Laura Leroi</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/erasmusplus/" class="contributor-badge contributor-erasmusplus"><img src="https://avatars.githubusercontent.com/erasmusplus?s=27" alt="Avatar">Erasmus+ Programme</a><a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a><a href="/training-material/hall-of-fame/mblue9/" class="contributor-badge contributor-mblue9"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/mblue9?s=27" alt="Avatar">Maria Doyle</a><a href="/training-material/hall-of-fame/r1corre/" class="contributor-badge contributor-r1corre"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/r1corre?s=27" alt="Avatar">Erwan Corre</a><a href="/training-material/hall-of-fame/alexcorm/" class="contributor-badge contributor-alexcorm"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/alexcorm?s=27" alt="Avatar">Alexandre Cormier</a><a href="/training-material/hall-of-fame/wm75/" class="contributor-badge contributor-wm75"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/wm75?s=27" alt="Avatar">Wolfgang Maier</a><a href="/training-material/hall-of-fame/abretaud/" class="contributor-badge contributor-abretaud"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/abretaud?s=27" alt="Avatar">Anthony Bretaudeau</a><a href="/training-material/hall-of-fame/joachimwolff/" class="contributor-badge contributor-joachimwolff"><img src="https://avatars.githubusercontent.com/joachimwolff?s=27" alt="Avatar">Joachim Wolff</a><a href="/training-material/hall-of-fame/deeptivarshney/" class="contributor-badge contributor-deeptivarshney"><img src="https://avatars.githubusercontent.com/deeptivarshney?s=27" alt="Avatar">Deepti Varshney</a>
+
+    
+    <h2 id="references">References</h2>
+    <ul>
+    
+        <li class="citation">
+            <strong>SciLifeLab:</strong> <a href="https://sequencing.qcfail.com/">QCFAIL</a>
+            
+            <br><cite>Articles about common next-generation sequencing problems</cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Marco-Antonio Mendoza-Parra et al:</strong> <a href="http://nar.oxfordjournals.org/content/41/21/e196.short">A quality control system for profiles obtained by ChIP sequencing</a>
+            
+            <br><cite>Presents an approach that associates global and local QC indicators to ChIP-seq data sets as well as to a variety of enrichment-based studies by NGS.</cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Ana Conesa et al:</strong> <a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8">A survey of best practices for RNA-seq data analysis</a>
+            
+            <br><cite>Highlights the challenges associated with each step of RNA-seq data analysis.</cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Yuval Benjamini et al:</strong> <a href="http://nar.oxfordjournals.org/content/40/10/e72.long">Summarizing and correcting the GC content bias in high-throughput sequencing</a>
+            
+            <br><cite>Summarizes the many possible sourced of GC bias for deeply sequenced samples.</cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>David Sims et al:</strong> <a href="http://www.nature.com/nrg/journal/v15/n2/abs/nrg3642.html">Sequencing depth and coverage: key considerations in genomic analyses</a>
+            
+            <br><cite>Discuss the issue of sequencing depth in the design of next-generation sequencing experiments.</cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Frontiers in Genetics:</strong> <a href="http://journal.frontiersin.org/researchtopic/1683/quality-assessment-and-control-of-high-throughput-sequencing-data">Quality assessment and control of high-throughput sequencing data</a>
+            
+            <br><cite>Collection of papers on quality controls for various NGS applications</cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Frazer Meacham et al:</strong> <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-451">Identification and correction of systematic error in high-throughput sequence data</a>
+            
+            <br><cite>Reviews and proposes correction for systematic base pair errors in deep sequencing</cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Guillaume Devailly et al:</strong> <a href="http://biorxiv.org/content/early/2016/04/18/049254.abstract">Heat seq: an interactive web tool for high-throughput sequencing experiment comparison with public data</a>
+            
+            <br><cite>Presents a web-tool that allows genome scale comparison of high throughput experiments</cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Amores, A., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21828280">Genome evolution and meiotic maps by massively parallel DNA sequencing</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Catchen, J. M. et al. 2011:</strong> <a href="http://www.g3journal.org/content/1/3/171.full">Stacks: building and genotyping loci de novo from short-read sequences</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Davey, J. W., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21681211">Genome-wide genetic marker discovery and genotyping using next-generation sequencing</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Etter, P. D., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3658458/">SNP Discovery and Genotyping for Evolutionary Genetics using RAD sequencing</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Ekblom, R., and J. Galindo. 2010:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21139633">Applications of next generation sequencing in molecular ecology of non-model organisms</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Hohenlohe, P. A. et al. 2010:</strong> <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000862">Population genomics of parallel adaptation in threespine stickleback using sequenced RAD tags</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Gompert, Z., and C. A. Buerkle. 2011a:</strong> <a href="http://www.genetics.org/content/187/3/903">A hierarchical Bayesian model for next-generation population genomics</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Gompert, Z., and C. A. Buerkle. 2011b:</strong> <a href="http://onlinelibrary.wiley.com/wol1/doi/10.1111/j.1365-294X.2011.05074.x/abstract">Bayesian estimation of genomic clines</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Lynch, M. 2009:</strong> <a href="http://www.genetics.org/content/182/1/295">Estimation of allele frequencies from high-coverage genome-sequencing projects</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Nielsen, R., et al. 2005:</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1310644/">Genomic scans for selective sweeps using SNP data</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Hohenlohe, P. A., et al. 2010:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21218185">Using population genomics to detect selection in natural populations: Key concepts and methodological considerations</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Stapley, J., et al. 2010:</strong> <a href="http://www.cell.com/trends/ecology-evolution/abstract/S0169-5347(10)00216-8">Adaptation genomics: the next generation</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Altshuler, D., et al. 2000:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/11029002">An SNP map of the human genome generated by reduced representation shotgun sequencing</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Baxter, S. W., et al. 2011:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0019315">Linkage mapping and comparative genomics using next-generation RAD sequencing of a non-model organism</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Chutimanitsakun, Y., et al. 2011:</strong> <a href="http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-12-4">Construction and application for QTL analysis of a Restriction Site Associated DNA (RAD) linkage map in barley</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Gore, M. A., et al. 2009:</strong> <a href="http://science.sciencemag.org/content/326/5956/1115">A first-generation haplotype map of maize</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Baird, N. A., et al. 2008:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0003376">Rapid SNP discovery and genetic mapping using sequenced RAD markers</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Emerson, K. J., et al. 2010:</strong> <a href="http://www.pnas.org/content/107/37/16196">Resolving postglacial phylogeography using high-throughput sequencing</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Etter, P. D., et al. 2011:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0018561">Local De Novo Assembly of RAD Paired-End Contigs Using Short Sequencing Reads</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Hohenlohe, P. A., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21429168">Next-generation RAD sequencing identifies thousands of SNPs for assessing hybridization between rainbow and westslope cutthroat trout</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Miller, M. R., et al. 2007:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/17189378">Rapid and cost-effective polymorphism identification and genotyping using restriction site associated DNA (RAD) markers</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Willing, E. M., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21712251">Paired-end RAD-seq for de novo assembly and marker design without available reference</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Andolfatto, P., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/21233398">Multiplexed shotgun genotyping for rapid and efficient genetic mapping</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Elshire, R. J., et al. 2011:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0019379">A Robust, Simple Genotyping-by-Sequencing (GBS) Approach for High Diversity Species</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Rigola, D., et al. 2009:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0004761">High-Throughput Detection of Induced Mutations and Natural Variation Using KeyPoint™ Technology</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>van Orsouw, N. J., et al. 2007:</strong> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0001172">Complexity reduction of polymorphic sequences (CRoPS): a novel approach for large-scale polymorphism discovery in complex genomes</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>van Tassell, C. P., et al. 2008:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/18297082">SNP discovery and allele frequency estimation by deep sequencing of reduced representation libraries</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Luikart, G.,et al. 2003:</strong> <a href="https://www.ncbi.nlm.nih.gov/pubmed/14631358">The power and promise of population genomics: from genotyping to genome typing</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+        <li class="citation">
+            <strong>Nielsen, R., et al. 2011:</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3593722/">Genotype and SNP calling from next-generation sequencing data</a>
+            
+            <br><cite></cite>
+            
+        </li>
+    
+    </ul>
+    
+</section>
+
+        </div>
+        
+            <footer>
     <div class="container">
+        <br><br>
         <p>
             The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
             provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
         </p>
+        <p>
+        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
+        </p>
+
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/a9ab6aceb6800f1a85dbbde24c79c472ee4cfb8a">a9ab6aceb6800f1a85dbbde24c79c472ee4cfb8a</a></p>
     </div>
 </footer>
 
+        
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
 
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+        <script type="text/javascript" src="/training-material/assets/js/list.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/topic.js"></script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
 </html>

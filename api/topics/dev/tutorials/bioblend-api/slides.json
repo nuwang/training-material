@@ -1,0 +1,82 @@
+{
+  "layout": "tutorial_slides",
+  "title": "Scripting Galaxy using the API and BioBlend",
+  "level": "Introductory",
+  "requirements": [
+    {
+      "title": "JupyterLab",
+      "type": "external",
+      "link": "https://jupyterlab.readthedocs.io/"
+    }
+  ],
+  "follow_up_training": [
+
+  ],
+  "questions": [
+    "What is a REST API?",
+    "How to interact with Galaxy programmatically?",
+    "Why and when should I use BioBlend?"
+  ],
+  "objectives": [
+    "Interact with Galaxy via BioBlend."
+  ],
+  "time_estimation": "2h",
+  "key_points": [
+    "The API allows you to use Galaxy's capabilities programmatically.",
+    "BioBlend makes using the Galaxy API from Python easier.",
+    "BioBlend objects is an object-oriented interface for interacting with Galaxy."
+  ],
+  "subtopic": "api",
+  "contributions": {
+    "authorship": [
+      "nsoranzo"
+    ],
+    "editing": [
+      "claresloggett",
+      "nturaga",
+      "hexylena"
+    ]
+  },
+  "notebook": {
+    "language": "python"
+  },
+  "tags": [
+    "jupyter-notebook"
+  ],
+  "url": "/topics/dev/tutorials/bioblend-api/slides.html",
+  "topic_name": "dev",
+  "tutorial_name": "bioblend-api",
+  "dir": "topics/dev/tutorials/bioblend-api",
+  "id": "dev/bioblend-api",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": true,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": true
+  },
+  "type": "tutorial",
+  "contributors": [
+    "odoppelt",
+    "fmareuil",
+    "nsoranzo",
+    "dannon"
+  ],
+  "logo": "GTN"
+}

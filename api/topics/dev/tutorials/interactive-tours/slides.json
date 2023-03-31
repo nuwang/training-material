@@ -1,0 +1,54 @@
+{
+  "layout": "tutorial_slides",
+  "logo": "GTN",
+  "title": "Galaxy Interactive Tours",
+  "questions": [
+    "What is a Galaxy Interactive Tour?",
+    "How to create a Galaxy Interactive Tour?"
+  ],
+  "objectives": [
+    "Discover what is a Galaxy Interactive Tour",
+    "Be able to create a Galaxy Interactive Tour",
+    "Be able to add a Galaxy Interactive Tour in a Galaxy instance"
+  ],
+  "time_estimation": "3h",
+  "key_points": [
+    "An Interactive Tour is easy to create: just a yaml file to fill",
+    "Use the Developper Tools of find the JQuery Selector",
+    "Help yourself by using the available web plugins and record an interactive tour"
+  ],
+  "contributors": [
+    "bebatut",
+    "bgruening"
+  ],
+  "subtopic": "advanced",
+  "url": "/topics/dev/tutorials/interactive-tours/slides.html",
+  "topic_name": "dev",
+  "tutorial_name": "interactive-tours",
+  "dir": "topics/dev/tutorials/interactive-tours",
+  "id": "dev/interactive-tours",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": false,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial"
+}

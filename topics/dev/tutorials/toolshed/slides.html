@@ -1,67 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Tool Shed: sharing Galaxy tools</title>
+        
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+        
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
+        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
+        <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/dev/tutorials/toolshed/slides.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Tool Shed: sharing Galaxy tools" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="2022-09-28 13:13:58 +0000" />
+<meta name="DC.creator" content="Anthony Bretaudeau" />
+<meta name="DC.creator" content="Loraine Guéguen" />
+<meta name="DC.creator" content="Stéphanie Legras" />
+<meta name="DC.creator" content="Bérénice Batut" />
 
+        
+        
+        
+        
+        <meta name="description" content="Galaxy is an open-source project. Everyone can contribute..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
+        <meta property="og:title" content="Galaxy Training: Tool Shed: sharing Galaxy tools" />
+        <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute..." />
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-
-
-
-  <head>
-    <meta charset="utf-8">
-    <title>Tool Shed: sharing Galaxy tools</title>
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-45719423-18' , 'auto');
-        ga('send', 'pageview');
-    </script>
-    
-    <link rel="stylesheet" href="/training-material/assets/css/slides.css">
-    <link rel="stylesheet" href="/training-material/assets/css/font-awesome.css" id="theme">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
-
-    
-    
-    
-    
-    <meta name="description" content="Galaxy is an open-source project. Everyone can contribute..." />
-    <meta property="og:title" content="Galaxy Training: Tool Shed: sharing Galaxy tools" />
-    <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute..." />
-    <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
-    <script type="application/ld+json">
-      
+        <script type="application/ld+json">
+            
 
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -74,16 +65,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "2022-09-28 13:13:58 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Tool Shed: sharing Galaxy tools",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -102,65 +90,219 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "courseCode": "dev / toolshed / slides",
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Development in Galaxy",
+    "description": "Galaxy is an open-source project. Everyone can contribute to its development with core Galaxy development, integration of softwares in Galaxy environment, ...",
+    "url": "https://training.galaxyproject.org/training-material/topics/dev/"
+  },
   "learningResourceType": "slides",
   "name": "Slides for 'Tool Shed: sharing Galaxy tools' tutorial",
-  "isPartOf": {
-    "@type": "Course",
-    "name": "Tool Shed: sharing Galaxy tools",
-    "description": "Tool Shed: sharing Galaxy tools",
-    "learningResourceType": "tutorial",
-    "interactivityType": "expositive",
-    "provider": {
-      "@type": "Organization",
-      "email": "galaxytrainingnetwork@gmail.com",
-      "name": "Galaxy Training Network",
-      "url": "https://galaxyproject.org/teach/gtn/"
-    }
-  },
-  "url": "https://galaxyproject.github.io//training-material/topics/dev/tutorials/toolshed/slides.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/dev/tutorials/toolshed/slides.html",
   "timeRequired": "PT3H",
-  "description": "Tool Shed: sharing Galaxy tools\\nThe questions this  addresses are:\n - What is a Tool Shed?\n - How to install tools and workflows from a Tool Shed into a Galaxy instance?\n - What are the Tool Shed repository types?\n - How to publish with Planemo?\n\n\\nThe objectives are:\n - Discover what is a Tool Shed\n - Be able to install tools and workflows from a Tool Shed into a Galaxy instance\n - Be able to publish tools with Planemo\n\n",
-  "hasPart": [
-
-  ],
-  "mentions": [
-
-  ],
+  "keywords": "dev",
+  "description": "The questions this  addresses are:\n - What is a Tool Shed?\n - How to install tools and workflows from a Tool Shed into a Galaxy instance?\n - What are the Tool Shed repository types?\n - How to publish with Planemo?\n\n\nThe objectives are:\n - Discover what is a Tool Shed\n - Be able to install tools and workflows from a Tool Shed into a Galaxy instance\n - Be able to publish tools with Planemo\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anthony Bretaudeau"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
+      "name": "Anthony Bretaudeau",
+      "image": "https://avatars.githubusercontent.com/abretaud",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-0914-2470",
+      "orcid": "https://orcid.org/0000-0003-0914-2470"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Loraine Guéguen"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/loraine-gueguen/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/loraine-gueguen/",
+      "name": "Loraine Guéguen",
+      "image": "https://avatars.githubusercontent.com/loraine-gueguen",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Stéphanie Legras"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/slegras/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/slegras/",
+      "name": "Stéphanie Legras",
+      "image": "https://avatars.githubusercontent.com/slegras",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Bérénice Batut"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
+      "name": "Bérénice Batut",
+      "image": "https://avatars.githubusercontent.com/bebatut",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9852-1987",
+      "orcid": "https://orcid.org/0000-0001-9852-1987"
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anthony Bretaudeau"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
+      "name": "Anthony Bretaudeau",
+      "image": "https://avatars.githubusercontent.com/abretaud",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-0914-2470",
+      "orcid": "https://orcid.org/0000-0003-0914-2470"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Loraine Guéguen"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/loraine-gueguen/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/loraine-gueguen/",
+      "name": "Loraine Guéguen",
+      "image": "https://avatars.githubusercontent.com/loraine-gueguen",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Stéphanie Legras"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/slegras/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/slegras/",
+      "name": "Stéphanie Legras",
+      "image": "https://avatars.githubusercontent.com/slegras",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Bérénice Batut"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
+      "name": "Bérénice Batut",
+      "image": "https://avatars.githubusercontent.com/bebatut",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9852-1987",
+      "orcid": "https://orcid.org/0000-0001-9852-1987"
     }
   ],
   "about": [
@@ -168,13 +310,23 @@
       "@type": "CreativeWork",
       "name": "Development in Galaxy",
       "description": "Galaxy is an open-source project. Everyone can contribute to its development with core Galaxy development, integration of softwares in Galaxy environment, ...",
-      "url": "https://galaxyproject.github.io//training-material/topics/dev/"
+      "url": "https://training.galaxyproject.org/training-material/topics/dev/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "http://edamontology.org/topic_3372",
+      "inDefinedTermSet": "http://edamontology.org",
+      "termCode": "topic_3372",
+      "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_3372"
     }
   ]
 }
-    </script>
-  </head>
+        </script>
+    </head>
   <body>
+
+
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
     <textarea id="source">
 name: inverse
 layout: true
@@ -183,7 +335,7 @@ class: center, middle, inverse
 <div class="my-header"><span>
 <a href="/training-material/topics/dev" title="Return to topic page" ><i class="fa fa-level-up" aria-hidden="true"></i></a>
 
-<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/dev/tutorials/toolshed/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/dev/tutorials/toolshed/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 
 </span></div>
 
@@ -195,17 +347,54 @@ class: center, middle, inverse
 
 ---
 
+
+
+<img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" class="cover-logo"/>
+
+
 # Tool Shed: sharing Galaxy tools
 
 
+<div markdown="0">
 
-.footnote[Tip: press `P` to view the presenter notes]
+	<div class="contributors-line">
+		Authors: <a href="/training-material/hall-of-fame/abretaud/" class="contributor-badge contributor-abretaud"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/abretaud?s=27" alt="Avatar">Anthony Bretaudeau</a><a href="/training-material/hall-of-fame/loraine-gueguen/" class="contributor-badge contributor-loraine-gueguen"><img src="https://avatars.githubusercontent.com/loraine-gueguen?s=27" alt="Avatar">Loraine Guéguen</a><a href="/training-material/hall-of-fame/slegras/" class="contributor-badge contributor-slegras"><img src="https://avatars.githubusercontent.com/slegras?s=27" alt="Avatar">Stéphanie Legras</a><a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a>
+	</div>
+
+</div>
+
+
+<!-- modified date -->
+<div class="footnote" style="bottom: 8em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: </div>
+
+
+<!-- other slide formats (video and plain-text) -->
+<div class="footnote" style="bottom: 6em;">
+
+
+  <i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a>
+</div>
+
+
+<!-- usage tips -->
+<div class="footnote" style="bottom: 2em;">
+    <strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes
+    | <i class="fa fa-arrows" aria-hidden="true"></i><span class="visually-hidden">arrow-keys</span> Use arrow keys to move between slides
+
+</div>
 
 ???
-Presenter notes contain extra information which might be useful if you
-intend to use these slides for teaching.
+Presenter notes contain extra information which might be useful if you intend to use these slides for teaching.
 
 Press `P` again to switch presenter notes off
+
+Press `C` to create a new window where the same presentation will be displayed.
+This window is linked to the main window. Changing slides on one will cause the
+slide to change on the other.
+
+Useful when presenting.
+
+
 
 ---
 
@@ -213,7 +402,9 @@ Press `P` again to switch presenter notes off
 
 
 
-### &lt;i class=&quot;fa fa-question-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;question&lt;/span&gt; Questions
+
+
+### &lt;i class=&quot;far fa-question-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;question&lt;/span&gt; Questions
 
 
 - What is a Tool Shed?
@@ -228,7 +419,8 @@ Press `P` again to switch presenter notes off
 ---
 
 
-### &lt;i class=&quot;fa fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
+
+### &lt;i class=&quot;fas fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
 
 
 - Discover what is a Tool Shed
@@ -243,15 +435,15 @@ Press `P` again to switch presenter notes off
 
 ## 1. What is a Tool Shed?
 
-![](../../images/toolShed.jpg)
+![toolshed logo with a shed over the words galaxy tool shed](../../images/toolShed.jpg)
 
 ---
 
-### ![](../../images/toolShed.jpg) = Galaxy App Store
+### ![same logo](../../images/toolShed.jpg) = Galaxy App Store
 
 ---
 
-### ![](../../images/toolShed.jpg) = Galaxy App Store
+### ![same logo again](../../images/toolShed.jpg) = Galaxy App Store
 
 - Galaxy tools
 - ~~Recipes for installing and compiling tools~~,
@@ -261,7 +453,7 @@ Press `P` again to switch presenter notes off
 
 ---
 
-### ![](../../images/toolShed.jpg) = Galaxy App Store
+### ![same logo again](../../images/toolShed.jpg) = Galaxy App Store
 
 - For Galaxy administrators, facilitates:
   - **installing/updating** tools
@@ -282,13 +474,13 @@ Press `P` again to switch presenter notes off
 
 ### Tool Shed interface
 
-![](../../images/main_toolShed_ss.png)
+![toolshed interface with categories, description, and number of repositories called out with arrows](../../images/main_toolShed_ss.png)
 
 ---
 
 ### Example of tool
 
-![](../../images/exampletool_ss.png)
+![view of a repository in the toolshed showing a lot of metadata](../../images/exampletool_ss.png)
 
 ---
 
@@ -307,17 +499,17 @@ Press `P` again to switch presenter notes off
 ### Install a tool from the Tool Shed
 
 - Go to the admin interface and click on &quot;Search Tool Shed&quot;
-![](../../images/admin_searchtoolshed_ss.png)
+![admin interface of galaxy with an arrow to search tool shed](../../images/admin_searchtoolshed_ss.png)
 - Select a Tool Shed
 
-![](../../images/goToToolshed_ss.png)
+![arrow to galaxy main toolshed button in older versions of galaxy](../../images/goToToolshed_ss.png)
 
 ---
 
 ### Install a tool from the Tool Shed
 
 - Search your tool
-![](../../images/searchTool_ss.png)
+![toolshed search interface with arrows to the search box and one of the results, trinity](../../images/searchTool_ss.png)
 
 ---
 
@@ -327,22 +519,22 @@ Press `P` again to switch presenter notes off
   - &lt;span style=&quot;color:orange&quot;&gt; Tools (`$name`)&lt;/span&gt;
   - &lt;span style=&quot;color:blue&quot;&gt; Tool suites (`suite_$name`)&lt;/span&gt;
   - &lt;span style=&quot;color:red&quot;&gt; Tool dependencies (`package_$name_$version`)&lt;/span&gt; (gradually removed, replaced by Conda dependencies)
-![](../../images/typeOfRep_ss.png)
+![screenshot with multiple search results called out with boxes for the above types](../../images/typeOfRep_ss.png)
 
 ---
 
 ### Install a tool from the Tool Shed
 
-![](../../images/goToToolInstall_ss.png)
+![trinity button showing a dropdown with preview and install](../../images/goToToolInstall_ss.png)
 - Install the tool
-![](../../images/launchInstallTool_ss.png)
+![toolshed page with a button install to galaxy](../../images/launchInstallTool_ss.png)
 
 ---
 
 ### Install a tool from the Tool Shed
 
 - Install the tool
-![](../../images/installTool_ss.png)
+![another screenshot of a form with checkboxes for dependcy options](../../images/installTool_ss.png)
 - &lt;span style=&quot;font-size:70%&quot;&gt; Selecting Tool Shed AND conda will make Galaxy to install both&lt;/span&gt;
 - &lt;span style=&quot;font-size:70%&quot;&gt; Recommended: use conda &lt;/span&gt;
 
@@ -351,15 +543,15 @@ Press `P` again to switch presenter notes off
 ### Install a tool from the Tool Shed
 
 - Check
-![](../../images/monitor_installing_toolshed_rep.png)
+![admin interface of galaxy with monitor installing repositories called out](../../images/monitor_installing_toolshed_rep.png)
 
 ---
 
 ### Manage installed tools
 
 - Admin &gt; Manage installed tools
-![](../../images/manage_installed_tools.png)
-![](../../images/repStatus_ss.png)
+![admin interface with manage installed tools menu item called out](../../images/manage_installed_tools.png)
+![various icons used to indicate tool state](../../images/repStatus_ss.png)
 
 ---
 
@@ -367,7 +559,7 @@ Press `P` again to switch presenter notes off
 
 - Click on the name of a tool
 - Manage and browse the repository
-![](../../images/managed_an_installed_tool.png)
+![yet another toolshed interface screenshot with the repository actions menu shown](../../images/managed_an_installed_tool.png)
 
 ---
 
@@ -379,29 +571,29 @@ Press `P` again to switch presenter notes off
 
 - Admin &gt; Search Tool Shed
 - Search the workflow
-  1. ![](../../images/toolshedWorkflow_ss.png)
-  2. ![](../../images/schemaWorkflow_ss.png)
+  1. ![the interface is identical to the tool install interface](../../images/toolshedWorkflow_ss.png)
+  2. ![a graph with two nodes, input dataset and fastqc](../../images/schemaWorkflow_ss.png)
 - &lt;span style=&quot;font-size:70%&quot;&gt; Tools can come with the workflow if they are not yet installed &lt;/span&gt;
 
 ---
 
 ### How to install a workflow?
 
-![](../../images/workflowNotInstalled_ss.png)
+![galaxy workflow list showing no workflows](../../images/workflowNotInstalled_ss.png)
 - No workflow?
 
 ---
 
 ###  How to install a workflow?
 
-![](../../images/workflowInstalled_ss.png)
+![the installed WF is found in the manage installed tools menu](../../images/workflowInstalled_ss.png)
 - Click on the imported workflow
 
 ---
 
 ###  How to install a workflow?
 
-![](../../images/makeAvailableWorkflow_ss.png)
+![contents of the repository section lists fastqc, a link to click on](../../images/makeAvailableWorkflow_ss.png)
 - Click on the workflow at the bottom of the “Contents of this repository” section
 
 ---
@@ -410,13 +602,13 @@ Press `P` again to switch presenter notes off
 
 - Repository Actions &gt; Import workflow to Galaxy
 
-![](../../images/exportWorkflow_ss.png)
+![clicking on that brings you to a view of the workflow, and you can click import to galaxy on the top right](../../images/exportWorkflow_ss.png)
 
 ---
 
 ###  How to install a workflow?
 
-![](../../images/workflowOK_ss.png)
+![it appears in the workflow menu](../../images/workflowOK_ss.png)
 - Done!
 
 ---
@@ -431,7 +623,7 @@ Press `P` again to switch presenter notes off
 
 ###  Tool with dependencies
 
-![](../../images/toolshedPackage.png)
+![tool folder with python script, xml, and test-data is put in an archive and uploaded to the TS.](../../images/toolshedPackage.png)
 
 ---
 
@@ -443,7 +635,7 @@ Press `P` again to switch presenter notes off
 
 ###  Tool suite
 
-![](../../images/toolSuite.png)
+![multiple wrappers in a single tool archive](../../images/toolSuite.png)
 
 - Works but no way to install a single tool
 
@@ -451,7 +643,7 @@ Press `P` again to switch presenter notes off
 
 ###  Tool suite
 
-![](../../images/toolsuite2.png)
+![phylogeny pipeline containing 4 tools](../../images/toolsuite2.png)
 
 - One repository per individual tool
 - A special 'Tool suite' repository listing the individual repositories
@@ -478,7 +670,7 @@ No need to write it yourself, Planemo does it for you
 
 ###  Tool suite
 
-![](../../images/toolsuite3.png)
+![phylogeny suite gets uploaded to the TS](../../images/toolsuite3.png)
 
 ---
 
@@ -488,7 +680,7 @@ No need to write it yourself, Planemo does it for you
 
 
 ###  Workflow
-![](../../images/workflow.png)
+![the four tools from the phylogeny pipeline are connected as a workflow](../../images/workflow.png)
 - A succession of tools to perform a complete analysis
 
 ---
@@ -497,13 +689,13 @@ No need to write it yourself, Planemo does it for you
 
 - In galaxy
 
-![](../../images/galaxyWorkflowEx.png)
+![same workflow with galaxy ui](../../images/galaxyWorkflowEx.png)
 
 ---
 
 ###  Workflow
 
-![](../../images/shareWorkflow.png)
+![extract workflow menu from galaxy](../../images/shareWorkflow.png)
 
 - You get a file: Galaxy-Workflow-NAME.ga
 
@@ -525,13 +717,13 @@ No need to write it yourself, Planemo does it for you
 
 ###  Workflow
 
-![](../../images/workflowRepDep.png)
+![phylogeny workflow is uploaded to the TS](../../images/workflowRepDep.png)
 
 ---
 
 ###  Workflow
 
-![](../../images/workflowRepDep2.png)
+![the workflow points at the tool suite which points at tools](../../images/workflowRepDep2.png)
 
 - **Everything must be on the same toolshed**
 
@@ -555,7 +747,7 @@ Their content or the file themselves are put to the right location on tool set u
 
 ### Tools with *.loc files or new datatypes
 
-![](../../images/repWithLoc_ss.png)
+![toolshed interface showing some files](../../images/repWithLoc_ss.png)
 
 &lt;span style=&quot;font-size:60%&quot;&gt;`tool_data_table_conf.xml.sample`&lt;/span&gt;
 ```xml
@@ -576,7 +768,7 @@ path to the *.loc file is added to `shed_tool_data_table_conf.xml`&lt;/span&gt;
 
 ---
 
-&lt;i class=&quot;fa fa-warning&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;warning&lt;/span&gt; *There are automated ways to publish to a ToolShed using GitHub and Continuous Integration*
+&lt;i class=&quot;fas fa-exclamation-triangle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;warning&lt;/span&gt; *There are automated ways to publish to a ToolShed using GitHub and Continuous Integration*
 
 [Check out these slides, &quot;Publishing tools&quot; section](/training-material/topics/dev/tutorials/tool-integration/slides.html)
 
@@ -739,7 +931,7 @@ Repository created
 cd '[…]/tandem_repeats_finder' &amp;&amp; git rev-parse HEAD
 Repository tandem_repeats_finder_2 updated successfully.
 ```
-![](../../images/shedCreate.png)
+![an image of a toolshed metadata from the planemo uploaded data](../../images/shedCreate.png)
 
 ---
 
@@ -786,32 +978,32 @@ Repository metadata updated.
 planemo shed_update --check_diff --shed_target testtoolshed
 
 ```
-![](../../images/checkToolUpdate.png)
+![tool shed info with revision circled](../../images/checkToolUpdate.png)
 
 - The repository has been updated
 
 ---
 
-![](../../images/planemo-logo.png)
+![planemo logo](../../images/planemo-logo.png)
 #### Publishing to the Tool Shed
 
-![](../../images/planemo_toolshed_publishing.png)
+![planemo shed_init creates a repo, shed_lint checks, and shed_create/shed_update uploads to the TS](../../images/planemo_toolshed_publishing.png)
 
 ---
 
-![](../../images/planemo-logo.png)
+![planemo logo again](../../images/planemo-logo.png)
 
 &gt; Command-line utilities to assist in building and publishing Galaxy tools.
 
 ---
 
-![](../../images/planemo-logo.png)
+![and again](../../images/planemo-logo.png)
 
-![](../../images/big_picture.png)
+![larger graph with local development, toolshed, conda, and galaxy and various lines between them.](../../images/big_picture.png)
 
 ---
 
-![](../../images/planemo-logo.png)
+![planemo logo again](../../images/planemo-logo.png)
 
 #### Checklist (3/3)
 
@@ -839,9 +1031,9 @@ planemo shed_update
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+&lt;div class=&quot;box-title hands-on-title&quot; id=&quot;hands-on-hands-on&quot; aria-label=&quot;hands-on box: Hands-on&quot;&gt;&lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;&lt;/span&gt; Hands-on: Hands-on&lt;/div&gt;
 
-![](../../images/exercise.png)
+![picture indicating exercise](../../images/exercise.png)
 
 ---
 
@@ -852,7 +1044,7 @@ Publish your tool (seqtk_seq) in your local toolshed with Planemo
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+&lt;div class=&quot;box-title hands-on-title&quot; id=&quot;hands-on-hands-on-1&quot; aria-label=&quot;hands-on box: Hands-on&quot;&gt;&lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;&lt;/span&gt; Hands-on: Hands-on&lt;/div&gt;
 
 #### Step 1: Start and configure your toolshed
 - Start your toolshed (in galaxy home directory):
@@ -866,13 +1058,13 @@ login: galaxy/azerty
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+&lt;div class=&quot;box-title hands-on-title&quot; id=&quot;hands-on-hands-on-2&quot; aria-label=&quot;hands-on box: Hands-on&quot;&gt;&lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;&lt;/span&gt; Hands-on: Hands-on&lt;/div&gt;
 
 #### Step 2: Use planemo to publish your tool
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+&lt;div class=&quot;box-title hands-on-title&quot; id=&quot;hands-on-hands-on-3&quot; aria-label=&quot;hands-on box: Hands-on&quot;&gt;&lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;&lt;/span&gt; Hands-on: Hands-on&lt;/div&gt;
 
 #### Step 2: Use planemo to publish your tool
 
@@ -899,13 +1091,13 @@ planemo shed_create --shed_target local
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+&lt;div class=&quot;box-title hands-on-title&quot; id=&quot;hands-on-hands-on-4&quot; aria-label=&quot;hands-on box: Hands-on&quot;&gt;&lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;&lt;/span&gt; Hands-on: Hands-on&lt;/div&gt;
 
 #### Step 3: Update your tool and then use planemo to update your tool on the Tool Shed
 
 ---
 
-### &lt;i class=&quot;fa fa-pencil&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;hands_on&lt;/span&gt; Hands-on
+&lt;div class=&quot;box-title hands-on-title&quot; id=&quot;hands-on-hands-on-5&quot; aria-label=&quot;hands-on box: Hands-on&quot;&gt;&lt;i class=&quot;fas fa-pencil-alt&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;&lt;/span&gt; Hands-on: Hands-on&lt;/div&gt;
 
 #### Step 3: Update your tool and then use planemo to update your tool on the Tool Shed
 
@@ -916,18 +1108,11 @@ planemo shed_diff --shed_target local
 planemo shed_update --check_diff --shed_target local
 ```
 
----
-
-### &lt;i class=&quot;fa fa-exclamation-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Key points
-
-- Use Planemo
-- Contribute to the Main Tool Shed
-
 
 
 
 ---
-### &lt;i class=&quot;fa fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
+### &lt;i class=&quot;fas fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
 
 
 - Use Planemo
@@ -942,31 +1127,66 @@ planemo shed_update --check_diff --shed_target local
 
 ---
 
-## Thank you!
+## Thank You!
 
-This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://wiki.galaxyproject.org/Teach/GTN) and all the contributors!
+This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://training.galaxyproject.org) and all the contributors!
 
+<div markdown="0">
 
-<div class="contributors-line">
-
-
-<a href="/training-material/hall-of-fame#abretaud" class="contributor-badge"><img src="https://avatars.githubusercontent.com/abretaud" alt="Anthony Bretaudeau">Anthony Bretaudeau</a>, <a href="/training-material/hall-of-fame#loraine-gueguen" class="contributor-badge"><img src="https://avatars.githubusercontent.com/loraine-gueguen" alt="Loraine Guéguen">Loraine Guéguen</a>, <a href="/training-material/hall-of-fame#slegras" class="contributor-badge"><img src="https://avatars.githubusercontent.com/slegras" alt="Stéphanie Legras">Stéphanie Legras</a>, <a href="/training-material/hall-of-fame#bebatut" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bebatut" alt="Bérénice Batut">Bérénice Batut</a>
-
+	<div class="contributors-line">
+		Authors: <a href="/training-material/hall-of-fame/abretaud/" class="contributor-badge contributor-abretaud"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/abretaud?s=27" alt="Avatar">Anthony Bretaudeau</a><a href="/training-material/hall-of-fame/loraine-gueguen/" class="contributor-badge contributor-loraine-gueguen"><img src="https://avatars.githubusercontent.com/loraine-gueguen?s=27" alt="Avatar">Loraine Guéguen</a><a href="/training-material/hall-of-fame/slegras/" class="contributor-badge contributor-slegras"><img src="https://avatars.githubusercontent.com/slegras?s=27" alt="Avatar">Stéphanie Legras</a><a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a>
+	</div>
 
 </div>
 
 
+<div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
 
 <img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;"/>
 
 
+</div>
+
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+This material is licensed under the Creative Commons Attribution 4.0 International License</a>.
+
 
     </textarea>
-    <script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript">
-    </script>
+	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
     <script type="text/javascript">
-      var slideshow = remark.create({navigation: {scroll: false,}});
+      var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
+      var snippets = document.querySelectorAll('code.remark-code');
+        [].forEach.call(snippets,function(snippet){
+          snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+      var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.parentElement;
+      }});
     </script>
-  </body>
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('body').prepend("<div style='text-align: center'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+
+    </body>
 </html>

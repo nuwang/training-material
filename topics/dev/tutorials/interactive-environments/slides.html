@@ -1,67 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Galaxy Interactive Environments</title>
+        
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+        
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
+        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
+        <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/dev/tutorials/interactive-environments/slides.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Galaxy Interactive Environments" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="2023-02-17 10:40:02 +0000" />
+<meta name="DC.creator" content="Saskia Hiltemann" />
+<meta name="DC.creator" content="Björn Grüning" />
+<meta name="DC.creator" content="Helena Rasche" />
 
+        
+        
+        
+        
+        <meta name="description" content="Galaxy is an open-source project. Everyone can contribute..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
+        <meta property="og:title" content="Galaxy Training: Galaxy Interactive Environments" />
+        <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute..." />
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-
-
-
-  <head>
-    <meta charset="utf-8">
-    <title>Galaxy Interactive Environments</title>
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-45719423-18' , 'auto');
-        ga('send', 'pageview');
-    </script>
-    
-    <link rel="stylesheet" href="/training-material/assets/css/slides.css">
-    <link rel="stylesheet" href="/training-material/assets/css/font-awesome.css" id="theme">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
-
-    
-    
-    
-    
-    <meta name="description" content="Galaxy is an open-source project. Everyone can contribute..." />
-    <meta property="og:title" content="Galaxy Training: Galaxy Interactive Environments" />
-    <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute..." />
-    <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
-    <script type="application/ld+json">
-      
+        <script type="application/ld+json">
+            
 
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -74,16 +64,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "2023-02-17 10:40:02 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Galaxy Interactive Environments",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -102,60 +89,184 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "courseCode": "dev / interactive-environments / slides",
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Development in Galaxy",
+    "description": "Galaxy is an open-source project. Everyone can contribute to its development with core Galaxy development, integration of softwares in Galaxy environment, ...",
+    "url": "https://training.galaxyproject.org/training-material/topics/dev/"
+  },
   "learningResourceType": "slides",
   "name": "Slides for 'Galaxy Interactive Environments' tutorial",
-  "isPartOf": {
-    "@type": "Course",
-    "name": "Galaxy Interactive Environments",
-    "description": "Galaxy Interactive Environments",
-    "learningResourceType": "tutorial",
-    "interactivityType": "expositive",
-    "provider": {
-      "@type": "Organization",
-      "email": "galaxytrainingnetwork@gmail.com",
-      "name": "Galaxy Training Network",
-      "url": "https://galaxyproject.org/teach/gtn/"
-    }
-  },
-  "url": "https://galaxyproject.github.io//training-material/topics/dev/tutorials/interactive-environments/slides.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/dev/tutorials/interactive-environments/slides.html",
   "timeRequired": "PT90M",
-  "description": "Galaxy Interactive Environments\\nThe questions this  addresses are:\n - What are Galaxy Interactive Environments (GIEs)?\n - How to enable GIEs in Galaxy?\n - How to develop your own GIE?\n\n\\nThe objectives are:\n - Implement a Hello-World Galaxy Interactive Environment\n\n",
-  "coursePrerequisites": [
+  "keywords": "dev",
+  "description": "The questions this  addresses are:\n - What are Galaxy Interactive Environments (GIEs)?\n - How to enable GIEs in Galaxy?\n - How to develop your own GIE?\n\n\nThe objectives are:\n - Implement a Hello-World Galaxy Interactive Environment\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
+  "competencyRequired": [
     "Docker basics"
-  ],
-  "hasPart": [
-
-  ],
-  "mentions": [
-
   ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Björn Grüning"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
+      "name": "Björn Grüning",
+      "image": "https://avatars.githubusercontent.com/bgruening",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-3079-6586",
+      "orcid": "https://orcid.org/0000-0002-3079-6586"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Saskia Hiltemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
+      "name": "Saskia Hiltemann",
+      "image": "https://avatars.githubusercontent.com/shiltemann",
+      "description": "Researcher at Erasmus Medical Center",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3803-468X",
+      "orcid": "https://orcid.org/0000-0003-3803-468X"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Björn Grüning"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
+      "name": "Björn Grüning",
+      "image": "https://avatars.githubusercontent.com/bgruening",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-3079-6586",
+      "orcid": "https://orcid.org/0000-0002-3079-6586"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Helena Rasche"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
+      "name": "Helena Rasche",
+      "image": "https://avatars.githubusercontent.com/hexylena",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0001-9760-8992",
+      "orcid": "https://orcid.org/0000-0001-9760-8992"
     }
   ],
   "about": [
@@ -163,13 +274,23 @@
       "@type": "CreativeWork",
       "name": "Development in Galaxy",
       "description": "Galaxy is an open-source project. Everyone can contribute to its development with core Galaxy development, integration of softwares in Galaxy environment, ...",
-      "url": "https://galaxyproject.github.io//training-material/topics/dev/"
+      "url": "https://training.galaxyproject.org/training-material/topics/dev/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "http://edamontology.org/topic_3372",
+      "inDefinedTermSet": "http://edamontology.org",
+      "termCode": "topic_3372",
+      "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_3372"
     }
   ]
 }
-    </script>
-  </head>
+        </script>
+    </head>
   <body>
+
+
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
     <textarea id="source">
 name: inverse
 layout: true
@@ -178,7 +299,7 @@ class: center, middle, inverse
 <div class="my-header"><span>
 <a href="/training-material/topics/dev" title="Return to topic page" ><i class="fa fa-level-up" aria-hidden="true"></i></a>
 
-<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/dev/tutorials/interactive-environments/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/dev/tutorials/interactive-environments/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 
 </span></div>
 
@@ -190,7 +311,52 @@ class: center, middle, inverse
 
 ---
 
+
+
+<img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" class="cover-logo"/>
+
+
 # Galaxy Interactive Environments
+
+
+<div markdown="0">
+
+	<div class="contributors-line">
+		Authors: <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+	</div>
+
+</div>
+
+
+<!-- modified date -->
+<div class="footnote" style="bottom: 8em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: </div>
+
+
+<!-- other slide formats (video and plain-text) -->
+<div class="footnote" style="bottom: 6em;">
+
+
+  <i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a>
+</div>
+
+
+<!-- usage tips -->
+<div class="footnote" style="bottom: 2em;">
+    <strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes
+    | <i class="fa fa-arrows" aria-hidden="true"></i><span class="visually-hidden">arrow-keys</span> Use arrow keys to move between slides
+
+</div>
+
+???
+Presenter notes contain extra information which might be useful if you intend to use these slides for teaching.
+
+Press `P` again to switch presenter notes off
+
+Press `C` to create a new window where the same presentation will be displayed.
+This window is linked to the main window. Changing slides on one will cause the
+slide to change on the other.
+
+Useful when presenting.
 
 
 
@@ -211,21 +377,15 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 
 
-.footnote[Tip: press `P` to view the presenter notes]
-
-???
-Presenter notes contain extra information which might be useful if you
-intend to use these slides for teaching.
-
-Press `P` again to switch presenter notes off
-
 ---
 
 
 
 
 
-### &lt;i class=&quot;fa fa-question-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;question&lt;/span&gt; Questions
+
+
+### &lt;i class=&quot;far fa-question-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;question&lt;/span&gt; Questions
 
 
 - What are Galaxy Interactive Environments (GIEs)?
@@ -238,7 +398,8 @@ Press `P` again to switch presenter notes off
 ---
 
 
-### &lt;i class=&quot;fa fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
+
+### &lt;i class=&quot;fas fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
 
 
 - Implement a Hello-World Galaxy Interactive Environment
@@ -256,7 +417,7 @@ Press `P` again to switch presenter notes off
 - Embedded access to third-party application inside of Galaxy
 - Interactively analyze data, access analysis products within Galaxy
 
-![](../../images/vis_IE_ipython0.png)
+![Ipython is shown in the center pane of galaxy](../../images/vis_IE_ipython0.png)
 
 - Bring external analysis platform to the data instead of vice-versa
   - no need to download/re-upload your data
@@ -298,7 +459,7 @@ GIE for visualization? Check that it is the right choice for your project
 
 ## Which should I use?
 
-![](../../images/which_viz_flowchart.png)
+![Flowchart. Only available on an external website? If yes use a display application. Does it need to be served (e.g. python), if yes use an interactive tool. Is it computationally intensive, then it needs to be a regular tool. Is it written in javascript? Then it shold be a generic plugin. If it passes all these tests it can be a charts plugin.](../../images/which_viz_flowchart.png)
 
 
 ---
@@ -308,12 +469,12 @@ GIE for visualization? Check that it is the right choice for your project
 - Can be bound to specific datatypes
   - Available under the visualizations button on the dataset
 
-.image-25[![](../../images/vis_IE_button.png)]
+.image-25[![visualisation button in galaxy is clicked on a dataset. Jupyter and Rstudio appear below charts.](../../images/vis_IE_button.png)]
 
 - Or more general-purpose applications (Jupyter/Rstudio)
 - IE launcher
 
-.image-25[![](../../images/vis_IE_launcher_menu.png)]
+.image-25[![A drop down menu from the masthead of galaxy shows interactive environments as well.](../../images/vis_IE_launcher_menu.png)]
 ---
 
 ### IE Launcher
@@ -321,7 +482,7 @@ GIE for visualization? Check that it is the right choice for your project
 - Choose between different available docker images
 - Attach one or more datasets from history
 
-.image-75[![](../../images/vis_IE_launcher.png)]
+.image-75[![An IE launcher is shown with select boxes for the GIE, image, and datasets. Launch is shown below.](../../images/vis_IE_launcher.png)]
 
 ---
 
@@ -330,7 +491,7 @@ GIE for visualization? Check that it is the right choice for your project
 - Docker Containers are launched on-demand by users..
 - ..and killed automatically when users stop using them
 
-![](../../images/vis_IE_infra.png)
+![schematic of request flow. A users requests an IE session with galaxy which connects to a docker host, launches the IE, and communicates this to a NodeJS proxy living next to galaxy. The user opens the connection through the proxy to access the container.](../../images/vis_IE_infra.png)
 
 .footnote[ Admin Docs: https://docs.galaxyproject.org/en/master/admin/interactive_environments.html ]
 
@@ -342,19 +503,19 @@ GIE for visualization? Check that it is the right choice for your project
   - Provides special functions to interact with the Galaxy history (get/put datasets)
   - Ability to save and load notebooks
 
-.image-75[![](../../images/vis_IE_ipython1.png)]
+.image-75[![jupyter seen in the main panel of galaxy](../../images/vis_IE_ipython1.png)]
 
 ---
 
 ### Jupyter
 
-![](../../images/vis_IE_ipython2.png)
+![the above screenshot but they have scrolled to show embedded plots computed in jupyter in galaxy](../../images/vis_IE_ipython2.png)
 
 ---
 
 ### Jupyter
 
-![](../../images/vis_IE_ipython3.png)
+![Another screenshot of jupyter in galaxy, this time fetching datasets from galaxy and running samtools.](../../images/vis_IE_ipython3.png)
 
 ---
 
@@ -364,7 +525,7 @@ GIE for visualization? Check that it is the right choice for your project
 - Provides special functions to interact with the Galaxy history
 - Ability to save and load workbook and R history object
 
-![](../../images/vis_IE_rstudio.png)
+![default rstudio in galaxy, multiple panes are visible for computing, values, and files.](../../images/vis_IE_rstudio.png)
 
 ---
 
@@ -373,19 +534,19 @@ GIE for visualization? Check that it is the right choice for your project
 - Visualizes single dataset
 - Only available for datasets of specific formats
 
-![](../../images/vis_IE_iobio.png)
+![IOBIO are dynamic javascript-y visualisations with lots of constantly updating graphs that are recalculated on the fly. They are shown in two scratchbooks in Galaxy](../../images/vis_IE_iobio.png)
 
 ---
 
 ### IOBIO
 
-![](../../images/vis_IE_iobio2.png)
+![a close up of iobio with several graphs and illegible text.](../../images/vis_IE_iobio2.png)
 
 ---
 
 ### Phinch
 
-![](../../images/vis_IE_phinch.png)
+![Phinch is shown inside galaxy, another visually intensive graphing application for metagenomics data.](../../images/vis_IE_phinch.png)
 
 ---
 
@@ -426,14 +587,14 @@ GIE for visualization? Check that it is the right choice for your project
 
 ### Development
 
-![](../../images/vis_IE_ipython_components.png)
+![schematic of GIE with a box on the left labelled ipython.mako being invoked by a launch ipython notebook call. This has boxes for running a docker container and then proxying authentication. These point to a docker container with a config.yaml containing the history id, api key and password, the ipython galaxy notebook, and the ipython webservice which loops while the connection is active. This proxies the connection and points to a cartoon of ipython in galaxy's center panel.](../../images/vis_IE_ipython_components.png)
 
 ---
 
 ### Hello World Example
 
 - All files in this example available from
-  https://github.com/erasche/hello-world-interactive-environment/
+  https://github.com/hexylena/hello-world-interactive-environment/
 - Create a GIE that shows the directory listing of `import` folder (datasets loaded into GIE by user)
 
 ```bash
@@ -655,7 +816,6 @@ CMD /startup.sh
 server {
     listen 80;
     server_name localhost;
-    access_log /var/log/nginx/localhost.access.log;
 
     # Note the trailing slash used everywhere!
     location PROXY_PREFIX/helloworld/ {
@@ -718,15 +878,15 @@ $ cd hello-ie
 $ docker build -t hello-ie .
 ```
 
-![](../../images/vis_IE_helloworld.png)
+![A directory listing is shown in the center panel.](../../images/vis_IE_helloworld.png)
 
-.footnote[Try it yourself: https://github.com/erasche/hello-world-interactive-environment]
+.footnote[Try it yourself: https://github.com/hexylena/hello-world-interactive-environment]
 
 
 
 
 ---
-### &lt;i class=&quot;fa fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
+### &lt;i class=&quot;fas fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
 
 
 - Interactive Environments offer access to third-party applications within Galaxy
@@ -741,31 +901,66 @@ $ docker build -t hello-ie .
 
 ---
 
-## Thank you!
+## Thank You!
 
-This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://wiki.galaxyproject.org/Teach/GTN) and all the contributors!
+This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://training.galaxyproject.org) and all the contributors!
 
+<div markdown="0">
 
-<div class="contributors-line">
-
-
-<a href="/training-material/hall-of-fame#shiltemann" class="contributor-badge"><img src="https://avatars.githubusercontent.com/shiltemann" alt="Saskia Hiltemann">Saskia Hiltemann</a>, <a href="/training-material/hall-of-fame#bgruening" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bgruening" alt="Björn Grüning">Björn Grüning</a>, <a href="/training-material/hall-of-fame#erasche" class="contributor-badge"><img src="https://avatars.githubusercontent.com/erasche" alt="Helena Rasche">Helena Rasche</a>
-
+	<div class="contributors-line">
+		Authors: <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+	</div>
 
 </div>
 
 
+<div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
 
 <img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;"/>
 
 
+</div>
+
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+This material is licensed under the Creative Commons Attribution 4.0 International License</a>.
+
 
     </textarea>
-    <script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript">
-    </script>
+	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
     <script type="text/javascript">
-      var slideshow = remark.create({navigation: {scroll: false,}});
+      var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
+      var snippets = document.querySelectorAll('code.remark-code');
+        [].forEach.call(snippets,function(snippet){
+          snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+      var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.parentElement;
+      }});
     </script>
-  </body>
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('body').prepend("<div style='text-align: center'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+
+    </body>
 </html>

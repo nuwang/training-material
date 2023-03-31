@@ -1,0 +1,75 @@
+{
+  "layout": "tutorial_slides",
+  "logo": "GTN",
+  "title": "Tool development and integration into Galaxy",
+  "hands_on": "external",
+  "hands_on_url": "http://planemo.readthedocs.io/en/latest/writing_standalone.html",
+  "questions": [
+    "What is a tool for Galaxy?",
+    "How to write a best-practice tool?",
+    "How to deal with the tool environment?"
+  ],
+  "objectives": [
+    "Learn what a tool is and its structure",
+    "Use the Planemo utilities to develop a tool",
+    "Deal with the dependencies",
+    "Write functional tests",
+    "Make a tool ready for publishing in a ToolShed"
+  ],
+  "time_estimation": "6h",
+  "subtopic": "tooldev",
+  "key_points": [
+    "Galaxy Tool Syntax",
+    "Use Planemo",
+    "Use Conda",
+    "Use GitHub",
+    "Use Travis",
+    "No more excuse to develop crappy Galaxy tools"
+  ],
+  "follow_up_training": [
+    {
+      "type": "internal",
+      "topic_name": "dev",
+      "tutorials": [
+        "conda"
+      ]
+    }
+  ],
+  "contributors": [
+    "shiltemann",
+    "bebatut",
+    "abretaud",
+    "jmchilton",
+    "nsoranzo",
+    "bgruening",
+    "lecorguille"
+  ],
+  "url": "/topics/dev/tutorials/tool-integration/slides.html",
+  "topic_name": "dev",
+  "tutorial_name": "tool-integration",
+  "dir": "topics/dev/tutorials/tool-integration",
+  "id": "dev/tool-integration",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial"
+}

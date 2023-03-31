@@ -1,67 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Genome annotation with Prokka</title>
+        
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+        
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
+        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
+        <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-prokka/slides.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Genome annotation with Prokka" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="2023-01-12 09:56:14 +0000" />
+<meta name="DC.creator" content="Anna Syme" />
+<meta name="DC.creator" content="Torsten Seemann" />
+<meta name="DC.creator" content="Simon Gladman" />
 
+        
+        
+        
+        
+        <meta name="description" content="Genome annotation is a multi-level process that includes ..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
+        <meta property="og:title" content="Galaxy Training: Genome annotation with Prokka" />
+        <meta property="og:description" content="Genome annotation is a multi-level process that includes ..." />
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
-
-
-
-  <head>
-    <meta charset="utf-8">
-    <title>Genome annotation with Prokka</title>
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-45719423-18' , 'auto');
-        ga('send', 'pageview');
-    </script>
-    
-    <link rel="stylesheet" href="/training-material/assets/css/slides.css">
-    <link rel="stylesheet" href="/training-material/assets/css/font-awesome.css" id="theme">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
-
-    
-    
-    
-    
-    <meta name="description" content="Genome annotation is a multi-level process that includes ..." />
-    <meta property="og:title" content="Galaxy Training: Genome annotation with Prokka" />
-    <meta property="og:description" content="Genome annotation is a multi-level process that includes ..." />
-    <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
-    <script type="application/ld+json">
-      
+        <script type="application/ld+json">
+            
 
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -74,16 +64,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "2023-01-12 09:56:14 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Genome annotation with Prokka",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -102,30 +89,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "courseCode": "genome-annotation / annotation-with-prokka / slides",
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Genome Annotation",
+    "description": "Genome annotation is a multi-level process that includes prediction of protein-coding\ngenes, as well as other functional genome units such as structural RNAs, tRNAs,\nsmall RNAs, pseudogenes, control regions, direct and inverted repeats, insertion\nsequences, transposons and other mobile elements.\n",
+    "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/"
+  },
   "learningResourceType": "slides",
   "name": "Slides for 'Genome annotation with Prokka' tutorial",
-  "isPartOf": {
-    "@type": "Course",
-    "name": "Genome annotation with Prokka",
-    "description": "Genome annotation with Prokka",
-    "learningResourceType": "tutorial",
-    "interactivityType": "expositive",
-    "provider": {
-      "@type": "Organization",
-      "email": "galaxytrainingnetwork@gmail.com",
-      "name": "Galaxy Training Network",
-      "url": "https://galaxyproject.org/teach/gtn/"
-    }
-  },
-  "url": "https://galaxyproject.github.io//training-material/topics/genome-annotation/tutorials/annotation-with-prokka/slides.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-prokka/slides.html",
   "timeRequired": "PT1H",
-  "keywords": "prokaryote",
-  "description": "Genome annotation with Prokka\\nThe questions this  addresses are:\n - How to annotate a bacterial genome?\n - How to visualize annoted genomic features?\n\n\\nThe objectives are:\n - Load genome into Galaxy\n - Annotate genome with Prokka\n - View annotations in JBrowse\n\n",
-  "coursePrerequisites": [
+  "keywords": "genome-annotation, prokaryote",
+  "description": "The questions this  addresses are:\n - How to annotate a bacterial genome?\n - How to visualize annoted genomic features?\n\n\nThe objectives are:\n - Load genome into Galaxy\n - Annotate genome with Prokka\n - View annotations in JBrowse\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
-      "url": "https://galaxyproject.github.io//training-material/topics/introduction/",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
       "provider": {
@@ -136,56 +139,166 @@
       }
     }
   ],
-  "hasPart": [
-
-  ],
-  "mentions": [
-    {
-      "@type": "Thing",
-      "url": "https://doi.org/10.5281/zenodo.1156405",
-      "name": "Training data for Genome annotation with Prokka tutorial"
-    }
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anna Syme"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annasyme/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annasyme/",
+      "name": "Anna Syme",
+      "image": "https://avatars.githubusercontent.com/annasyme",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-9906-0673",
+      "orcid": "https://orcid.org/0000-0002-9906-0673"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Torsten Seemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/tseemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/tseemann/",
+      "name": "Torsten Seemann",
+      "image": "https://avatars.githubusercontent.com/tseemann",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Simon Gladman"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/slugger70/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/slugger70/",
+      "name": "Simon Gladman",
+      "image": "https://avatars.githubusercontent.com/slugger70",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-6100-4385",
+      "orcid": "https://orcid.org/0000-0002-6100-4385"
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anna Syme"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annasyme/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annasyme/",
+      "name": "Anna Syme",
+      "image": "https://avatars.githubusercontent.com/annasyme",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-9906-0673",
+      "orcid": "https://orcid.org/0000-0002-9906-0673"
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Torsten Seemann"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/tseemann/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/tseemann/",
+      "name": "Torsten Seemann",
+      "image": "https://avatars.githubusercontent.com/tseemann",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     },
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Simon Gladman"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/slugger70/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/slugger70/",
+      "name": "Simon Gladman",
+      "image": "https://avatars.githubusercontent.com/slugger70",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-6100-4385",
+      "orcid": "https://orcid.org/0000-0002-6100-4385"
     }
   ],
   "about": [
     {
       "@type": "CreativeWork",
       "name": "Genome Annotation",
-      "description": "Genome annotation is a multi-level process that includes prediction of protein-coding genes, as well as other functional genome units such as structural RNAs, tRNAs, small RNAs, pseudogenes, control regions, direct and inverted repeats, insertion sequences, transposons and other mobile elements.",
-      "url": "https://galaxyproject.github.io//training-material/topics/genome-annotation/"
+      "description": "Genome annotation is a multi-level process that includes prediction of protein-coding\ngenes, as well as other functional genome units such as structural RNAs, tRNAs,\nsmall RNAs, pseudogenes, control regions, direct and inverted repeats, insertion\nsequences, transposons and other mobile elements.\n",
+      "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "http://edamontology.org/topic_0362",
+      "inDefinedTermSet": "http://edamontology.org",
+      "termCode": "topic_0362",
+      "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_0362"
     }
   ]
 }
-    </script>
-  </head>
+        </script>
+    </head>
   <body>
+
+
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
     <textarea id="source">
 name: inverse
 layout: true
@@ -194,7 +307,7 @@ class: center, middle, inverse
 <div class="my-header"><span>
 <a href="/training-material/topics/genome-annotation" title="Return to topic page" ><i class="fa fa-level-up" aria-hidden="true"></i></a>
 
-<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/genome-annotation/tutorials/annotation-with-prokka/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/genome-annotation/tutorials/annotation-with-prokka/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 
 </span></div>
 
@@ -206,7 +319,54 @@ class: center, middle, inverse
 
 ---
 
+
+
+<img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" class="cover-logo"/>
+
+
 # Genome annotation with Prokka
+
+
+<div markdown="0">
+
+	<div class="contributors-line">
+		Authors: <a href="/training-material/hall-of-fame/annasyme/" class="contributor-badge contributor-annasyme"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/annasyme?s=27" alt="Avatar">Anna Syme</a><a href="/training-material/hall-of-fame/tseemann/" class="contributor-badge contributor-tseemann"><img src="https://avatars.githubusercontent.com/tseemann?s=27" alt="Avatar">Torsten Seemann</a><a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge contributor-slugger70"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/slugger70?s=27" alt="Avatar">Simon Gladman</a>
+	</div>
+
+</div>
+
+
+<!-- modified date -->
+<div class="footnote" style="bottom: 8em;"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Updated: </div>
+
+
+<!-- other slide formats (video and plain-text) -->
+<div class="footnote" style="bottom: 6em;">
+
+  <i class="far fa-play-circle" aria-hidden="true"></i><span class="visually-hidden">video-slides</span> <a href="/training-material/videos/watch.html?v=/genome-annotation/tutorials/annotation-with-prokka/slides">Video slides</a> |
+
+
+  <i class="fas fa-file-alt" aria-hidden="true"></i><span class="visually-hidden">text-document</span><a href="slides-plain.html"> Plain-text slides</a>
+</div>
+
+
+<!-- usage tips -->
+<div class="footnote" style="bottom: 2em;">
+    <strong>Tip: </strong>press <kbd>P</kbd> to view the presenter notes
+    | <i class="fa fa-arrows" aria-hidden="true"></i><span class="visually-hidden">arrow-keys</span> Use arrow keys to move between slides
+
+</div>
+
+???
+Presenter notes contain extra information which might be useful if you intend to use these slides for teaching.
+
+Press `P` again to switch presenter notes off
+
+Press `C` to create a new window where the same presentation will be displayed.
+This window is linked to the main window. Changing slides on one will cause the
+slide to change on the other.
+
+Useful when presenting.
 
 
 
@@ -231,21 +391,15 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 
 
-.footnote[Tip: press `P` to view the presenter notes]
-
-???
-Presenter notes contain extra information which might be useful if you
-intend to use these slides for teaching.
-
-Press `P` again to switch presenter notes off
-
 ---
 
 
 
 
 
-### &lt;i class=&quot;fa fa-question-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;question&lt;/span&gt; Questions
+
+
+### &lt;i class=&quot;far fa-question-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;question&lt;/span&gt; Questions
 
 
 - How to annotate a bacterial genome?
@@ -256,7 +410,8 @@ Press `P` again to switch presenter notes off
 ---
 
 
-### &lt;i class=&quot;fa fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
+
+### &lt;i class=&quot;fas fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
 
 
 - Load genome into Galaxy
@@ -278,37 +433,117 @@ display the other window
 
 ### Overview
 
-- What is genome annotation
+- What is genome annotation?
+
 - Tools for genome annotation
+
 - The tool &quot;Prokka&quot;
-
----
-
-### Annotation
-
-![annotation pic](images/seq_annotation.jpg)
 
 ???
 
-- Annotations are biological or other features on a genome
-- e.g. ribosome binding site: a biological feature
-- e.g. the TTTTTT homopolymer: may or may not be biological but could be interesting
+- In these slides, we will learn what is genome annotation, and which tools can be used for genome annotation.
+- We will describe in detail a tool called Prokka.
+
+---
+
+### What is Annotation?
+
+- Classifying and describing parts of the genome sequence
+
+- Annotations are biological or other features on a genome, *e.g.*
+
+    - a ribosome binding site: a biological feature
+
+    - a sequence of TTTTTT: may/may not be biological but could be interesting
+
+- We can name features by type and location, *e.g.* gene, pseudogene, repeat
+
+- We can hypothesise functions, *e.g.* antioxidant activity
+
+???
+
+- Annotating a genome means positioning features along the sequence of a genome.
+- Those features can be anything one can find in a genome sequence: genes, but also binding sites for example.
+- When a feature, like a gene for example, is positioned, you can add information about its function.
+- This operation is named &quot;functional annotation&quot;.
+
+---
+
+### First: assemble the genome
+![annotation pic](../../images/contigs.png)
+
+???
+
+- Before annotating a genome, you need to assemble it.
+- If you get a high quality assembly, it will be easier to perform a good quality annotation.
+
+---
+
+### Then: annotate
+![annotation pic](../../images/seq_annotation.jpg)
+
+???
+
+- Once you have a good genome sequence, you can annotate it.
+- In this example, there a gene coding for a delta toxin.
+- There is a ribosome binding site in red, and the coding sequence of this gene is in green.
+
 ---
 
 ### Annotation
+![annotation pic](../../images/annotation_details.png)
 
-![annotation pic](images/annotation_details.png)
+???
+
+- For each feature annotated on a genome, you can get its position, its type, and some information about its function or how it is expressed.
+
+---
+
+### How do we annotate? many different ways:
+
+- sequence: does it match known sequences in databases?
+
+- sequence structure: *e.g.* does it look like an exon (start and stop codons)?
+
+- use other data: *e.g.* do lab experiments to investigate biological function
+
+???
+
+- You can annotate features by looking at similarities with known sequences from international databases.
+- Some tools annotate features on a genome by seeking motifs corresponding to known structure (for example gene or exon start or stop).
+- Some lab experiments can help annotate specific regions of a genome, even though it is often much more expensive than an automatic annotation.
+- The lab experiments can provide certainty about function, where automatic annotation is more of a guess.
+
 ---
 
 ### Prokka
+![annotation pic](../../images/prokka_pipeline.png)
 
-![annotation pic](images/prokka_pipeline.png)
+???
+
+- Prokka is a pipeline that runs several other tools to annotate prokaryotic genomes.
+- The input is the assembly of the genome in Fasta format.
+- Prokka runs Aragorn to annotate transfer RNAs.
+- Ribosomal RNAs are annotated with RNAmmer.
+- Infernal uses the Rfam database to annotate non coding RNAs.
+- Finally Prodigal annotated coding genes.
+- Each coding sequence is then compared to the SwissProt sequence database using Blast, and to TIGR and Pfam motif datases using Hmmer3.
+- SignalP is also run to detect signal peptides in each predicted coding sequence.
+- The final result of the whole Prokka pipeline is a set of GFF3, GBK ans ASN1 files.
+
+---
+### More information
+Galaxy Training Network Slides: [Introduction to Genome Annotation](../introduction/slides.html)
+
+???
+
+- More information is available in the &quot;Introduction to Genome Annotation&quot; slides.
 
 
 
 
 ---
-### &lt;i class=&quot;fa fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
+### &lt;i class=&quot;fas fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
 
 
 - Prokka is a useful tool to annotate a bacterial genome.
@@ -323,31 +558,66 @@ display the other window
 
 ---
 
-## Thank you!
+## Thank You!
 
-This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://wiki.galaxyproject.org/Teach/GTN) and all the contributors!
+This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://training.galaxyproject.org) and all the contributors!
 
+<div markdown="0">
 
-<div class="contributors-line">
-
-
-<a href="/training-material/hall-of-fame#annasyme" class="contributor-badge"><img src="https://avatars.githubusercontent.com/annasyme" alt="Anna Syme">Anna Syme</a>, <a href="/training-material/hall-of-fame#tseemann" class="contributor-badge"><img src="https://avatars.githubusercontent.com/tseemann" alt="Torsten Seemann">Torsten Seemann</a>, <a href="/training-material/hall-of-fame#slugger70" class="contributor-badge"><img src="https://avatars.githubusercontent.com/slugger70" alt="Simon Gladman">Simon Gladman</a>
-
+	<div class="contributors-line">
+		Authors: <a href="/training-material/hall-of-fame/annasyme/" class="contributor-badge contributor-annasyme"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/annasyme?s=27" alt="Avatar">Anna Syme</a><a href="/training-material/hall-of-fame/tseemann/" class="contributor-badge contributor-tseemann"><img src="https://avatars.githubusercontent.com/tseemann?s=27" alt="Avatar">Torsten Seemann</a><a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge contributor-slugger70"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/slugger70?s=27" alt="Avatar">Simon Gladman</a>
+	</div>
 
 </div>
 
 
+<div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
 
 <img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;"/>
 
 
+</div>
+
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+This material is licensed under the Creative Commons Attribution 4.0 International License</a>.
+
 
     </textarea>
-    <script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript">
-    </script>
+	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
     <script type="text/javascript">
-      var slideshow = remark.create({navigation: {scroll: false,}});
+      var slideshow = remark.create({navigation: {scroll: false}, ratio: '16:9'});
       var hljs = remark.highlighter.engine;
+      var snippets = document.querySelectorAll('code.remark-code');
+        [].forEach.call(snippets,function(snippet){
+          snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+      var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.parentElement;
+      }});
     </script>
-  </body>
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('body').prepend("<div style='text-align: center'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+
+    </body>
 </html>

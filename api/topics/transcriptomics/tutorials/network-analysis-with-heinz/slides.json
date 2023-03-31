@@ -1,0 +1,80 @@
+{
+  "layout": "tutorial_slides",
+  "title": "Network Analysis with Heinz",
+  "zenodo_link": "https://doi.org/10.5281/zenodo.1344105",
+  "tags": [
+    "metatranscriptomics",
+    "network analysis"
+  ],
+  "questions": [
+    "What is metatranscriptomics",
+    "Which pathways are potentially contributing to dental caries?"
+  ],
+  "objectives": [
+    "Learn some background knowledge about microbiome",
+    "Understand metatranscriptomics",
+    "Familiarize yourself with KEGG terminology",
+    "Understand how network(pathway) analysis works"
+  ],
+  "time_estimation": "1h30m",
+  "key_points": [
+    "Analyzing differential expression for (meta)transcriptomics data",
+    "Validating the p-value distribution of the differential expression analysis",
+    "Finding the most differentially expressed subnetwork in a gene functional network using Heinz",
+    "Interpreting the pinpointed subnetwork"
+  ],
+  "contributors": [
+    "sanneabeln",
+    "ChaoZhang123"
+  ],
+  "url": "/topics/transcriptomics/tutorials/network-analysis-with-heinz/slides.html",
+  "topic_name": "transcriptomics",
+  "tutorial_name": "network-analysis-with-heinz",
+  "dir": "topics/transcriptomics/tutorials/network-analysis-with-heinz",
+  "id": "transcriptomics/network-analysis-with-heinz",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": true,
+  "workflows": [
+    {
+      "workflow": "Galaxy-Workflow-Heinz.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/network-analysis-with-heinz/workflows/Galaxy-Workflow-Heinz.ga",
+      "path": "topics/transcriptomics/tutorials/network-analysis-with-heinz/workflows/Galaxy-Workflow-Heinz.ga",
+      "wfid": "transcriptomics-network-analysis-with-heinz",
+      "wfname": "galaxy-workflow-heinz",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/transcriptomics-network-analysis-with-heinz/versions/galaxy-workflow-heinz",
+      "license": null,
+      "creators": [
+
+      ]
+    }
+  ],
+  "tools": [
+    "Cut1",
+    "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.2",
+    "toolshed.g2.bx.psu.edu/repos/iuc/heinz/heinz/1.0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/heinz/heinz_bum/1.0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/heinz/heinz_scoring/1.0",
+    "toolshed.g2.bx.psu.edu/repos/iuc/heinz/heinz_visualization/0.1.0"
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial",
+  "logo": "GTN"
+}

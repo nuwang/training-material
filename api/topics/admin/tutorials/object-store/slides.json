@@ -1,0 +1,66 @@
+{
+  "layout": "tutorial_slides",
+  "title": "Storage Management",
+  "questions": [
+    "How does Galaxy locate data?",
+    "How can I have Galaxy use multiple storage locations?"
+  ],
+  "objectives": [
+    "Setup Galaxy with both the Hierarachical and Distributed Object Storages"
+  ],
+  "time_estimation": "30m",
+  "key_points": [
+    "The distributed object store configuration allows you to easily expand that storage that is attached to your Galaxy.",
+    "You can move data around without affecting users."
+  ],
+  "contributors": [
+    "natefoo",
+    "martenson",
+    "hexylena"
+  ],
+  "subtopic": "data",
+  "tags": [
+    "ansible",
+    "storage"
+  ],
+  "requirements": [
+    {
+      "type": "internal",
+      "topic_name": "admin",
+      "tutorials": [
+        "ansible",
+        "ansible-galaxy"
+      ]
+    }
+  ],
+  "url": "/topics/admin/tutorials/object-store/slides.html",
+  "topic_name": "admin",
+  "tutorial_name": "object-store",
+  "dir": "topics/admin/tutorials/object-store",
+  "id": "admin/object-store",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial",
+  "logo": "assets/images/gat.png"
+}

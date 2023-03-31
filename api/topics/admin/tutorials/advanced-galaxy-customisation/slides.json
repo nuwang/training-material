@@ -1,0 +1,39 @@
+{
+  "layout": "tutorial_slides",
+  "logo": "assets/images/gat.png",
+  "title": "Advanced customisation of a Galaxy instance",
+  "contributors": [
+    "bgruening",
+    "hexylena",
+    "martenson"
+  ],
+  "url": "/topics/admin/tutorials/advanced-galaxy-customisation/slides.html",
+  "topic_name": "admin",
+  "tutorial_name": "advanced-galaxy-customisation",
+  "dir": "topics/admin/tutorials/advanced-galaxy-customisation",
+  "id": "admin/advanced-galaxy-customisation",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": false,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial"
+}

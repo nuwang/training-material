@@ -1,0 +1,63 @@
+{
+  "layout": "tutorial_slides",
+  "logo": "GTN",
+  "title": "Galaxy Interactive Environments",
+  "draft": true,
+  "questions": [
+    "What are Galaxy Interactive Environments (GIEs)?",
+    "How to enable GIEs in Galaxy?",
+    "How to develop your own GIE?"
+  ],
+  "objectives": [
+    "Implement a Hello-World Galaxy Interactive Environment"
+  ],
+  "requirements": [
+    {
+      "title": "Docker basics",
+      "type": "none"
+    }
+  ],
+  "time_estimation": "90m",
+  "key_points": [
+    "Interactive Environments offer access to third-party applications within Galaxy",
+    "Interactive Environments run in a docker images for sandboxing and easy dependency management"
+  ],
+  "contributors": [
+    "shiltemann",
+    "bgruening",
+    "hexylena"
+  ],
+  "subtopic": "advanced",
+  "url": "/topics/dev/tutorials/interactive-environments/slides.html",
+  "topic_name": "dev",
+  "tutorial_name": "interactive-environments",
+  "dir": "topics/dev/tutorials/interactive-environments",
+  "id": "dev/interactive-environments",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": false,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial",
+  "tags": [
+    "work-in-progress"
+  ]
+}

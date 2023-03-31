@@ -1,0 +1,168 @@
+{
+  "layout": "tutorial_slides",
+  "title": "Galaxy Installation with Ansible",
+  "questions": [
+    "How does it all connect?",
+    "What steps will we go through?"
+  ],
+  "objectives": [
+    "Get a high-level overview of a Galaxy server setup"
+  ],
+  "time_estimation": "2h30m",
+  "key_points": [
+    "Everything can be accomplished with Ansible roles from Galaxy",
+    "You can easily deploy a base Galaxy, or one with more features."
+  ],
+  "contributions": {
+    "authorship": [
+      "hexylena",
+      "natefoo",
+      "slugger70"
+    ],
+    "editing": [
+      "shiltemann",
+      "nsoranzo",
+      "gmauro",
+      "mvdbeek",
+      "martenson",
+      "jmchilton",
+      "davebx",
+      "nsoranzo",
+      "lecorguille",
+      "abretaud"
+    ],
+    "testing": [
+      "mira-miracoli"
+    ]
+  },
+  "tags": [
+    "ansible",
+    "deploying",
+    "git-gat"
+  ],
+  "subtopic": "core",
+  "requirements": [
+    {
+      "type": "internal",
+      "topic_name": "admin",
+      "tutorials": [
+        "ansible"
+      ]
+    },
+    {
+      "type": "none",
+      "title": "A VM with at least 2 vCPUs and 4 GB RAM, preferably running Ubuntu 18.04 - 20.04."
+    }
+  ],
+  "abbreviations": {
+    "DVCS": "Distributed Version Control System"
+  },
+  "url": "/topics/admin/tutorials/ansible-galaxy/slides.html",
+  "topic_name": "admin",
+  "tutorial_name": "ansible-galaxy",
+  "dir": "topics/admin/tutorials/ansible-galaxy",
+  "id": "admin/ansible-galaxy",
+  "video_library": {
+    "tutorial": {
+      "description": null,
+      "force_archive_materials": true,
+      "materials": [
+        {
+          "link": "topics/admin/tutorials/ansible-galaxy/tutorial.html",
+          "title": "Tutorial (All Parts)",
+          "type": "Tutorial"
+        },
+        {
+          "link": "topics/admin/tutorials/database/slides.html",
+          "title": "Database Slides",
+          "type": "Slides"
+        },
+        {
+          "link": "topics/admin/tutorials/systemd-supervisor/slides.html",
+          "title": "systemd Slides",
+          "type": "Slides"
+        },
+        {
+          "link": "topics/admin/tutorials/production/slides.html",
+          "title": "Moving Towards Production Slides",
+          "type": "Slides"
+        }
+      ],
+      "tags": [
+        "admin"
+      ],
+      "type": "Tutorial",
+      "versions": [
+        {
+          "captions": [
+            "natefoo",
+            "hexylena"
+          ],
+          "date": "2022-03-01",
+          "galaxy_version": "21.05",
+          "length": "2H50M",
+          "link": "LPK8rP_qUiA",
+          "speakers": [
+            "natefoo",
+            "hexylena"
+          ]
+        },
+        {
+          "captions": [
+            "natefoo",
+            "hexylena"
+          ],
+          "date": "2021-06-28",
+          "galaxy_version": "21.05",
+          "length": "2H47M",
+          "link": "zT70luZqPOU",
+          "speakers": [
+            "natefoo"
+          ]
+        },
+        {
+          "captions": [
+            "shiltemann",
+            "hexylena"
+          ],
+          "date": "2021-02-15",
+          "galaxy_version": "21.01",
+          "length": "53M",
+          "link": "il83uApg7Hc",
+          "speakers": [
+            "hexylena"
+          ]
+        }
+      ],
+      "gtn_id": "admin/ansible-galaxy",
+      "title": "Galaxy Installation with Ansible",
+      "captioned": true
+    },
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": true,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": true,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": true
+  },
+  "type": "tutorial",
+  "contributors": [
+    "slugger70",
+    "natefoo"
+  ],
+  "logo": "assets/images/gat.png"
+}

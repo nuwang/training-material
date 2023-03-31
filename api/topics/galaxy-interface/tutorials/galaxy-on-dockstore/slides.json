@@ -1,0 +1,49 @@
+{
+  "layout": "tutorial_slides",
+  "logo": "GTN",
+  "title": "Galaxy workflows in Dockstore",
+  "objectives": [
+    "What is Dockstore?",
+    "Why use Dockstore?",
+    "How to find workflows on Dockstore?",
+    "How to launch workflows from Dockstore?",
+    "Getting started with Galaxy workflows on Dockstore",
+    "Register your Galaxy workflow on Dockstore"
+  ],
+  "subtopic": "workflows",
+  "contributors": [
+    "avani-k",
+    "bethsheets",
+    "coverbeck",
+    "afgane"
+  ],
+  "url": "/topics/galaxy-interface/tutorials/galaxy-on-dockstore/slides.html",
+  "topic_name": "galaxy-interface",
+  "tutorial_name": "galaxy-on-dockstore",
+  "dir": "topics/galaxy-interface/tutorials/galaxy-on-dockstore",
+  "id": "galaxy-interface/galaxy-on-dockstore",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": false,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "video": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": false
+  },
+  "type": "tutorial"
+}

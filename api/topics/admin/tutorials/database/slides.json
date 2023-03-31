@@ -1,0 +1,40 @@
+{
+  "layout": "tutorial_slides",
+  "logo": "assets/images/gat.png",
+  "video": true,
+  "title": "Galactic Database",
+  "contributors": [
+    "martenson",
+    "nsoranzo",
+    "natefoo",
+    "hexylena"
+  ],
+  "url": "/topics/admin/tutorials/database/slides.html",
+  "topic_name": "admin",
+  "tutorial_name": "database",
+  "dir": "topics/admin/tutorials/database",
+  "id": "admin/database",
+  "video_library": {
+    "tutorial": null,
+    "slides": null,
+    "demo": null,
+    "both": null,
+    "session": null
+  },
+  "hands_on": false,
+  "slides": true,
+  "tools": [
+
+  ],
+  "tours": false,
+  "translations": {
+    "tutorial": [
+
+    ],
+    "slides": [
+
+    ],
+    "video": true
+  },
+  "type": "tutorial"
+}

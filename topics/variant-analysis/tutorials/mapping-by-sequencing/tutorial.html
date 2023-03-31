@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -6,158 +6,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Mapping and molecular identification of phenotype-causing mutations</title>
         
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-45719423-18' , 'auto');
-            ga('send', 'pageview');
-        </script>
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <link rel="stylesheet" href="/training-material/assets/css/font-awesome.css">
+        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Mapping and molecular identification of phenotype-causing mutations" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="2023-03-05 09:19:48 +0000" />
+<meta name="DC.creator" content="Wolfgang Maier" />
 
         
         
         
         
-        
-        <meta name="description" content="Exome sequencing means that all protein-coding genes in a..." />
+        <meta name="description" content="Genetic differences (variants) between healthy and diseas..." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Mapping and molecular identification of phenotype-causing..." />
-        <meta property="og:description" content="Exome sequencing means that all protein-coding genes in a..." />
+        <meta property="og:description" content="Genetic differences (variants) between healthy and diseas..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
-    </head>
-    <body data-spy="scroll" data-target="#toc">
+
         
-
-
-
-
-
-
-
-
-
-
-
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/training-material/">
-                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
-            </a>
-
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="top-navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/training-material/topics/variant-analysis" title="Go back to list of tutorials">
-                            <i class="fa fa-folder-o" aria-hidden="true"></i><span class="visually-hidden">topic</span> Variant Analysis
-                        </a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="EN">
-                            EN
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmapping-by-sequencing%2Ftutorial.html&edit-text=&act=url" title="">
-                                FR
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmapping-by-sequencing%2Ftutorial.html&edit-text=&act=url" title="">
-                                JA
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmapping-by-sequencing%2Ftutorial.html&edit-text=&act=url" title="">
-                                ES
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmapping-by-sequencing%2Ftutorial.html&edit-text=&act=url" title="">
-                                PT
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fmapping-by-sequencing%2Ftutorial.html&edit-text=&act=url" title="">
-                                AR
-                            </a>
-                            
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="fa fa-life-ring" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
-    </a>
-    <div class="dropdown-menu dropdown-menu-right">
-        <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
-            <input type="hidden" value="Galaxy Training" name="content_provider">
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
-        </form>
-
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
-        </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Chat on Gitter">
-            Chat on Gitter
-        </a>
-        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
-        </a>
-    </div>
-</li>
-
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.md">
-                            <i class="fa fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<div class="container main-content">
-    <script type="application/ld+json">
-        
+        <script type="application/ld+json">
+            
 
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -170,16 +64,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "2023-03-05 09:19:48 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Mapping and molecular identification of phenotype-causing mutations",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "/blob//LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -198,29 +89,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "courseCode": "variant-analysis / mapping-by-sequencing / hands-on",
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Variant Analysis",
+    "description": "Genetic differences (variants) between healthy and diseased tissue,\nbetween individuals of a population, or between strains of an organism\ncan provide mechanistic insight into disease processes and the natural\nfunction of affected genes.\n\nThe tutorials in this section show how to detect evidence for\ngenetic variants in next-generation sequencing data, a process termed\nvariant calling.\n\nOf equal importance, they also demonstrate how you can interpret, for\na range of different organisms, the resulting sets of variants by\npredicting their molecular effects on genes and proteins, by\nannotating previously observed variants with published knowledge, and\nby trying to link phenotypes of the sequenced samples to their variant\ngenotypes.\n",
+    "url": "https://training.galaxyproject.org/training-material/topics/variant-analysis/"
+  },
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Mapping and molecular identification of phenotype-causing mutations' tutorial",
-  "isPartOf": {
-    "@type": "Course",
-    "name": "Mapping and molecular identification of phenotype-causing mutations",
-    "description": "Mapping and molecular identification of phenotype-causing mutations",
-    "learningResourceType": "tutorial",
-    "interactivityType": "expositive",
-    "provider": {
-      "@type": "Organization",
-      "email": "galaxytrainingnetwork@gmail.com",
-      "name": "Galaxy Training Network",
-      "url": "https://galaxyproject.org/teach/gtn/"
-    }
-  },
-  "url": "https://galaxyproject.github.io//training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html",
   "timeRequired": "PT2H",
-  "description": "Mapping and molecular identification of phenotype-causing mutations\\nThe questions this  addresses are:\n - What is mapping-by-sequencing?\n - How can it help you identify the causative mutation in phenotypic mutants isolated from genetic screens?\n\n\\nThe objectives are:\n - Use joint variant calling and extraction to facilitate variant comparison across samples\n - Perform variant linkage analyses for phenotypically selected recombinant progeny\n - Filter, annotate and report lists of variants\n\n",
-  "coursePrerequisites": [
+  "keywords": "variant-analysis",
+  "description": "The questions this  addresses are:\n - What is mapping-by-sequencing?\n - How can it help you identify the causative mutation in phenotypic mutants isolated from genetic screens?\n\n\nThe objectives are:\n - Use joint variant calling and extraction to facilitate variant comparison across samples\n - Perform variant linkage analyses for phenotypically selected recombinant progeny\n - Filter, annotate and report lists of variants\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
-      "url": "https://galaxyproject.github.io//training-material/topics/introduction/",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
       "provider": {
@@ -231,8 +139,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
       "name": "Quality Control",
       "description": "Slides for 'Quality Control' tutorial",
       "learningResourceType": "slides",
@@ -245,8 +154,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
       "name": "Quality Control",
       "description": "Hands-on for 'Quality Control' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -259,8 +169,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
       "name": "Mapping",
       "description": "Slides for 'Mapping' tutorial",
       "learningResourceType": "slides",
@@ -273,8 +184,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://galaxyproject.github.io//training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html",
       "name": "Mapping",
       "description": "Hands-on for 'Mapping' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -287,34 +199,62 @@
       }
     }
   ],
-  "hasPart": [
-
-  ],
-  "mentions": [
-    {
-      "@type": "Thing",
-      "url": "https://doi.org/10.5281/zenodo.1098033",
-      "name": "Training data for Mapping and molecular identification of phenotype-causing mutations tutorial"
-    }
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Wolfgang Maier"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/",
+      "name": "Wolfgang Maier",
+      "image": "https://avatars.githubusercontent.com/wm75",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-9464-6640",
+      "orcid": "https://orcid.org/0000-0002-9464-6640"
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Wolfgang Maier"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/",
+      "name": "Wolfgang Maier",
+      "image": "https://avatars.githubusercontent.com/wm75",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-9464-6640",
+      "orcid": "https://orcid.org/0000-0002-9464-6640"
     }
   ],
   "about": [
     {
       "@type": "CreativeWork",
       "name": "Variant Analysis",
-      "description": "Exome sequencing means that all protein-coding genes in a genome are sequenced",
-      "url": "https://galaxyproject.github.io//training-material/topics/variant-analysis/"
+      "description": "Genetic differences (variants) between healthy and diseased tissue,\nbetween individuals of a population, or between strains of an organism\ncan provide mechanistic insight into disease processes and the natural\nfunction of affected genes.\n\nThe tutorials in this section show how to detect evidence for\ngenetic variants in next-generation sequencing data, a process termed\nvariant calling.\n\nOf equal importance, they also demonstrate how you can interpret, for\na range of different organisms, the resulting sets of variants by\npredicting their molecular effects on genes and proteins, by\nannotating previously observed variants with published knowledge, and\nby trying to link phenotypes of the sequenced samples to their variant\ngenotypes.\n",
+      "url": "https://training.galaxyproject.org/training-material/topics/variant-analysis/"
     },
     {
       "@type": "DefinedTerm",
@@ -325,41 +265,261 @@
     }
   ]
 }
-    </script>
+        </script>
+        
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <header>
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
+        <div class="container">
+            <a class="navbar-brand" href="/training-material/">
+                <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
+                
+                    Galaxy Training!
+                
+            </a>
 
-    <section class="tutorial">
-        <h1 data-toc-skip>Mapping and molecular identification of phenotype-causing mutations</h1>
-        <div class="contributors-line">By: 
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="/training-material/topics/variant-analysis" title="Go back to list of tutorials">
+                            <i class="far fa-folder" aria-hidden="true"></i> Variant Analysis
+                        </a>
+                        
+                    </li>
 
-<a href="/training-material/hall-of-fame#wm75" class="contributor-badge"><img src="https://avatars.githubusercontent.com/wm75" alt="Wolfgang Maier">Wolfgang Maier</a>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+        -->
+
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="/training-material/topics/variant-analysis/faqs/" title="Check our FAQs for the Variant Analysis topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <!-- link to feedback -->
+        
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
+        
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
+            </div>
+
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-05-01/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html" title="Version 2019-05-01">2019-05-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-02-07/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html" title="Version 2019-02-07">2019-02-07</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+
+
+                    <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent" role="search">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        
+        <div class="container main-content" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
+</script>
+
+
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<section class="tutorial topic-variant-analysis">
+    <h1 data-toc-skip>Mapping and molecular identification of phenotype-causing mutations</h1>
+    
+
+    <div markdown="0">
+
+	<div class="contributors-line">
+		Authors: <a href="/training-material/hall-of-fame/wm75/" class="contributor-badge contributor-wm75"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/wm75?s=27" alt="Avatar">Wolfgang Maier</a>
+	</div>
 
 </div>
-        <blockquote class="overview">
-            <h3>Overview</h3>
-            <strong><i class="fa fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</strong>
-            <ul>
-            
-            <li>What is mapping-by-sequencing?</li>
-            
-            <li>How can it help you identify the causative mutation in phenotypic mutants isolated from genetic screens?</li>
-            
-            </ul>
 
-            <strong><i class="fa fa-bullseye" aria-hidden="true"></i><span class="visually-hidden">objectives</span> Objectives</strong>
-            <ul>
-            
-            <li>Use joint variant calling and extraction to facilitate variant comparison across samples</li>
-            
-            <li>Perform variant linkage analyses for phenotypically selected recombinant progeny</li>
-            
-            <li>Filter, annotate and report lists of variants</li>
-            
-            </ul>
 
-            
-            <strong><i class="fa fa-check-circle" aria-hidden="true"></i><span class="visually-hidden">requirements</span> Requirements</strong>
-            <ul>
-            
+    <blockquote class="overview">
+        <div class="box-title" aria-label="overview box">Overview</div>
+        
+        <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
+        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
+        <ul>
+        
+        <li><p>What is mapping-by-sequencing?</p>
+</li>
+        
+        <li><p>How can it help you identify the causative mutation in phenotypic mutants isolated from genetic screens?</p>
+</li>
+        
+        </ul>
+
+        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives: </strong>
+        <ul>
+        
+        <li><p>Use joint variant calling and extraction to facilitate variant comparison across samples</p>
+</li>
+        
+        <li><p>Perform variant linkage analyses for phenotypically selected recombinant progeny</p>
+</li>
+        
+        <li><p>Filter, annotate and report lists of variants</p>
+</li>
+        
+        </ul>
+
+        
+        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements:</strong>
+        <ul>
+        
     <li>
     
         
@@ -384,17 +544,15 @@
                             
                             <li> Quality Control:
                             
-                                <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html"><i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
                                 
                             
                             
                                 
-                                    - <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html"><i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                    - <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
                                 
                             
                             </li>
-                        
-                    
                         
                     
                         
@@ -407,17 +565,15 @@
                             
                             <li> Mapping:
                             
-                                <a href="/training-material/topics/sequence-analysis/tutorials/mapping/slides.html"><i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                <a href="/training-material/topics/sequence-analysis/tutorials/mapping/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
                                 
                             
                             
                                 
-                                    - <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html"><i class="fa fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                    - <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
                                 
                             
                             </li>
-                        
-                    
                         
                     
                         
@@ -432,83 +588,294 @@
     
     </li>
 
+        
+        </ul>
+        
+
+        
+        <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i> Time estimation:</strong> 2 hours</div>
+        
+
+        
+
+        
+        
+
+        
+        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
+        <ul class="supporting_material">
             
-            </ul>
-            
 
             
-            <p><strong><i class="fa fa-hourglass-end" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 2 hours</p>
-            
-
-            
+                <li class="btn btn-default supporting_material">
 
 
-
-            <div>
-                <div><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
-                <div id="supporting_materials">
-                    <ul>
-                        <li>
-                            <div>
-                    
-                    <div>
-                        <a class="topic-icon" href="/training-material/topics/variant-analysis/slides/introduction.html" title="Introduction slides">
-                            <i class="fa fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> Introduction Slides
-                        </a>
-                    </div>
-                    
-
-                    
-                    <div>
-                        
-<a class="topic-icon" href="https://doi.org/10.5281/zenodo.1098033">
-    <i class="fa fa-files-o" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span> Datasets
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.1098033">
+    <i class="far fa-copy" aria-hidden="true"></i>&nbsp;Datasets
 </a>
 
+</li>
+            
 
-                    </div>
-                    
+            
+                <li class="btn btn-default supporting_material">
 
-                    
-                    <div>
-                        
-    <a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/variant-analysis/tutorials/mapping-by-sequencing/workflows/" title="Workflows" alt="Mapping and molecular identification of phenotype-causing mutations workflows">
-        <i class="fa fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> Workflows
+
+    <a class="btn btn-default topic-icon" href="/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/workflows/" title="Workflows" alt="Mapping and molecular identification of phenotype-causing mutations workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Workflows
     </a>
 
+</li>
+            
 
-                    </div>
-                    
-                    
-                    <div>
-                        
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/variant-analysis/tutorials/mapping-by-sequencing/tours/">
-    <i class="fa fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span> Tours
-</a>
+            
+
+            
+
+            
+            
+            
+                 <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/faqs/" title="Frequently Asked Questions" alt="Tutorial FAQs">
+        <i class="far fa-question-circle" aria-hidden="true"></i> FAQs
+    </a>
+  </li>
 
 
-                    </div>
-                    
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
 
 
-                    
-                            </div>
-                        </li>
-                    </ul>
-                </div>
 
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+            
+                <li class="btn btn-default supporting_material">
+
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
+    </a>
+    <ul class="dropdown-menu">
+    
+        <li>
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/variant-analysis/docker" title="Docker image for this tutorial">
+                <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
+            </a>
+        </li>
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
+            Galaxy Test
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxytrakr.org/" title="GalaxyTrakr">
+            GalaxyTrakr
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+
+
+</li>
+            
+        </ul>
+        
+
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 5, 2023 </div>
+        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
+            <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
+        </div>
+    </blockquote>
+
+    <div class="container">
+        <div class="row">
+            <!-- sidebar, which will move to the top on a small screen -->
+            <div class="col-sm-2">
+                <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
+            <div class="col-sm-10">
+                 
 
-        </blockquote>
-
-        <div class="container">
-            <div class="row">
-                <!-- sidebar, which will move to the top on a small screen -->
-                <div class="col-sm-2">
-                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-                </div>
-                <div class="col-sm-10">
-                    <h1 class="no_toc" id="introduction">Introduction</h1>
+                <h1 id="introduction">Introduction</h1>
 
 <p>In order to map and identify phenotype-causing mutations efficiently from a
 single experiment, modern genetic research aims to combine classical genetic
@@ -546,7 +913,7 @@ analysis workflows compatible with a variety of mapping-by-sequencing
 approaches.</p>
 
 <blockquote class="details">
-  <h3 id="details-further-reading"><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> Further reading</h3>
+  <div class="box-title details-title" id="details-further-reading"><button class="gtn-boxify-button details" type="button" aria-controls="details-further-reading-contents" aria-expanded="true" aria-label="Toggle details box: Further reading"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Details: Further reading<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
   <p>The MiModD documentation has its own chapter on supported
 <a href="http://mimodd.readthedocs.io/en/latest/nacreousmap.html">mapping-by-sequencing schemes</a>
 not covered here.</p>
@@ -559,7 +926,7 @@ supported by <strong>MiModD</strong> called <em>Variant Allele Frequency Mapping
 
 <h3 id="variant-allele-frequency-mapping">Variant Allele Frequency Mapping</h3>
 
-<figure id="figure-1"><img src="../../images/mbs_scheme.png" alt="Principal of variant allele frequency mapping" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Principle of variant allele frequency mapping</figcaption></figure>
+<figure id="figure-1"><img src="../../images/mbs_scheme.png" alt="Principal of variant allele frequency mapping. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Principle of variant allele frequency mapping</figcaption></figure>
 
 <p>As illustrated in Figure 1, variant allele frequency mapping analyzes marker
 variant inheritance patterns in pooled F2 recombinants selected for the
@@ -589,13 +956,15 @@ which all sequenced reads support variant alleles found in the original mutant
 line, rather than mapping strain variant alleles.</p>
 
 <blockquote class="agenda">
-  <h3 id="agenda">Agenda</h3>
+  <div class="box-title agenda-title" id="agenda" aria-label="agenda box: ">Agenda</div>
 
 <ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#data-preparation" id="markdown-toc-data-preparation">Data Preparation</a></li>
   <li><a href="#joint-variant-calling-and-extraction" id="markdown-toc-joint-variant-calling-and-extraction">Joint Variant Calling and Extraction</a></li>
   <li><a href="#linkage-analysis" id="markdown-toc-linkage-analysis">Linkage Analysis</a></li>
   <li><a href="#identifying-candidate-mutations" id="markdown-toc-identifying-candidate-mutations">Identifying Candidate Mutations</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
 </ol>
 
 </blockquote>
@@ -606,13 +975,13 @@ line, rather than mapping strain variant alleles.</p>
 in a late-flowering mutant line of <em>Arabidopsis thaliana</em>.</p>
 
 <blockquote class="comment">
-  <h3 id="comment-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
+  <div class="box-title comment-title" id="comment" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
   <p><strong>MiModD</strong> was developed as a successor of the older and now unmaintained
 <em>CloudMap</em> suite of tools, but also uses some key concepts first implemented
 in the command line package <em>SHOREmap</em>.
 The data used in this tutorial represent a subsample of the
 <a href="http://bioinfo.mpipz.mpg.de/shoremap/examples.html">SHOREmap proof-of-principle data</a>
-(specifically of the <code class="highlighter-rouge">OCF2</code> and <code class="highlighter-rouge">Ler</code> datasets).</p>
+(specifically of the <code class="language-plaintext highlighter-rouge">OCF2</code> and <code class="language-plaintext highlighter-rouge">Ler</code> datasets).</p>
 </blockquote>
 
 <p>The mutant line was obtained from a mutagenesis screen on the <strong>Col</strong>umbia
@@ -640,10 +1009,10 @@ TAIR10) so the two datasets take the form of BAM files with the mapping results
 if you do not know what this means).</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-data-upload-and-preprocessing"><i class="fa fa-pencil" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload and preprocessing</h3>
+  <div class="box-title hands-on-title" id="hands-on-data-upload-and-preprocessing" aria-label="hands-on box: Data upload and preprocessing"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Data upload and preprocessing</div>
 
   <blockquote class="tip">
-    <h3 id="tip-tip"><i class="fa fa-lightbulb-o" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip</h3>
+    <div class="box-title tip-title" id="tip"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-contents" aria-expanded="true" aria-label="Toggle tip box: "><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
     <p>This section assumes that you already know</p>
 
     <ul>
@@ -670,7 +1039,7 @@ and
     <li>Specify the genome that was used at the reads mapping step
       <ol>
         <li>Click on <strong>Edit attributes</strong> (the pencil icon displayed with the dataset)</li>
-        <li>As the <strong>Database/Build</strong> select <code class="highlighter-rouge">Arabidopsis thaliana TAIR10</code></li>
+        <li>As the <strong>Database/Build</strong> select <code class="language-plaintext highlighter-rouge">Arabidopsis thaliana TAIR10</code></li>
         <li><strong>Save</strong> the edited attributes</li>
       </ol>
     </li>
@@ -678,37 +1047,37 @@ and
       <p>Import the reference genome</p>
 
       <blockquote class="comment">
-        <h3 id="comment-tair10-version"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visually-hidden">comment</span> TAIR10 Version</h3>
+        <div class="box-title comment-title" id="comment-tair10-version" aria-label="comment box: TAIR10 Version"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: TAIR10 Version</div>
         <p>This step is only necessary if the TAIR10 version of the <em>A. thaliana</em>
 genome is not available as a built-in genome on your Galaxy server.</p>
       </blockquote>
 
       <ol>
         <li>Upload the reference genome using the URL:
-<code class="highlighter-rouge">https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas</code></li>
-        <li>Use <strong>Replace parts of text</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to truncate the title
+<code class="language-plaintext highlighter-rouge">https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas</code></li>
+        <li>Use <strong>Replace parts of text</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to truncate the title
 lines in the fasta dataset to just the bare chromosome names. Set:
           <ul>
             <li>
-              <p>the <strong>Find pattern</strong> to <code class="highlighter-rouge">^&gt;(\w+).*</code></p>
+              <p>the <strong>Find pattern</strong> to <code class="language-plaintext highlighter-rouge">^&gt;(\w+).*</code></p>
 
               <p>This will find entire fasta title lines, or more specifically, any
-lines starting with <code class="highlighter-rouge">&gt;</code> followed by at least one letter, digit or
+lines starting with <code class="language-plaintext highlighter-rouge">&gt;</code> followed by at least one letter, digit or
 underscore.</p>
             </li>
             <li>
-              <p>the <strong>Replace with</strong> pattern to <code class="highlighter-rouge">&gt;chr$1</code></p>
+              <p>the <strong>Replace with</strong> pattern to <code class="language-plaintext highlighter-rouge">&gt;chr$1</code></p>
 
-              <p>The <code class="highlighter-rouge">$1</code> in it refers to the parenthesized part of the find pattern,
+              <p>The <code class="language-plaintext highlighter-rouge">$1</code> in it refers to the parenthesized part of the find pattern,
 <em>i.e.</em>, just the substring of letters/digits/underscores directly
-following the <code class="highlighter-rouge">&gt;</code>.</p>
+following the <code class="language-plaintext highlighter-rouge">&gt;</code>.</p>
             </li>
             <li>
-              <p><strong>Find-Pattern is a regular expression</strong> to <code class="highlighter-rouge">Yes</code></p>
+              <p><strong>Find-Pattern is a regular expression</strong> to <code class="language-plaintext highlighter-rouge">Yes</code></p>
             </li>
           </ul>
         </li>
-        <li>Make sure the datatype of the resulting dataset is set to <code class="highlighter-rouge">fasta</code> and
+        <li>Make sure the datatype of the resulting dataset is set to <code class="language-plaintext highlighter-rouge">fasta</code> and
 give the dataset a nice name (<em>e.g.</em>, TAIR10 reference).</li>
         <li>At this point you can delete the originally downloaded dataset.</li>
       </ol>
@@ -738,10 +1107,10 @@ the <strong>MiModD Extract Variant Sites</strong> tool to extract sites, for whi
 one sample appears to have a non-wt genotype, and report them in VCF format.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-variant-calling"><i class="fa fa-pencil" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Variant Calling</h3>
+  <div class="box-title hands-on-title" id="hands-on-variant-calling" aria-label="hands-on box: Variant Calling"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Variant Calling</div>
 
   <ol>
-    <li>Use <strong>MiModD Variant Calling</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to generate combined
+    <li>Use <strong>MiModD Variant Calling</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to generate combined
 variant call statistics:
       <ul>
         <li>
@@ -753,12 +1122,12 @@ Otherwise, download and preprocess the reference as described under
 Data Preparation and use it as a <strong>genome from my history</strong>.</p>
         </li>
         <li>As the <strong>Aligned reads input datasets</strong> for the analysis select the two
-BAM datasets representing the two samples (use the <code class="highlighter-rouge">Control</code> key on the
+BAM datasets representing the two samples (use the <code class="language-plaintext highlighter-rouge">Control</code> key on the
 keyboard to select multiple datasets from the list.</li>
         <li><strong>Execute</strong> the job</li>
       </ul>
     </li>
-    <li>Run <strong>MiModD Extract Variant Sites</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
+    <li>Run <strong>MiModD Extract Variant Sites</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
       <ul>
         <li><strong>BCF input file</strong> set to the BCF dataset generated in the previous
 step.</li>
@@ -767,7 +1136,7 @@ step.</li>
   </ol>
 
   <blockquote class="question">
-    <h3 id="question-questions"><i class="fa fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div class="box-title question-title" id="question" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>Approximately how many variants were extracted?</li>
@@ -775,7 +1144,7 @@ step.</li>
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution"><i class="fa fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div class="box-title solution-title" id="solution"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
       <ol>
         <li>You can click on the extracted variants dataset in your history to
 get more details about it. You should see that the file has an
@@ -813,22 +1182,22 @@ identify these markers and look for linkage between them and the causative
 mutation.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-linkage-analysis-with-one-set-of-parentally-contributed-markers"><i class="fa fa-pencil" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Linkage Analysis with one set of parentally contributed markers</h3>
+  <div class="box-title hands-on-title" id="hands-on-linkage-analysis-with-one-set-of-parentally-contributed-markers" aria-label="hands-on box: Linkage Analysis with one set of parentally contributed markers"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Linkage Analysis with one set of parentally contributed markers</div>
 
-  <p>In the <strong>MiModD NacreousMap</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> interface, set</p>
+  <p>In the <strong>MiModD NacreousMap</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> interface, set</p>
   <ul>
-    <li><strong>type of mapping analysis to perform</strong> to <code class="highlighter-rouge">Variant Allele Frequency
-  Mapping</code> and</li>
-    <li><strong>data source to use</strong> to <code class="highlighter-rouge">VCF file of variants</code>.</li>
+    <li><strong>type of mapping analysis to perform</strong> to <code class="language-plaintext highlighter-rouge">Variant Allele Frequency
+Mapping</code> and</li>
+    <li><strong>data source to use</strong> to <code class="language-plaintext highlighter-rouge">VCF file of variants</code>.</li>
     <li>As the <strong>input file with variants to analyze</strong> select your extracted
 variants VCF dataset obtained in the previous step.</li>
-    <li>As the <strong>mapping sample name</strong> use <code class="highlighter-rouge">outcrossed F2</code>.</li>
+    <li>As the <strong>mapping sample name</strong> use <code class="language-plaintext highlighter-rouge">outcrossed F2</code>.</li>
     <li>Leave the <strong>name of the related parent sample</strong> input field empty because
 in this two-sample there is no such sample.</li>
-    <li>As the <strong>name of the unrelated parent sample</strong> specify <code class="highlighter-rouge">Ler</code>.
+    <li>As the <strong>name of the unrelated parent sample</strong> specify <code class="language-plaintext highlighter-rouge">Ler</code>.
       <blockquote class="comment">
-        <h3 id="comment-sample-roles"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visually-hidden">comment</span> Sample roles</h3>
-        <p>In <code class="highlighter-rouge">Variant Allele Frequency Mapping</code> mode the tool requires:</p>
+        <div class="box-title comment-title" id="comment-sample-roles" aria-label="comment box: Sample roles"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Sample roles</div>
+        <p>In <code class="language-plaintext highlighter-rouge">Variant Allele Frequency Mapping</code> mode the tool requires:</p>
         <ul>
           <li>a <strong>mapping sample</strong>, which corresponds to the recombinant pool, from
 which allele frequencies should be calculated</li>
@@ -858,19 +1227,19 @@ chromosome in the <em>A. thaliana</em> genome, one with graphical representation
 of the data.</p>
 
   <blockquote class="question">
-    <h3 id="question-questions-1"><i class="fa fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div class="box-title question-title" id="question-1" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>Have a look at the linkage plots dataset generated by the tool run. In
 which interval on which chromosome would you expect the causative
 mutation?</li>
       <li>Are the per-marker scatter plots and the histogram plots in agreement?</li>
-      <li>What about those <code class="highlighter-rouge">No markers found!</code> messages (you saw them, right?)
+      <li>What about those <code class="language-plaintext highlighter-rouge">No markers found!</code> messages (you saw them, right?)
 that the tool printed?</li>
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-1"><i class="fa fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div class="box-title solution-title" id="solution-1"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-1-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
       <ol>
         <li>The plots suggest that the causative variant is likely to be found
 in the region from 18,000,000 to 19,000,000 on chr2.</li>
@@ -921,9 +1290,9 @@ homozygous for it.</p>
 </ul>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-variant-filtering"><i class="fa fa-pencil" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Variant Filtering</h3>
+  <div class="box-title hands-on-title" id="hands-on-variant-filtering" aria-label="hands-on box: Variant Filtering"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Variant Filtering</div>
 
-  <p>With the above information, we can run <strong>MiModD VCF Filter</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>
+  <p>With the above information, we can run <strong>MiModD VCF Filter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>
 to obtain a new VCF dataset with only those variants from the originally
 extracted ones that fulfill all three criteria. In the tool interface,</p>
 
@@ -932,17 +1301,17 @@ extracted ones that fulfill all three criteria. In the tool interface,</p>
 history</li>
     <li>add a <strong>Sample-specific Filter</strong> and set its
       <ul>
-        <li><strong>sample</strong> to <code class="highlighter-rouge">outcrossed F2</code></li>
-        <li><strong>genotype pattern(s) for the inclusion of variants</strong> to <code class="highlighter-rouge">1/1</code></li>
+        <li><strong>sample</strong> to <code class="language-plaintext highlighter-rouge">outcrossed F2</code></li>
+        <li><strong>genotype pattern(s) for the inclusion of variants</strong> to <code class="language-plaintext highlighter-rouge">1/1</code></li>
       </ul>
 
       <p>These settings will make the filter retain only variants for which the F2
-pool has a <code class="highlighter-rouge">1/1</code>, <em>i.e.</em>, homozygous mutant genotype.</p>
+pool has a <code class="language-plaintext highlighter-rouge">1/1</code>, <em>i.e.</em>, homozygous mutant genotype.</p>
     </li>
     <li>add another <strong>Sample-specific Filter</strong> and set its
       <ul>
-        <li><strong>sample</strong> to <code class="highlighter-rouge">Ler</code></li>
-        <li><strong>genotype pattern(s) for the inclusion of variants</strong> to <code class="highlighter-rouge">0/0</code></li>
+        <li><strong>sample</strong> to <code class="language-plaintext highlighter-rouge">Ler</code></li>
+        <li><strong>genotype pattern(s) for the inclusion of variants</strong> to <code class="language-plaintext highlighter-rouge">0/0</code></li>
       </ul>
 
       <p>This filter will retain only variants for which the mapping strain sample
@@ -950,7 +1319,7 @@ has a homozygous wt genotype.</p>
     </li>
     <li>add a <strong>Region Filter</strong> and set its
       <ul>
-        <li><strong>Chromosome</strong> to <code class="highlighter-rouge">chr2</code></li>
+        <li><strong>Chromosome</strong> to <code class="language-plaintext highlighter-rouge">chr2</code></li>
         <li><strong>Region Start</strong> to 18000000</li>
         <li><strong>Region End</strong> to 19000000</li>
       </ul>
@@ -959,14 +1328,14 @@ has a homozygous wt genotype.</p>
 interval.</p>
 
       <blockquote class="comment">
-        <h3 id="comment-sample-and-chromosome-names"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visually-hidden">comment</span> Sample and chromosome names</h3>
+        <div class="box-title comment-title" id="comment-sample-and-chromosome-names" aria-label="comment box: Sample and chromosome names"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: Sample and chromosome names</div>
         <p>This is the second time in this tutorial that we ask you to type sample
 or chromosome names exactly as they appear in a dataset, and so you
 may have started wondering how you are supposed to keep track of which
 names are used where in your own analyses.</p>
 
         <p>Because this is a valid concern, the MiModD tool suite features the
-<strong>MiModD File Information</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool that can report the
+<strong>MiModD File Information</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool that can report the
 sample and sequence names stored in almost any dataset that you may
 encounter in a mapping-by-sequencing analysis (specifically, the
 tool can handle datasets in vcf, bcf, sam, bam and fasta format).</p>
@@ -979,7 +1348,7 @@ tool can handle datasets in vcf, bcf, sam, bam and fasta format).</p>
 filters.</p>
 
   <blockquote class="question">
-    <h3 id="question-questions-2"><i class="fa fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div class="box-title question-title" id="question-2" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <ol>
       <li>How many variants passed the filters?</li>
@@ -988,7 +1357,7 @@ not have any mapping information?</li>
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-2"><i class="fa fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div class="box-title solution-title" id="solution-2"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-2-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
       <ol>
         <li>If you used the suggested mapping interval of 1Mb on chr2, you
 should have retained 5 variants. Filtering is a really powerful way to
@@ -1011,41 +1380,46 @@ level. Hence, we can prioritize our candidate variants after annotating them
 with predicted functional effects.</p>
 
 <blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-variant-annotation"><i class="fa fa-pencil" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Variant Annotation</h3>
+  <div class="box-title hands-on-title" id="hands-on-variant-annotation" aria-label="hands-on box: Variant Annotation"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Variant Annotation</div>
 
-  <p>To annotate our variants we are going to use <strong>SnpEff</strong> with the
-<code class="highlighter-rouge">athalianaTair10</code> genome database as the source of functional genomic
+  <p>To annotate our variants we are going to use <strong>SnpEff</strong> with its
+<code class="language-plaintext highlighter-rouge">Arabidopsis_thaliana</code> genome database as the source of functional genomic
 annotations, then generate a human-friendly variant report with the
-<strong>MiModD Report Variants</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool.</p>
+<strong>MiModD Report Variants</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool.</p>
 
   <ol>
     <li>
-      <p>Use <strong>SnpEff Download</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> (Galaxy tool version 4.1.0) to
-download genome database <code class="highlighter-rouge">athalianaTair10</code>.</p>
+      <p>Use <strong>SnpEff Download</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to download genome database
+<code class="language-plaintext highlighter-rouge">Arabidopsis_thaliana</code>.</p>
 
       <blockquote class="comment">
-        <h3 id="comment-snpeff-versions"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visually-hidden">comment</span> SnpEff versions</h3>
-        <p>SnpEff genome databases can only be used with the specific version of
-SnpEff they were built for. Make sure you are using version <code class="highlighter-rouge">4.1.0</code> of
-<strong>SnpEff Download</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> in this and of <strong>SnpEff Variant
-effect and annotation</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> in the next step.
-If your Galaxy server offers newer versions of these tools by default,
-you may be able to request version <code class="highlighter-rouge">4.1.0</code> explicitly using the
-<strong>Versions</strong> button at the top right of the tool interface.</p>
+        <div class="box-title comment-title" id="comment-snpeff-versions" aria-label="comment box: SnpEff versions"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment: SnpEff versions</div>
+        <p>SnpEff genome databases can only be used with the specific <code class="language-plaintext highlighter-rouge">major.minor</code>
+version of SnpEff they were built for.
+Make sure you are using matching versions (e.g., <code class="language-plaintext highlighter-rouge">4.3</code> - differences
+past the second digit are fine and denote subversions with compatible
+database schemes) of <strong>SnpEff Download</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> in this and of
+<strong>SnpEff Variant effect and annotation</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> in the next
+step.</p>
+
+        <p>Please also note that before SnpEff version 4.3 the TAIR10 version of
+the <em>A. thaliana</em> genome database was named <code class="language-plaintext highlighter-rouge">athalianaTair10</code>.
+If your Galaxy server offers only older versions of the SnpEff tools,
+you will have to use that name instead of <code class="language-plaintext highlighter-rouge">Arabidopsis_thaliana</code>.</p>
       </blockquote>
     </li>
-    <li>In the <strong>SnpEff Variant effect and annotation</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> interface,
+    <li>In the <strong>SnpEff Variant effect and annotation</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> interface,
 set:
       <ul>
         <li><strong>Sequence changes (SNPs, MNPs, InDels)</strong> to your filtered VCF dataset</li>
-        <li><strong>Genome source</strong> to <code class="highlighter-rouge">Reference genome from your history</code></li>
-        <li><strong>SnpEff4.1 Genome Data</strong> to your just downloaded genome dataset</li>
+        <li><strong>Genome source</strong> to <code class="language-plaintext highlighter-rouge">Downloaded snpEff database in your history</code></li>
+        <li><strong>SnpEff4.3 Genome Data</strong> to your just downloaded genome dataset</li>
         <li>
-          <p>under <strong>Annotation options</strong> check <code class="highlighter-rouge">Use 'EFF' field compatible with
+          <p>under <strong>Annotation options</strong> check <code class="language-plaintext highlighter-rouge">Use 'EFF' field compatible with
 older versions (instead of 'ANN')</code></p>
 
           <p>This last setting is required for compatibility of the resulting dataset
-with the current version of <strong>MiModD Report Variants</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>.</p>
+with the current version of <strong>MiModD Report Variants</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>.</p>
         </li>
       </ul>
 
@@ -1054,13 +1428,13 @@ annotation data added to its INFO column. Inspecting this dataset is not
 particularly convenient, but you can turn it into a more user-friendly
 report by</p>
     </li>
-    <li>using <strong>MiModD Report Variants</strong> <i class="fa fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> and setting:
+    <li>using <strong>MiModD Report Variants</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> and setting:
       <ul>
         <li><strong>The VCF input with the variants to be reported</strong> to the annotated
 variants dataset generated by <strong>SnpEff</strong></li>
-        <li>the <strong>Format to use for the report</strong> to <code class="highlighter-rouge">HTML</code></li>
+        <li>the <strong>Format to use for the report</strong> to <code class="language-plaintext highlighter-rouge">HTML</code></li>
         <li>
-          <p><strong>Species</strong> to <code class="highlighter-rouge">A. thaliana</code>.</p>
+          <p><strong>Species</strong> to <code class="language-plaintext highlighter-rouge">A. thaliana</code>.</p>
 
           <p>The species information can be used by the tool to enrich the output
 with species-specific database and genome browser links.</p>
@@ -1068,20 +1442,20 @@ with species-specific database and genome browser links.</p>
       </ul>
 
       <blockquote class="comment">
-        <h3 id="comment-comment-1"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
+        <div class="box-title comment-title" id="comment-1" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
         <p>Variant reports in html format are meant to be used on relatively small
 lists of candidate variants like in this example. If the input VCF
 contains &gt; 1000 variants, the relatively large size of the reports and
 slow loading in the browser may become annoying. In this case, or if you
 experience formatting problems with the generated html in your browser,
-it may be better to choose <code class="highlighter-rouge">Tab-separated plain text</code> as the report
+it may be better to choose <code class="language-plaintext highlighter-rouge">Tab-separated plain text</code> as the report
 format although the output will then lack those convenient hyperlinks.</p>
       </blockquote>
     </li>
   </ol>
 
   <blockquote class="question">
-    <h3 id="question-questions-3"><i class="fa fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
+    <div class="box-title question-title" id="question-3" aria-label="question box: "><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden"></span> Question</div>
 
     <p>The published confirmed mutations in the mutant line are <em>chr2:18,774,111
 C→T</em> and <em>chr2:18,808,927 C→T</em>. The latter was shown through follow-up
@@ -1095,7 +1469,7 @@ relate to the phenotype of our mutant line?</li>
     </ol>
 
     <blockquote class="solution">
-      <h3 id="solution-solution-3"><i class="fa fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+      <div class="box-title solution-title" id="solution-3"><button class="gtn-boxify-button solution" type="button" aria-controls="solution-3-contents" aria-expanded="true" aria-label="Toggle solution box: "><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"></span> Solution<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>
       <ol>
         <li>The C→T transition at 18,774,111 results in a premature
 translational stop for the transcript AT2G45550.1. The C→T transition
@@ -1103,7 +1477,7 @@ at 18,808,927 affects a splice donor site and, thus, is likely to
 interfere with correct splicing of the transcript AT2G45660.1.</li>
         <li>From the linked gene pages at <em>TAIR</em> you can learn that the
 gene AT2G45550 encodes a cytochrome P450, while AT2G45660 encodes a
-protein called AGL20, which is known to control flowering. Thus, there
+protein called AGL20/SOC1, which is known to control flowering. Thus, there
 is a direct connection between the late-flowering phenotype of the
 mutant line studied here and the known role of the gene affected by
 chr2:18,808,927 C→T.</li>
@@ -1112,7 +1486,7 @@ chr2:18,808,927 C→T.</li>
   </blockquote>
 </blockquote>
 
-<h1 class="no_toc" id="conclusion">Conclusion</h1>
+<h1 id="conclusion">Conclusion</h1>
 
 <p>Mapping-by-sequencing can greatly speed up and facilitate the molecular
 identification of mutations recovered from mutagenesis screens. The method
@@ -1127,85 +1501,182 @@ essence of the analysis method <strong>before</strong> the preparation of any bi
 samples.</p>
 
 
+                
+                <blockquote class="key_points">
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
+                    <ul>
+                        
+                        <li><p>Mapping-by-sequencing is a powerful method for the molecular identification of mutations</p>
+</li>
+                        
+                        <li><p>The MiModD suite of tools bundles most of the functionality required to perform mapping-by-sequencing analyses with Galaxy</p>
+</li>
+                        
+                    </ul>
+                </blockquote>
+                
+
+                <h1>Frequently Asked Questions</h1>
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/variant-analysis/faqs/">FAQ page for the Variant Analysis topic</a> to see if your question is listed there.
+                If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
+                
+
+                
+                <h1 data-toc-skip>Useful literature</h1>
+                <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/variant-analysis#references">here</a>.</p>
+                
 
 
-                    
-                    <blockquote class="key_points">
-                        <h3><i class="fa fa-key" aria-hidden="true"></i><span class="visually-hidden">keypoints</span> Key points</h3>
+                
 
-                        <ul>
-                            
-                            <li>Mapping-by-sequencing is a powerful method for the molecular identification of mutations</li>
-                            
-                            <li>The MiModD suite of tools bundles most of the functionality required to perform mapping-by-sequencing analyses with Galaxy</li>
-                            
-                        </ul>
-                    </blockquote>
-                    
+                
 
-                    
-                    <h1 data-toc-skip>Useful literature</h1>
-                    <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/variant-analysis#references">here</a>.</p>
-                    
+                <h1>Feedback</h1>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
-                    
-
+                <div id="feedback-button">
+                    <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
                 </div>
+                <div id="feedback-form">
+                </div>
+                <script type="text/javascript">
+                    (function (window, document) {
+                        function onDocumentReady(fn) {
+                            if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                                fn();
+                            } else {
+                                document.addEventListener('DOMContentLoaded', fn);
+                            }
+                        }
+
+                        onDocumentReady(function () {
+                            $("#feedback-button").click(function(evt){
+                                var e = $(evt.target)
+                                e.hide();
+
+                                $("#feedback-form").html(`
+                                    <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Mapping and molecular identification of phenotype-causing mutations (Variant Analysis)">Loading...</iframe>
+                                `)
+                            })
+                        });
+                    })(window, document);
+                </script>
+
+                <h1>Citing this Tutorial</h1>
+                <p>
+                    <ol>
+                        <li id="citation-text">
+                            Wolfgang Maier,  <b>Mapping and molecular identification of phenotype-causing mutations (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html">https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html</a> Online; accessed TODAY
+                        </li>
+                        <li>
+                        Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
+                        </li>
+                    </ol>
+                </p>
+
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
+                <blockquote class="details">
+
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
+
+<code id="citation-code">@misc{variant-analysis-mapping-by-sequencing,
+author = "Wolfgang Maier",
+title = "Mapping and molecular identification of phenotype-causing mutations (Galaxy Training Materials)",
+year = "",
+month = "",
+day = ""
+url = "\url{https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html}",
+note = "[Online; accessed TODAY]"
+}
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+</code>
+                   </pre></div></div>
+                   </p>
+                </blockquote>
+
+                
+
+
+<script type="text/javascript">
+// update the date on load, or leave fallback of 'today'
+d = new Date();
+document.getElementById("citation-code").innerHTML = document.getElementById("citation-code").innerHTML.replace("TODAY", d.toDateString());
+document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
+</script>
+
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
+
+                
+
+                
+
             </div>
         </div>
-
-        <h3><i class="fa fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
-
-        <hr>
-        <br>
-
-        <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Mapping and molecular identification of phenotype-causing mutations (Variant Analysis)">Loading...
-        </iframe>
-
-        <blockquote class="feedback">
-            <h3><i class="fa fa-comments-o" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Give us even more feedback on this content!</h3>
-            <p>To give us more detailed feedback about these materials, please take a moment to fill in the extended <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_GLZRpxZGAL9tN6DA1bE6WkNhmQdXT7B16TpOb-X4YwKUsQ/viewform?entry.1548889262=Mapping and molecular identification of phenotype-causing mutations (Variant Analysis)">Feedback Form</a>.</p>
-        </blockquote>
-    </section>
-</div>
-
-
-<footer>
-    <div class="container">
-        <p>
-            This material is the result of a collaborative work. Thanks to the
-            <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a>
-            and all the <a href="/training-material/hall-of-fame">contributors</a> (Wolfgang Maier)!
-        </p>
-        <p>
-            Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.md">GitHub</a>.
-        </p>
     </div>
-</footer>
+</section>
+<br/>
+<br/>
+<br/>
 
+        </div>
+        
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
 </html>
