@@ -47,6 +47,23 @@
   "slides": false,
   "workflows": [
     {
+      "workflow": "Galaxy-Workflow-Data_QC.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Data_QC.ga",
+      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Data_QC.ga",
+      "wfid": "assembly-largegenome",
+      "wfname": "galaxy-workflow-data_qc",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-data_qc",
+      "license": null,
+      "creators": [
+        {
+          "class": "Person",
+          "identifier": "0000-0002-9906-0673",
+          "name": "Anna Syme"
+        }
+      ]
+    },
+    {
       "workflow": "Galaxy-Workflow-Assembly_with_Flye.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assembly_with_Flye.ga",
@@ -54,40 +71,6 @@
       "wfid": "assembly-largegenome",
       "wfname": "galaxy-workflow-assembly_with_flye",
       "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-assembly_with_flye",
-      "license": null,
-      "creators": [
-        {
-          "class": "Person",
-          "identifier": "0000-0002-9906-0673",
-          "name": "Anna Syme"
-        }
-      ]
-    },
-    {
-      "workflow": "Galaxy-Workflow-Racon_polish_with_Illumina_reads_x2.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_Illumina_reads_x2.ga",
-      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_Illumina_reads_x2.ga",
-      "wfid": "assembly-largegenome",
-      "wfname": "galaxy-workflow-racon_polish_with_illumina_reads_x2",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-racon_polish_with_illumina_reads_x2",
-      "license": null,
-      "creators": [
-        {
-          "class": "Person",
-          "identifier": "0000-0002-9906-0673",
-          "name": "Anna Syme"
-        }
-      ]
-    },
-    {
-      "workflow": "Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
-      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
-      "wfid": "assembly-largegenome",
-      "wfname": "galaxy-workflow-racon_polish_with_long_reads_x4",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-racon_polish_with_long_reads_x4",
       "license": null,
       "creators": [
         {
@@ -132,13 +115,30 @@
       ]
     },
     {
-      "workflow": "Galaxy-Workflow-kmer_counting.ga",
+      "workflow": "Galaxy-Workflow-Racon_polish_with_Illumina_reads_x2.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-kmer_counting.ga",
-      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-kmer_counting.ga",
+      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_Illumina_reads_x2.ga",
+      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_Illumina_reads_x2.ga",
       "wfid": "assembly-largegenome",
-      "wfname": "galaxy-workflow-kmer_counting",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-kmer_counting",
+      "wfname": "galaxy-workflow-racon_polish_with_illumina_reads_x2",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-racon_polish_with_illumina_reads_x2",
+      "license": null,
+      "creators": [
+        {
+          "class": "Person",
+          "identifier": "0000-0002-9906-0673",
+          "name": "Anna Syme"
+        }
+      ]
+    },
+    {
+      "workflow": "Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
+      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
+      "wfid": "assembly-largegenome",
+      "wfname": "galaxy-workflow-racon_polish_with_long_reads_x4",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-racon_polish_with_long_reads_x4",
       "license": null,
       "creators": [
         {
@@ -166,13 +166,13 @@
       ]
     },
     {
-      "workflow": "Galaxy-Workflow-Data_QC.ga",
+      "workflow": "Galaxy-Workflow-kmer_counting.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Data_QC.ga",
-      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Data_QC.ga",
+      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-kmer_counting.ga",
+      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-kmer_counting.ga",
       "wfid": "assembly-largegenome",
-      "wfname": "galaxy-workflow-data_qc",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-data_qc",
+      "wfname": "galaxy-workflow-kmer_counting",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-kmer_counting",
       "license": null,
       "creators": [
         {
