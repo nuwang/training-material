@@ -545,6 +545,18 @@
           "type": "Tutorial",
           "versions": [
             {
+              "link": "HNYop3vLpoM",
+              "date": "2023-05-17",
+              "speakers": [
+                "paulzierep"
+              ],
+              "captions": [
+
+              ],
+              "length": "1H5M",
+              "galaxy_version": "23.01"
+            },
+            {
               "captions": [
                 "EngyNasr",
                 "shiltemann"
@@ -563,7 +575,7 @@
           ],
           "gtn_id": "metagenomics/metatranscriptomics",
           "title": "Metatranscriptomics analysis using microbiome RNA-seq data",
-          "captioned": true
+          "captioned": false
         },
         "session": null
       },
@@ -1364,7 +1376,9 @@
               "speakers": [
                 "bebatut"
               ],
-              "captions": null,
+              "captions": [
+                "sophia120199"
+              ],
               "date": "2023-05-10",
               "galaxy_version": "23.01",
               "length": "1H5M"
@@ -1372,7 +1386,7 @@
           ],
           "gtn_id": "metagenomics/beer-data-analysis",
           "title": "Identification of the micro-organisms in a beer using Nanopore sequencing",
-          "captioned": false
+          "captioned": true
         },
         "slides": null,
         "demo": null,
