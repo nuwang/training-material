@@ -77,6 +77,23 @@
   "slides": false,
   "workflows": [
     {
+      "workflow": "Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
+      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
+      "wfid": "assembly-largegenome",
+      "wfname": "galaxy-workflow-racon_polish_with_long_reads_x4",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-racon_polish_with_long_reads_x4",
+      "license": null,
+      "creators": [
+        {
+          "class": "Person",
+          "identifier": "0000-0002-9906-0673",
+          "name": "Anna Syme"
+        }
+      ]
+    },
+    {
       "workflow": "Galaxy-Workflow-Data_QC.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Data_QC.ga",
@@ -111,13 +128,13 @@
       ]
     },
     {
-      "workflow": "Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
+      "workflow": "Galaxy-Workflow-Assess_genome_quality.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
-      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Racon_polish_with_long_reads_x4.ga",
+      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assess_genome_quality.ga",
+      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assess_genome_quality.ga",
       "wfid": "assembly-largegenome",
-      "wfname": "galaxy-workflow-racon_polish_with_long_reads_x4",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-racon_polish_with_long_reads_x4",
+      "wfname": "galaxy-workflow-assess_genome_quality",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-assess_genome_quality",
       "license": null,
       "creators": [
         {
@@ -152,23 +169,6 @@
       "wfid": "assembly-largegenome",
       "wfname": "galaxy-workflow-trim_and_filter_reads",
       "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-trim_and_filter_reads",
-      "license": null,
-      "creators": [
-        {
-          "class": "Person",
-          "identifier": "0000-0002-9906-0673",
-          "name": "Anna Syme"
-        }
-      ]
-    },
-    {
-      "workflow": "Galaxy-Workflow-Assess_genome_quality.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assess_genome_quality.ga",
-      "path": "topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assess_genome_quality.ga",
-      "wfid": "assembly-largegenome",
-      "wfname": "galaxy-workflow-assess_genome_quality",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-assess_genome_quality",
       "license": null,
       "creators": [
         {
