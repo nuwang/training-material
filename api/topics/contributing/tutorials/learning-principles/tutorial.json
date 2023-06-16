@@ -55,22 +55,6 @@
       ]
     },
     {
-      "id": "verbs.yaml",
-      "path": "topics/contributing/tutorials/learning-principles/quiz/verbs.yaml",
-      "title": "Identify observable and non observable actions (verbs)",
-      "contributors": [
-        "bebatut"
-      ]
-    },
-    {
-      "id": "learning_metaphors.yaml",
-      "path": "topics/contributing/tutorials/learning-principles/quiz/learning_metaphors.yaml",
-      "title": "Learning metaphors",
-      "contributors": [
-        "bebatut"
-      ]
-    },
-    {
       "id": "overloading_short_term_memory.yaml",
       "path": "topics/contributing/tutorials/learning-principles/quiz/overloading_short_term_memory.yaml",
       "title": "How can you avoid to overload learners working memory?",
@@ -82,6 +66,22 @@
       "id": "teaching_or_training.yaml",
       "path": "topics/contributing/tutorials/learning-principles/quiz/teaching_or_training.yaml",
       "title": "Teaching or training?",
+      "contributors": [
+        "bebatut"
+      ]
+    },
+    {
+      "id": "verbs.yaml",
+      "path": "topics/contributing/tutorials/learning-principles/quiz/verbs.yaml",
+      "title": "Identify observable and non observable actions (verbs)",
+      "contributors": [
+        "bebatut"
+      ]
+    },
+    {
+      "id": "learning_metaphors.yaml",
+      "path": "topics/contributing/tutorials/learning-principles/quiz/learning_metaphors.yaml",
+      "title": "Learning metaphors",
       "contributors": [
         "bebatut"
       ]
