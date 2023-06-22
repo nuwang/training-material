@@ -65,9 +65,9 @@
   "slides": false,
   "quiz": [
     {
-      "id": "LEs_GTN_tutorials.yaml",
-      "path": "topics/contributing/tutorials/design/quiz/LEs_GTN_tutorials.yaml",
-      "title": "LEs in GTN tutorials",
+      "id": "evaluate_learning_outcomes.yaml",
+      "path": "topics/contributing/tutorials/design/quiz/evaluate_learning_outcomes.yaml",
+      "title": "Evaluate Learning outcomes",
       "contributors": [
         "bebatut"
       ]
@@ -89,9 +89,9 @@
       ]
     },
     {
-      "id": "evaluate_learning_outcomes.yaml",
-      "path": "topics/contributing/tutorials/design/quiz/evaluate_learning_outcomes.yaml",
-      "title": "Evaluate Learning outcomes",
+      "id": "LEs_GTN_tutorials.yaml",
+      "path": "topics/contributing/tutorials/design/quiz/LEs_GTN_tutorials.yaml",
+      "title": "LEs in GTN tutorials",
       "contributors": [
         "bebatut"
       ]

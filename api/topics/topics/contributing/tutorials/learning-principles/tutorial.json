@@ -55,14 +55,6 @@
       ]
     },
     {
-      "id": "overloading_short_term_memory.yaml",
-      "path": "topics/contributing/tutorials/learning-principles/quiz/overloading_short_term_memory.yaml",
-      "title": "How can you avoid to overload learners working memory?",
-      "contributors": [
-        "bebatut"
-      ]
-    },
-    {
       "id": "teaching_or_training.yaml",
       "path": "topics/contributing/tutorials/learning-principles/quiz/teaching_or_training.yaml",
       "title": "Teaching or training?",
@@ -74,6 +66,14 @@
       "id": "verbs.yaml",
       "path": "topics/contributing/tutorials/learning-principles/quiz/verbs.yaml",
       "title": "Identify observable and non observable actions (verbs)",
+      "contributors": [
+        "bebatut"
+      ]
+    },
+    {
+      "id": "overloading_short_term_memory.yaml",
+      "path": "topics/contributing/tutorials/learning-principles/quiz/overloading_short_term_memory.yaml",
+      "title": "How can you avoid to overload learners working memory?",
       "contributors": [
         "bebatut"
       ]
