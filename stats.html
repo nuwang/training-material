@@ -387,20 +387,6 @@
       <tr>
         <td></td>
         <td style="text-align:right">
-            <a href="/training-material/topics/single-cell">
-                Single Cell
-            </a>
-</td>
-        <td><a href="/training-material//topics/single-cell/tutorials/scrna-umis/tutorial.html">
-            Understanding Barcodes
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td></td>
-        <td style="text-align:right">
             <a href="/training-material/topics/introduction">
                 Introduction to Galaxy Analyses
             </a>
@@ -415,12 +401,12 @@
       <tr>
         <td></td>
         <td style="text-align:right">
-            <a href="/training-material/topics/admin">
-                Galaxy Server administration
+            <a href="/training-material/topics/single-cell">
+                Single Cell
             </a>
 </td>
-        <td><a href="/training-material//topics/admin/tutorials/pulsar/tutorial.html">
-            Running Jobs on Remote Resources with Pulsar
+        <td><a href="/training-material//topics/single-cell/tutorials/scrna-umis/tutorial.html">
+            Understanding Barcodes
             </a></td>
       </tr>
     
@@ -429,12 +415,12 @@
       <tr>
         <td></td>
         <td style="text-align:right">
-            <a href="/training-material/topics/galaxy-interface">
-                Using Galaxy and Managing your Data
+            <a href="/training-material/topics/admin">
+                Galaxy Server administration
             </a>
 </td>
-        <td><a href="/training-material//topics/galaxy-interface/tutorials/history/tutorial.html">
-            Understanding Galaxy history system
+        <td><a href="/training-material//topics/admin/tutorials/pulsar/tutorial.html">
+            Running Jobs on Remote Resources with Pulsar
             </a></td>
       </tr>
     
@@ -461,8 +447,22 @@
                 Using Galaxy and Managing your Data
             </a>
 </td>
-        <td><a href="/training-material//topics/galaxy-interface/tutorials/group-tags/tutorial.html">
-            Group tags for complex experimental designs
+        <td><a href="/training-material//topics/galaxy-interface/tutorials/history/tutorial.html">
+            Understanding Galaxy history system
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td></td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/variant-analysis">
+                Variant Analysis
+            </a>
+</td>
+        <td><a href="/training-material//topics/variant-analysis/tutorials/trio-analysis/tutorial.html">
+            Trio Analysis using Synthetic Datasets from RD-Connect GPAP
             </a></td>
       </tr>
     
@@ -549,8 +549,8 @@ var tutorialsBar = new Chart('tutorialsBar', {
 
 // Technical Topics
 // Chart displaying number of tutorials per topic
-var data_tutos = [22,21,19,14,36,44];
-var labels_topics = ["Using Galaxy and Managing your Data","Development in Galaxy","Contributing to the Galaxy Training Material","Teaching and Hosting Galaxy training","Foundations of Data Science","Galaxy Server administration"];
+var data_tutos = [19,22,36,14,21,44];
+var labels_topics = ["Contributing to the Galaxy Training Material","Using Galaxy and Managing your Data","Foundations of Data Science","Teaching and Hosting Galaxy training","Development in Galaxy","Galaxy Server administration"];
 
 var tutorialsBarTechnical = new Chart("tutorialsBarTechnical", {
   type: 'horizontalBar',
