@@ -128,19 +128,6 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "workflow3_functional_information_quick.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information_quick.ga",
-      "path": "topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information_quick.ga",
-      "wfid": "metagenomics-metatranscriptomics-short",
-      "wfname": "workflow3_functional_information_quick",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-metatranscriptomics-short/versions/workflow3_functional_information_quick",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
       "workflow": "workflow1_preprocessing.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow1_preprocessing.ga",
@@ -148,6 +135,19 @@
       "wfid": "metagenomics-metatranscriptomics-short",
       "wfname": "workflow1_preprocessing",
       "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-metatranscriptomics-short/versions/workflow1_preprocessing",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
+      "workflow": "workflow3_functional_information_quick.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information_quick.ga",
+      "path": "topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information_quick.ga",
+      "wfid": "metagenomics-metatranscriptomics-short",
+      "wfname": "workflow3_functional_information_quick",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-metatranscriptomics-short/versions/workflow3_functional_information_quick",
       "license": null,
       "creators": [
 

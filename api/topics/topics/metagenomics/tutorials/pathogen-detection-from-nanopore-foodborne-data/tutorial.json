@@ -150,13 +150,13 @@
       ]
     },
     {
-      "workflow": "nanopore_taxonomy_profiling_and_visualization.ga",
+      "workflow": "Nanopore_Datasets_Gene_based_pathogenic_Identification.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/nanopore_taxonomy_profiling_and_visualization.ga",
-      "path": "topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/nanopore_taxonomy_profiling_and_visualization.ga",
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/Nanopore_Datasets_Gene_based_pathogenic_Identification.ga",
+      "path": "topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/Nanopore_Datasets_Gene_based_pathogenic_Identification.ga",
       "wfid": "metagenomics-pathogen-detection-from-nanopore-foodborne-data",
-      "wfname": "nanopore_taxonomy_profiling_and_visualization",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-pathogen-detection-from-nanopore-foodborne-data/versions/nanopore_taxonomy_profiling_and_visualization",
+      "wfname": "nanopore_datasets_gene_based_pathogenic_identification",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-pathogen-detection-from-nanopore-foodborne-data/versions/nanopore_datasets_gene_based_pathogenic_identification",
       "license": "MIT",
       "creators": [
         {
@@ -174,13 +174,13 @@
       ]
     },
     {
-      "workflow": "Nanopore_Datasets_Gene_based_pathogenic_Identification.ga",
+      "workflow": "nanopore_taxonomy_profiling_and_visualization.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/Nanopore_Datasets_Gene_based_pathogenic_Identification.ga",
-      "path": "topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/Nanopore_Datasets_Gene_based_pathogenic_Identification.ga",
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/nanopore_taxonomy_profiling_and_visualization.ga",
+      "path": "topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/nanopore_taxonomy_profiling_and_visualization.ga",
       "wfid": "metagenomics-pathogen-detection-from-nanopore-foodborne-data",
-      "wfname": "nanopore_datasets_gene_based_pathogenic_identification",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-pathogen-detection-from-nanopore-foodborne-data/versions/nanopore_datasets_gene_based_pathogenic_identification",
+      "wfname": "nanopore_taxonomy_profiling_and_visualization",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-pathogen-detection-from-nanopore-foodborne-data/versions/nanopore_taxonomy_profiling_and_visualization",
       "license": "MIT",
       "creators": [
         {
