@@ -73,9 +73,9 @@
       ]
     },
     {
-      "id": "LEs_GTN_tutorials.yaml",
-      "path": "topics/contributing/tutorials/design/quiz/LEs_GTN_tutorials.yaml",
-      "title": "LEs in GTN tutorials",
+      "id": "assessments_GTN_tutorials.yaml",
+      "path": "topics/contributing/tutorials/design/quiz/assessments_GTN_tutorials.yaml",
+      "title": "Evaluate assessment in GTN tutorials",
       "contributors": [
         "bebatut"
       ]
@@ -89,9 +89,9 @@
       ]
     },
     {
-      "id": "assessments_GTN_tutorials.yaml",
-      "path": "topics/contributing/tutorials/design/quiz/assessments_GTN_tutorials.yaml",
-      "title": "Evaluate assessment in GTN tutorials",
+      "id": "LEs_GTN_tutorials.yaml",
+      "path": "topics/contributing/tutorials/design/quiz/LEs_GTN_tutorials.yaml",
+      "title": "LEs in GTN tutorials",
       "contributors": [
         "bebatut"
       ]

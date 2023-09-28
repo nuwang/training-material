@@ -78,7 +78,8 @@
   "priority": 3,
   "tags": [
     "R",
-    "rmarkdown-notebook"
+    "rmarkdown-notebook",
+    "jupyter-notebook"
   ],
   "license": "MIT",
   "url": "/topics/data-science/tutorials/r-dplyr/tutorial.html",

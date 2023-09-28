@@ -60,95 +60,12 @@
                                
                        
                                
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
 			{
-				"id": "admin/tutorials/ansible-galaxy/slides",
+				"id": "admin/tutorials/interactive-tools/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Galaxy Installation with Ansible"
+				"title": "Galaxy Interactive Tools"
 			},
 								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/database/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galactic Database"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/monitoring/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Monitoring with Telegraf and Grafana"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/data-library/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Data Libraries"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/users-groups-quotas/slides",
-				"topic": "Galaxy Server administration",
-				"title": "User, Role, Group and Quota managment"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/cvmfs/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Reference Data with CVMFS"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/ansible/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Ansible"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/connect-to-compute-cluster/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Connecting Galaxy to a compute cluster"
-			},
-								
-                               
-                       
                                
                        
                                
@@ -167,12 +84,10 @@
                                
                        
                                
-                       
-                               
 			{
-				"id": "admin/tutorials/systemd-supervisor/slides",
+				"id": "admin/tutorials/monitoring/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Controlling Galaxy with systemd or Supervisor"
+				"title": "Galaxy Monitoring with Telegraf and Grafana"
 			},
 								
                                
@@ -188,6 +103,76 @@
                        
                                
 			{
+				"id": "admin/tutorials/data-library/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Data Libraries"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/database/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galactic Database"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/users-groups-quotas/slides",
+				"topic": "Galaxy Server administration",
+				"title": "User, Role, Group and Quota managment"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/systemd-supervisor/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Controlling Galaxy with systemd or Supervisor"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/ansible-galaxy/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galaxy Installation with Ansible"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/cvmfs/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Reference Data with CVMFS"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+			{
 				"id": "admin/tutorials/production/slides",
 				"topic": "Galaxy Server administration",
 				"title": "Gearing towards production"
@@ -196,10 +181,25 @@
                                
                        
                                
+                       
+                               
+                       
+                               
+                       
+                               
 			{
-				"id": "admin/tutorials/interactive-tools/slides",
+				"id": "admin/tutorials/ansible/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Galaxy Interactive Tools"
+				"title": "Ansible"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/connect-to-compute-cluster/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Connecting Galaxy to a compute cluster"
 			},
 								
                                
@@ -303,6 +303,8 @@
                        
                        
                                
+                       
+                               
 			{
 				"id": "climate/tutorials/fates/slides",
 				"topic": "Climate",
@@ -318,8 +320,6 @@
 				"title": "Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools"
 			},
 								
-                               
-                       
                                
                        
                                
@@ -526,8 +526,6 @@
                                
                        
                                
-                       
-                               
 			{
 				"id": "dev/tutorials/tool-generators/slides",
 				"topic": "Development in Galaxy",
@@ -537,18 +535,20 @@
                                
                        
                                
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
 			{
 				"id": "dev/tutorials/bioblend-api/slides",
 				"topic": "Development in Galaxy",
 				"title": "Scripting Galaxy using the API and BioBlend"
 			},
 								
-                               
-                       
-                               
-                       
-                               
-                       
                                
                        
                                
@@ -720,14 +720,14 @@
                                
                        
                                
-                       
-                               
 			{
 				"id": "genome-annotation/tutorials/apollo/slides",
 				"topic": "Genome Annotation",
 				"title": "Refining Genome Annotations with Apollo (prokaryotes)"
 			},
 								
+                               
+                       
                                
                        
                                
@@ -1066,14 +1066,14 @@
                        
                        
                                
-                       
-                               
 			{
 				"id": "teaching/tutorials/gtn-for-instructors/slides",
 				"topic": "Teaching and Hosting Galaxy training",
 				"title": "Overview of the Galaxy Training Material for Instructors"
 			},
 								
+                               
+                       
                                
                        
                                
@@ -1108,34 +1108,34 @@
                                
                        
                                
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
 			{
 				"id": "transcriptomics/tutorials/mirna-target-finder/slides",
 				"topic": "Transcriptomics",
 				"title": "Whole transcriptome analysis of Arabidopsis thaliana"
 			},
 								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
                                
                        
                                
