@@ -72,17 +72,17 @@
       ]
     },
     {
-      "id": "active_learning_strategies.yaml",
-      "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/active_learning_strategies.yaml",
-      "title": "Which strategies for active learning training did you use?",
+      "id": "trainer_skills.yaml",
+      "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/trainer_skills.yaml",
+      "title": "Reflect on your skills as a trainer",
       "contributors": [
         "bebatut"
       ]
     },
     {
-      "id": "trainer_skills.yaml",
-      "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/trainer_skills.yaml",
-      "title": "Reflect on your skills as a trainer",
+      "id": "active_learning_strategies.yaml",
+      "path": "topics/teaching/tutorials/learner_participation_engagement/quiz/active_learning_strategies.yaml",
+      "title": "Which strategies for active learning training did you use?",
       "contributors": [
         "bebatut"
       ]

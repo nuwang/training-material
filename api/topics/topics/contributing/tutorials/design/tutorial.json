@@ -73,17 +73,17 @@
       ]
     },
     {
-      "id": "assessments_GTN_tutorials.yaml",
-      "path": "topics/contributing/tutorials/design/quiz/assessments_GTN_tutorials.yaml",
-      "title": "Evaluate assessment in GTN tutorials",
+      "id": "effectiveness_GTN_tutorials.yaml",
+      "path": "topics/contributing/tutorials/design/quiz/effectiveness_GTN_tutorials.yaml",
+      "title": "Evaluate effectiveness in GTN tutorials",
       "contributors": [
         "bebatut"
       ]
     },
     {
-      "id": "effectiveness_GTN_tutorials.yaml",
-      "path": "topics/contributing/tutorials/design/quiz/effectiveness_GTN_tutorials.yaml",
-      "title": "Evaluate effectiveness in GTN tutorials",
+      "id": "assessments_GTN_tutorials.yaml",
+      "path": "topics/contributing/tutorials/design/quiz/assessments_GTN_tutorials.yaml",
+      "title": "Evaluate assessment in GTN tutorials",
       "contributors": [
         "bebatut"
       ]
