@@ -26530,5 +26530,27 @@
     "topic": "Introduction to Galaxy Analyses",
     "month": "2023-11",
     "date": "2023-11-04"
+  },
+  {
+    "": "2412",
+    "note": "4",
+    "pro": "The step by step process is well explained",
+    "con": "I as not able to comple some steps, like converting the resistance gene table to gf3",
+    "anonymous": null,
+    "tutorial": "Identification of the micro-organisms in a beer using Nanopore sequencing",
+    "topic": "Metagenomics",
+    "month": "2023-11",
+    "date": "2023-11-07"
+  },
+  {
+    "": "2413",
+    "note": "5",
+    "pro": "the coherence",
+    "con": "Examples in many ways to analyze",
+    "anonymous": null,
+    "tutorial": "A short introduction to Galaxy",
+    "topic": "Introduction to Galaxy Analyses",
+    "month": "2023-11",
+    "date": "2023-11-08"
   }
 ]
