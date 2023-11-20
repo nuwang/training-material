@@ -128,6 +128,19 @@
   "slides": false,
   "workflows": [
     {
+      "workflow": "workflow3_functional_information.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information.ga",
+      "path": "topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information.ga",
+      "wfid": "metagenomics-metatranscriptomics-short",
+      "wfname": "workflow3_functional_information",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-metatranscriptomics-short/versions/workflow3_functional_information",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
       "workflow": "workflow2_community_profile.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow2_community_profile.ga",
@@ -135,19 +148,6 @@
       "wfid": "metagenomics-metatranscriptomics-short",
       "wfname": "workflow2_community_profile",
       "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-metatranscriptomics-short/versions/workflow2_community_profile",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
-      "workflow": "workflow3_functional_information_quick.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information_quick.ga",
-      "path": "topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information_quick.ga",
-      "wfid": "metagenomics-metatranscriptomics-short",
-      "wfname": "workflow3_functional_information_quick",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-metatranscriptomics-short/versions/workflow3_functional_information_quick",
       "license": null,
       "creators": [
 
@@ -167,13 +167,13 @@
       ]
     },
     {
-      "workflow": "workflow3_functional_information.ga",
+      "workflow": "workflow3_functional_information_quick.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information.ga",
-      "path": "topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information.ga",
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information_quick.ga",
+      "path": "topics/metagenomics/tutorials/metatranscriptomics-short/workflows/workflow3_functional_information_quick.ga",
       "wfid": "metagenomics-metatranscriptomics-short",
-      "wfname": "workflow3_functional_information",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-metatranscriptomics-short/versions/workflow3_functional_information",
+      "wfname": "workflow3_functional_information_quick",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-metatranscriptomics-short/versions/workflow3_functional_information_quick",
       "license": null,
       "creators": [
 
