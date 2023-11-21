@@ -79,19 +79,6 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "amplicon.ga",
-      "tests": true,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/general-tutorial/workflows/amplicon.ga",
-      "path": "topics/metagenomics/tutorials/general-tutorial/workflows/amplicon.ga",
-      "wfid": "metagenomics-general-tutorial",
-      "wfname": "amplicon",
-      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-general-tutorial/versions/amplicon",
-      "license": null,
-      "creators": [
-
-      ]
-    },
-    {
       "workflow": "wgs-worklow.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/general-tutorial/workflows/wgs-worklow.ga",
@@ -99,6 +86,19 @@
       "wfid": "metagenomics-general-tutorial",
       "wfname": "wgs-worklow",
       "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-general-tutorial/versions/wgs-worklow",
+      "license": null,
+      "creators": [
+
+      ]
+    },
+    {
+      "workflow": "amplicon.ga",
+      "tests": true,
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/general-tutorial/workflows/amplicon.ga",
+      "path": "topics/metagenomics/tutorials/general-tutorial/workflows/amplicon.ga",
+      "wfid": "metagenomics-general-tutorial",
+      "wfname": "amplicon",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/metagenomics-general-tutorial/versions/amplicon",
       "license": null,
       "creators": [
 
