@@ -47,17 +47,17 @@
   "slides": false,
   "quiz": [
     {
-      "id": "short_term_memory.yaml",
-      "path": "topics/contributing/tutorials/learning-principles/quiz/short_term_memory.yaml",
-      "title": "How short is your short term memory?",
+      "id": "learning_metaphors.yaml",
+      "path": "topics/contributing/tutorials/learning-principles/quiz/learning_metaphors.yaml",
+      "title": "Learning metaphors",
       "contributors": [
         "bebatut"
       ]
     },
     {
-      "id": "verbs.yaml",
-      "path": "topics/contributing/tutorials/learning-principles/quiz/verbs.yaml",
-      "title": "Identify observable and non observable actions (verbs)",
+      "id": "short_term_memory.yaml",
+      "path": "topics/contributing/tutorials/learning-principles/quiz/short_term_memory.yaml",
+      "title": "How short is your short term memory?",
       "contributors": [
         "bebatut"
       ]
@@ -71,17 +71,17 @@
       ]
     },
     {
-      "id": "learning_metaphors.yaml",
-      "path": "topics/contributing/tutorials/learning-principles/quiz/learning_metaphors.yaml",
-      "title": "Learning metaphors",
+      "id": "teaching_or_training.yaml",
+      "path": "topics/contributing/tutorials/learning-principles/quiz/teaching_or_training.yaml",
+      "title": "Teaching or training?",
       "contributors": [
         "bebatut"
       ]
     },
     {
-      "id": "teaching_or_training.yaml",
-      "path": "topics/contributing/tutorials/learning-principles/quiz/teaching_or_training.yaml",
-      "title": "Teaching or training?",
+      "id": "verbs.yaml",
+      "path": "topics/contributing/tutorials/learning-principles/quiz/verbs.yaml",
+      "title": "Identify observable and non observable actions (verbs)",
       "contributors": [
         "bebatut"
       ]

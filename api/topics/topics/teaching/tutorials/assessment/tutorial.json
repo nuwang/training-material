@@ -56,17 +56,17 @@
   "slides": false,
   "quiz": [
     {
-      "id": "frequency_formative_assessment.yaml",
-      "path": "topics/teaching/tutorials/assessment/quiz/frequency_formative_assessment.yaml",
-      "title": "How frequent should formative feedback be?",
+      "id": "formative_assessment.yaml",
+      "path": "topics/teaching/tutorials/assessment/quiz/formative_assessment.yaml",
+      "title": "Collecting formative assessment",
       "contributors": [
         "bebatut"
       ]
     },
     {
-      "id": "formative_assessment.yaml",
-      "path": "topics/teaching/tutorials/assessment/quiz/formative_assessment.yaml",
-      "title": "Collecting formative assessment",
+      "id": "frequency_formative_assessment.yaml",
+      "path": "topics/teaching/tutorials/assessment/quiz/frequency_formative_assessment.yaml",
+      "title": "How frequent should formative feedback be?",
       "contributors": [
         "bebatut"
       ]
